@@ -36,7 +36,7 @@ export function LanguageSwitcher({
           ref.current.open = false;
       }}
     >
-      <summary aria-label={copy.language}>{NATIVE_NAME[lang]}</summary>
+      <summary aria-label={`${copy.language}: ${NATIVE_NAME[lang]}`}>{NATIVE_NAME[lang]}</summary>
       <div className="lang-menu">
         {LANGS.map((l) => (
           <a

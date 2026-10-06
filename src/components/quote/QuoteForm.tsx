@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Lang } from "@/lib/i18n/langs";
 import type { Dictionary, QuoteCopy } from "@/content/types";
@@ -36,6 +36,25 @@ export function QuoteForm({
       : {}),
   }));
   const [step, setStep] = useState<1 | 2 | 3>(1);
+  const [transition, setTransition] = useState<{
+    leaving: 1 | 2 | 3;
+    dir: number;
+  } | null>(null);
+  const [entered, setEntered] = useState(false);
+  useEffect(() => {
+    if (!transition) return;
+    const timer = setTimeout(() => setTransition(null), 220);
+    return () => clearTimeout(timer);
+  }, [transition]);
+  const changeStep = (n: 1 | 2 | 3) => {
+    if (n === step) return;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    setTransition(reduce ? null : { leaving: step, dir: n > step ? 1 : -1 });
+    setEntered(true);
+    setStep(n);
+  };
   const [errors, setErrors] = useState<FieldError[]>([]);
   const [network, setNetwork] = useState(false);
   const [sending, setSending] = useState(false);
@@ -74,7 +93,7 @@ export function QuoteForm({
     "aria-describedby": error(field) ? "error-" + field : undefined,
   });
   const go = (n: 1 | 2 | 3) => {
-    setStep(n);
+    changeStep(n);
     setErrors([]);
     setNetwork(false);
     focusHeading();
@@ -116,7 +135,7 @@ export function QuoteForm({
             (STEP_FIELDS[n] as readonly string[]).includes(e.field),
           ),
         );
-        if (target) setStep(target);
+        if (target) changeStep(target);
         showErrors(list);
       } else setNetwork(true);
     } catch {
@@ -125,9 +144,151 @@ export function QuoteForm({
       setSending(false);
     }
   }
+  const renderStep = (s: 1 | 2 | 3) => (
+    <>
+      {s === 1 ? (
+        <fieldset {...invalid("interest")}>
+          <legend>{c.interestLegend}</legend>
+          <div className="chips">
+            {INTERESTS.map((id) => (
+              <span key={id}>
+                <input
+                  name="interest"
+                  type="radio"
+                  id={"interest-" + id}
+                  checked={draft.interest === id}
+                  onChange={() => update("interest", id)}
+                  {...invalid("interest")}
+                />
+                <label htmlFor={"interest-" + id}>{care[id]}</label>
+              </span>
+            ))}
+          </div>
+          {errorText("interest")}
+        </fieldset>
+      ) : null}
+      {s === 2 ? (
+        <>
+          <fieldset {...invalid("timing")}>
+            <legend>{c.timingLegend}</legend>
+            {Object.entries(c.timing).map(([id, label]) => (
+              <label className="radio-line" key={id}>
+                <input
+                  type="radio"
+                  name="timing"
+                  checked={draft.timing === id}
+                  onChange={() => update("timing", id)}
+                  {...invalid("timing")}
+                />
+                {label}
+              </label>
+            ))}
+            {errorText("timing")}
+          </fieldset>
+          <label className="radio-line">
+            <input
+              type="checkbox"
+              name="pickup"
+              checked={draft.pickup === true}
+              onChange={(e) => update("pickup", e.target.checked)}
+            />
+            {c.pickupLabel} ({c.optional})
+          </label>
+          <label className="field">
+            {c.stayLabel} ({c.optional})
+            <select
+              name="stay"
+              value={String(draft.stay ?? "")}
+              onChange={(e) => update("stay", e.target.value || undefined)}
+            >
+              <option value="">{c.stayNone}</option>
+              {Object.entries(c.stay).map(([id, label]) => (
+                <option value={id} key={id}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </>
+      ) : null}
+      {s === 3 ? (
+        <>
+          <label className="field">
+            {c.nameLabel}
+            <input
+              name="name"
+              autoComplete="name"
+              value={String(draft.name ?? "")}
+              onChange={(e) => update("name", e.target.value)}
+              {...invalid("name")}
+            />
+            {errorText("name")}
+          </label>
+          <label className="field">
+            {c.methodLabel}
+            <select
+              name="contactMethod"
+              value={String(draft.contactMethod ?? "email")}
+              onChange={(e) => update("contactMethod", e.target.value)}
+            >
+              {Object.entries(c.method).map(([id, label]) => (
+                <option value={id} key={id}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="field">
+            {c.contactLabel}
+            <input
+              name="contact"
+              autoComplete={draft.contactMethod === "email" ? "email" : "off"}
+              type={draft.contactMethod === "email" ? "email" : "text"}
+              value={String(draft.contact ?? "")}
+              onChange={(e) => update("contact", e.target.value)}
+              {...invalid("contact")}
+            />
+            {errorText("contact")}
+          </label>
+          <label className="field">
+            {c.residenceLabel} ({c.optional})
+            <input
+              name="residence"
+              autoComplete="country-name"
+              value={String(draft.residence ?? "")}
+              onChange={(e) => update("residence", e.target.value)}
+              {...invalid("residence")}
+            />
+            {errorText("residence")}
+          </label>
+          <p id="privacy">{c.privacy}</p>
+          <label className="radio-line">
+            <input
+              type="checkbox"
+              name="consent"
+              checked={draft.consent === true}
+              onChange={(e) => update("consent", e.target.checked)}
+              {...invalid("consent")}
+            />
+            {c.consentLabel}
+          </label>
+          {errorText("consent")}
+        </>
+      ) : null}
+    </>
+  );
   if (done)
     return (
       <section className="quote-card" data-done="true">
+        <svg
+          className="done-seal"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+          stroke="currentColor"
+        >
+          <circle cx="50" cy="50" r="44" pathLength="1" />
+          <path d="M28 50 L44 66 L74 34" pathLength="1" />
+        </svg>
         <h2 ref={heading} tabIndex={-1}>
           {c.doneTitle}
         </h2>
@@ -139,6 +300,9 @@ export function QuoteForm({
   return (
     <section className="quote-card">
       {notice ? <p className="notice">{notice}</p> : null}
+      <div className="q-progress" aria-hidden="true">
+        <i style={{ "--step": step } as React.CSSProperties} />
+      </div>
       <ol className="stepper">
         {c.steps.map((s, i) => (
           <li key={s} aria-current={i + 1 === step ? "step" : undefined}>
@@ -150,135 +314,28 @@ export function QuoteForm({
         {c.stepOf.replace("{n}", String(step))} · {c.steps[step - 1]}
       </h2>
       <form noValidate ref={form} onSubmit={submit}>
-        {step === 1 ? (
-          <fieldset {...invalid("interest")}>
-            <legend>{c.interestLegend}</legend>
-            <div className="chips">
-              {INTERESTS.map((id) => (
-                <span key={id}>
-                  <input
-                    name="interest"
-                    type="radio"
-                    id={"interest-" + id}
-                    checked={draft.interest === id}
-                    onChange={() => update("interest", id)}
-                    {...invalid("interest")}
-                  />
-                  <label htmlFor={"interest-" + id}>{care[id]}</label>
-                </span>
-              ))}
+        <div className="q-stage">
+          <div
+            className="q-step"
+            key={step}
+            data-step-state={entered ? "enter" : "stay"}
+            style={{ "--dir": transition?.dir ?? 1 } as React.CSSProperties}
+          >
+            {renderStep(step)}
+          </div>
+          {transition ? (
+            <div
+              className="q-step"
+              key={transition.leaving}
+              data-step-state="leave"
+              aria-hidden
+              inert
+              style={{ "--dir": transition.dir } as React.CSSProperties}
+            >
+              {renderStep(transition.leaving)}
             </div>
-            {errorText("interest")}
-          </fieldset>
-        ) : null}
-        {step === 2 ? (
-          <>
-            <fieldset {...invalid("timing")}>
-              <legend>{c.timingLegend}</legend>
-              {Object.entries(c.timing).map(([id, label]) => (
-                <label className="radio-line" key={id}>
-                  <input
-                    type="radio"
-                    name="timing"
-                    checked={draft.timing === id}
-                    onChange={() => update("timing", id)}
-                    {...invalid("timing")}
-                  />
-                  {label}
-                </label>
-              ))}
-              {errorText("timing")}
-            </fieldset>
-            <label className="radio-line">
-              <input
-                type="checkbox"
-                name="pickup"
-                checked={draft.pickup === true}
-                onChange={(e) => update("pickup", e.target.checked)}
-              />
-              {c.pickupLabel} ({c.optional})
-            </label>
-            <label className="field">
-              {c.stayLabel} ({c.optional})
-              <select
-                name="stay"
-                value={String(draft.stay ?? "")}
-                onChange={(e) => update("stay", e.target.value || undefined)}
-              >
-                <option value="">{c.stayNone}</option>
-                {Object.entries(c.stay).map(([id, label]) => (
-                  <option value={id} key={id}>
-                    {label}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </>
-        ) : null}
-        {step === 3 ? (
-          <>
-            <label className="field">
-              {c.nameLabel}
-              <input
-                name="name"
-                autoComplete="name"
-                value={String(draft.name ?? "")}
-                onChange={(e) => update("name", e.target.value)}
-                {...invalid("name")}
-              />
-              {errorText("name")}
-            </label>
-            <label className="field">
-              {c.methodLabel}
-              <select
-                name="contactMethod"
-                value={String(draft.contactMethod ?? "email")}
-                onChange={(e) => update("contactMethod", e.target.value)}
-              >
-                {Object.entries(c.method).map(([id, label]) => (
-                  <option value={id} key={id}>
-                    {label}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="field">
-              {c.contactLabel}
-              <input
-                name="contact"
-                autoComplete={draft.contactMethod === "email" ? "email" : "off"}
-                type={draft.contactMethod === "email" ? "email" : "text"}
-                value={String(draft.contact ?? "")}
-                onChange={(e) => update("contact", e.target.value)}
-                {...invalid("contact")}
-              />
-              {errorText("contact")}
-            </label>
-            <label className="field">
-              {c.residenceLabel} ({c.optional})
-              <input
-                name="residence"
-                autoComplete="country-name"
-                value={String(draft.residence ?? "")}
-                onChange={(e) => update("residence", e.target.value)}
-                {...invalid("residence")}
-              />
-              {errorText("residence")}
-            </label>
-            <p id="privacy">{c.privacy}</p>
-            <label className="radio-line">
-              <input
-                type="checkbox"
-                name="consent"
-                checked={draft.consent === true}
-                onChange={(e) => update("consent", e.target.checked)}
-                {...invalid("consent")}
-              />
-              {c.consentLabel}
-            </label>
-            {errorText("consent")}
-          </>
-        ) : null}
+          ) : null}
+        </div>
         {network ? (
           <p className="error" role="alert">
             {c.errors.network}

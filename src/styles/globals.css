@@ -17,6 +17,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 a {
   color: inherit;
@@ -39,7 +40,7 @@ a {
 }
 
 /* header */
-.site-head {
+.site-head-in {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -88,7 +89,7 @@ a {
   .site-nav {
     display: none;
   }
-  .site-head {
+  .site-head-in {
     justify-content: space-between;
   }
 }
@@ -346,19 +347,6 @@ legend {
 .plan-foot strong {
   color: var(--ink);
 }
-.plan.updating .days {
-  animation: swap 0.35s ease;
-}
-@keyframes swap {
-  from {
-    opacity: 0.25;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 
 @media (max-width: 960px) {
   .hero {
@@ -558,7 +546,6 @@ legend {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 2px solid var(--ink);
 }
 .tpl li {
   display: grid;
@@ -695,13 +682,7 @@ legend {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
-  }
-} /* Language-specific system fallback preserves the single Latin webfont. */
+/* Language-specific system fallback preserves the single Latin webfont. */
 html:lang(ja) {
   --font:
     var(--font-schibsted), "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
@@ -911,7 +892,7 @@ small {
 .matrix {
   width: 100%;
   border-collapse: collapse;
-  border-top: 2px solid var(--ink);
+
   table-layout: fixed;
 }
 .matrix td,
@@ -1022,7 +1003,8 @@ small {
   height: 150px;
   color: var(--pine);
   pointer-events: none;
-  animation: stamp 0.5s ease 0.5s both;
+  transform: rotate(-14deg);
+  opacity: 0.88;
 }
 .rosette {
   position: absolute;
@@ -1114,7 +1096,6 @@ small {
   gap: 1.75rem;
   list-style: none;
   padding: 1.5rem 0 0;
-  border-top: 2px solid var(--ink);
 }
 .steps li > span {
   font-weight: 800;
@@ -1225,7 +1206,6 @@ small {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 2px solid var(--ink);
 }
 .org-list li {
   display: grid;
@@ -1372,7 +1352,6 @@ small {
     clip-path: inset(50%);
   }
   .matrix .stage {
-    border-top: 2px solid var(--ink);
     margin-top: 1.25rem;
     padding-top: 1rem;
   }
@@ -1454,7 +1433,7 @@ small {
   .ref-preview {
     padding: 1rem;
   }
-  .site-head {
+  .site-head-in {
     gap: 1rem;
   }
   .org-list li {
@@ -1512,3 +1491,573 @@ html:lang(mn) body {
   word-break: keep-all;
   overflow-wrap: normal;
 }
+
+/* State and progressive enhancement share one scroll runtime. */
+.site-head {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
+}
+.site-head[data-compact] {
+  margin-bottom: 1.3rem;
+}
+.site-head[data-compact] .site-head-in {
+  padding-block: 0.6rem;
+}
+.site-head[data-compact] .logo {
+  transform: scale(0.88);
+  transform-origin: left center;
+}
+.read-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+}
+.read-progress i {
+  display: block;
+  height: 100%;
+  background: var(--pine);
+  transform: scaleX(var(--doc-p, 0));
+  transform-origin: left;
+}
+main [id],
+#main {
+  scroll-margin-top: var(--head-h);
+}
+.hero h1 > span {
+  display: inline-block;
+}
+#price > span {
+  display: inline-block;
+}
+.care-split {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  padding-block: clamp(2rem, 4vw, 3rem);
+}
+.care-split figure {
+  width: 100%;
+  max-width: 512px;
+  justify-self: end;
+  margin: 0;
+}
+.care-photo {
+  overflow: clip;
+  border-radius: 28px;
+  aspect-ratio: 4/5;
+  background: var(--mist);
+}
+.care-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.scrub {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.scrub input {
+  grid-column: 1/-1;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    var(--ok) calc(var(--fill) * 100%),
+    rgba(255, 255, 255, 0.18) 0
+  );
+}
+.scrub input::-webkit-slider-thumb {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ok);
+  border: 2px solid var(--ink);
+  cursor: pointer;
+}
+.scrub input::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ok);
+  border: 2px solid var(--ink);
+  cursor: pointer;
+}
+.scrub input:focus-visible {
+  outline: 3px solid var(--ok);
+  outline-offset: 4px;
+}
+.scrub-ticks {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.rule-grid [data-col-on] {
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.rule-grid tr[data-on] th {
+  box-shadow: inset 4px 0 0 var(--ok);
+}
+.today h3 {
+  font-size: 1rem;
+}
+.today ul {
+  padding-left: 1.25rem;
+}
+.matrix tr[data-active] {
+  background: color-mix(in srgb, var(--ok) 28%, transparent);
+}
+.matrix tr[data-active] .stage {
+  box-shadow: inset 4px 0 0 var(--ok);
+}
+.total {
+  position: relative;
+}
+.total::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--ink);
+  transform-origin: left;
+}
+.record[data-mounted] .record-faces {
+  display: grid;
+  perspective: 1200px;
+}
+.record[data-mounted] .face {
+  grid-area: 1/1;
+  backface-visibility: hidden;
+}
+.record[data-mounted] .face-back {
+  transform: rotateY(180deg);
+}
+.record[data-flipped="true"][data-mounted] .face-front {
+  transform: rotateY(-180deg);
+}
+.record[data-flipped="true"][data-mounted] .face-back {
+  transform: rotateY(0);
+}
+.flip-btn {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--pine);
+  background: transparent;
+  border: 1.5px solid var(--pine);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.registry img {
+  aspect-ratio: 4/3;
+}
+.steps-line {
+  height: 2px;
+  background: var(--stop);
+}
+.steps-line i {
+  display: block;
+  height: 100%;
+  background: var(--pine);
+  transform: scaleX(var(--p, 0));
+  transform-origin: left;
+}
+#trust-steps[data-reached="0"] li:nth-child(n + 1) > span,
+#trust-steps[data-reached="1"] li:nth-child(n + 2) > span,
+#trust-steps[data-reached="2"] li:nth-child(n + 3) > span,
+#trust-steps[data-reached="3"] li:nth-child(n + 4) > span {
+  color: var(--text-3);
+}
+.tpl > li {
+  position: relative;
+}
+.tpl-mini {
+  position: absolute;
+  left: 0;
+  top: calc(100% - 0.35rem);
+  z-index: 5;
+  width: min(100%, 560px);
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--ink) 15%, transparent);
+  visibility: hidden;
+  clip-path: inset(0 0 100% 0 round 14px);
+  pointer-events: none;
+  list-style: none;
+}
+.tpl-mini li {
+  display: block;
+  border: 0;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+}
+.tpl-mini b {
+  display: inline-block;
+  min-width: 4rem;
+}
+.tpl > li:is(:hover, :focus-within) .tpl-mini {
+  visibility: visible;
+  clip-path: inset(0 round 14px);
+}
+.give-to strong {
+  display: inline-block;
+}
+.q-stage {
+  display: grid;
+}
+.q-step {
+  grid-area: 1/1;
+  min-width: 0;
+}
+.q-step[data-step-state="leave"] {
+  pointer-events: none;
+}
+.q-progress {
+  height: 3px;
+  background: var(--line);
+  margin-bottom: 1rem;
+}
+.q-progress i {
+  display: block;
+  height: 100%;
+  background: var(--pine);
+  transform: scaleX(calc(var(--step) / 3));
+  transform-origin: left;
+}
+.done-seal {
+  width: 96px;
+  height: 96px;
+  color: var(--pine);
+  fill: none;
+  stroke-width: 3;
+}
+.done-seal :is(circle, path) {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+@media (max-width: 860px) {
+  .care-split {
+    grid-template-columns: 1fr;
+  }
+  .care-split figure {
+    justify-self: start;
+  }
+  .care-photo {
+    aspect-ratio: 4/3;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-head,
+  .site-head-in {
+    transition:
+      margin-bottom 200ms var(--ease-out),
+      padding 200ms var(--ease-out);
+  }
+  .site-head .logo {
+    transition: transform 200ms var(--ease-out);
+  }
+  .hero:has(> .plan[data-intro]) .eyebrow {
+    animation: fade 300ms var(--ease-out) both;
+  }
+  .hero:has(> .plan[data-intro]) h1 > span {
+    animation: rise 420ms var(--ease-out) calc(var(--i) * 70ms) both;
+  }
+  .hero:has(> .plan[data-intro]) :is(.lede, #planner, #planner ~ a) {
+    animation: rise-sm 360ms var(--ease-out) 200ms both;
+  }
+  .plan[data-intro] {
+    animation: lift 420ms var(--ease-out) 240ms both;
+  }
+  .plan[data-intro] .days::before {
+    transform-origin: top;
+    animation: line-draw 600ms var(--ease-io) 480ms both;
+  }
+  .plan[data-intro] .day {
+    animation: slot-in 300ms var(--ease-out) calc(480ms + var(--i) * 80ms) both;
+  }
+  .plan[data-intro] .plan-foot {
+    animation: fade 300ms var(--ease-out) 600ms both;
+  }
+  .plan:not([data-intro]) [data-presence="exit"] {
+    animation: node-out 180ms var(--ease-in) both;
+    pointer-events: none;
+  }
+  .plan:not([data-intro]) [data-presence="enter"] {
+    animation: node-in 260ms var(--ease-out) 60ms both;
+  }
+  .plan:not([data-intro]) #price > span[data-roll] {
+    animation: price-roll 280ms var(--ease-out) both;
+  }
+  .care-photo img {
+    transform: translateY(calc((0.5 - var(--p, 0.5)) * 8%)) scale(1.1);
+    will-change: transform;
+  }
+  [data-enhanced] .local-panel[data-reveal]:not([data-inview]) .care-chips li {
+    opacity: 0;
+  }
+  .local-panel[data-inview] .care-chips li {
+    animation: chip-in 320ms var(--ease-stamp) calc(var(--i) * 90ms) both;
+  }
+  .today li {
+    animation: chip-in 200ms var(--ease-out) calc(var(--i) * 30ms) both;
+  }
+  .rule-grid [data-col-on],
+  .rule-grid tr[data-on] th {
+    transition: box-shadow 180ms var(--ease-out);
+  }
+  .matrix tr {
+    transition: background 200ms var(--ease-out);
+  }
+  [data-enhanced]
+    .receipt-wrap[data-reveal]:not([data-inview])
+    :is(.rows li, .total strong, .seal) {
+    opacity: 0;
+  }
+  [data-enhanced] .receipt-wrap[data-reveal]:not([data-inview]) .total::before {
+    transform: scaleX(0);
+  }
+  .receipt-wrap[data-inview] .rows li {
+    animation: print 220ms var(--ease-io) calc(var(--i) * 140ms) both;
+  }
+  .receipt-wrap[data-inview] .total::before {
+    animation: rule-draw 240ms var(--ease-io) 800ms both;
+  }
+  .receipt-wrap[data-inview] .total strong {
+    animation: confirm 220ms var(--ease-stamp) 880ms both;
+  }
+  .receipt-wrap[data-inview] .seal {
+    animation: stamp 450ms var(--ease-stamp) 1300ms both;
+  }
+  .record[data-mounted] .face {
+    transition: transform 420ms var(--ease-io);
+  }
+  .steps li > span {
+    transition: color 200ms var(--ease-out);
+  }
+  .tpl-mini {
+    transition:
+      clip-path 160ms var(--ease-in),
+      visibility 0s linear 160ms;
+  }
+  .tpl > li:is(:hover, :focus-within) .tpl-mini {
+    transition:
+      clip-path 240ms var(--ease-out),
+      visibility 0s;
+  }
+  .tpl > li:is(:hover, :focus-within) .tpl-mini li {
+    animation: rise-sm 200ms var(--ease-out) calc(var(--i) * 30ms) both;
+  }
+  .give-to strong {
+    animation: rise-sm 240ms var(--ease-out) both;
+  }
+  [data-enhanced]
+    .ref-preview[data-reveal]:not([data-inview])
+    .dot:is(.done, .now) {
+    opacity: 0;
+  }
+  .ref-preview[data-inview] .dot:is(.done, .now) {
+    animation: dot-fill 220ms var(--ease-stamp) calc(var(--d) * 1ms) both;
+  }
+  .q-step[data-step-state="leave"] {
+    animation: step-out 200ms var(--ease-in) both;
+  }
+  .q-step[data-step-state="enter"] {
+    animation: step-in 280ms var(--ease-out) 40ms both;
+  }
+  .q-progress i {
+    transition: transform 320ms var(--ease-out);
+  }
+  .done-seal :is(circle, path) {
+    animation: seal-draw 560ms var(--ease-io) both;
+  }
+  .done-seal {
+    animation: stamp-in 300ms var(--ease-stamp) 560ms both;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.5em);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes rise-sm {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes lift {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes line-draw {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes rule-draw {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes slot-in {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes node-out {
+    to {
+      opacity: 0;
+      transform: translateX(-12px);
+    }
+  }
+  @keyframes node-in {
+    from {
+      opacity: 0;
+      transform: translateX(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes price-roll {
+    from {
+      opacity: 0;
+      transform: translateY(0.6em);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes chip-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes print {
+    from {
+      clip-path: inset(0 0 100% 0);
+      transform: translateY(-6px);
+    }
+    to {
+      clip-path: inset(0);
+      transform: none;
+    }
+  }
+  @keyframes confirm {
+    from {
+      opacity: 0;
+      transform: scale(1.25);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes dot-fill {
+    from {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes step-out {
+    to {
+      opacity: 0;
+      transform: translateX(calc(var(--dir) * -24px));
+    }
+  }
+  @keyframes step-in {
+    from {
+      opacity: 0;
+      transform: translateX(calc(var(--dir) * 24px));
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes seal-draw {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes stamp-in {
+    from {
+      opacity: 0;
+      transform: scale(1.2) rotate(-14deg);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+/* Keep the nested controls inside the rules panel on narrow screens. */
+.okrules > div { min-width: 0; }

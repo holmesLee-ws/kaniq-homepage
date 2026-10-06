@@ -11,7 +11,7 @@ export function Hero({ dict: d }: { dict: Dictionary }) {
         <p className="eyebrow">{d.hero.homeFor}</p>
         <h1>
           {d.hero.headline.map((s, i) => (
-            <span key={s}>
+            <span key={s} style={{ "--i": i } as React.CSSProperties}>
               {i > 0 ? <br /> : null}
               {s}
             </span>

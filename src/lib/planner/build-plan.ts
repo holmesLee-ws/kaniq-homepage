@@ -11,6 +11,7 @@ export type PlanView = {
   subtitle: string;
   price: string;
   days: {
+    slot: "arrive" | "treat" | "early" | "culture" | "free" | "home";
     label: string;
     title: string;
     treat: boolean;
@@ -71,24 +72,28 @@ export function buildPlan(
     rules[p].map((s, i) => item(s, t[p][i]));
   const rows: PlanView["days"] = [
     {
+      slot: "arrive",
       label: "D-1",
       title: copy.dayTitles.arrive,
       treat: false,
       items: [fixed("Move", copy.fixed.pickup), fixed("Stay", copy.rooms[who])],
     },
     {
+      slot: "treat",
       label: "D0",
       title: copy.dayTitles.treatment,
       treat: true,
       items: [fixed("Treat", t.treat), fixed("Move", copy.fixed.escort)],
     },
     {
+      slot: "early",
       label: "D1–2",
       title: copy.dayTitles.early,
       treat: false,
       items: period("early"),
     },
     {
+      slot: "culture",
       label: days === 5 ? "D3" : "D3–5",
       title: copy.dayTitles.culture,
       treat: false,
@@ -97,12 +102,14 @@ export function buildPlan(
   ];
   if (days === 10)
     rows.push({
+      slot: "free",
       label: "D6–8",
       title: copy.dayTitles.free,
       treat: false,
       items: period("late"),
     });
   rows.push({
+    slot: "home",
     label: days === 5 ? "D4" : days === 7 ? "D6" : "D9",
     title: copy.dayTitles.home,
     treat: false,

@@ -73,3 +73,17 @@ for (const lang of LANGS)
       expect(QUOTE_INTEREST.lasik).toBe("eye");
     });
   });
+
+it("keeps stable day slots across duration choices", () => {
+  for (const days of [5, 7, 10] as const) {
+    const plan = buildPlan(
+      { tx: "implants", days, pax: 2 },
+      getDictionary("en").planner,
+    );
+    expect(plan.days.map((d) => d.slot)).toEqual(
+      days === 10
+        ? ["arrive", "treat", "early", "culture", "free", "home"]
+        : ["arrive", "treat", "early", "culture", "home"],
+    );
+  }
+});

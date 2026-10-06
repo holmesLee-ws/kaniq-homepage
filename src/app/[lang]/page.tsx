@@ -3,8 +3,7 @@ import { LANGS, isLang } from "@/lib/i18n/langs";
 import { getDictionary } from "@/content";
 import { Hero } from "@/components/home/Hero";
 import { LocalBlock } from "@/components/home/LocalBlock";
-import { DoctorOkRules } from "@/components/home/DoctorOkRules";
-import { RecoveryWeek } from "@/components/home/RecoveryWeek";
+import { RecoveryExplorer } from "@/components/home/RecoveryExplorer";
 import { TrustReceipt } from "@/components/home/TrustReceipt";
 import { RecordCards } from "@/components/home/RecordCards";
 import { ProblemSteps } from "@/components/home/ProblemSteps";
@@ -25,8 +24,7 @@ export default async function Page({
     <main id="main">
       <Hero dict={d} />
       <LocalBlock dict={d} />
-      <DoctorOkRules copy={d.doctorOk} />
-      <RecoveryWeek copy={d.recovery} />
+      <RecoveryExplorer doctorOk={d.doctorOk} recovery={d.recovery} />
       <section id="trust" className="section wrap">
         <div className="trust-top">
           <div>

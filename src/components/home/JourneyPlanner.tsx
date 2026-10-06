@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
 import photo from "../../../public/img/a-samgyetang.jpg";
 import type { Lang } from "@/lib/i18n/langs";
@@ -8,8 +8,10 @@ import {
   buildPlan,
   QUOTE_INTEREST,
   type PlanInput,
+  type PlanView,
 } from "@/lib/planner/build-plan";
 import { QuoteStartLink } from "@/components/cta/QuoteStartLink";
+import { usePresence, type Presence } from "@/lib/motion/presence";
 export function JourneyPlanner({
   lang,
   copy,
@@ -26,7 +28,15 @@ export function JourneyPlanner({
     days: 7,
     pax: 2,
   });
-  const plan = buildPlan(input, copy);
+  const [touched, setTouched] = useState(false);
+  const change = (next: PlanInput) => {
+    setTouched(true);
+    setInput(next);
+  };
+  const plan = useMemo(() => buildPlan(input, copy), [input, copy]);
+  const days = usePresence(plan.days, (d) => d.slot);
+  const [price, setPrice] = useState({ v: plan.price, rolled: false });
+  if (price.v !== plan.price) setPrice({ v: plan.price, rolled: true });
   return (
     <>
       <div>
@@ -43,7 +53,7 @@ export function JourneyPlanner({
                     id={"tx-" + tx}
                     value={tx}
                     checked={input.tx === tx}
-                    onChange={() => setInput({ ...input, tx })}
+                    onChange={() => change({ ...input, tx })}
                   />
                   <label htmlFor={"tx-" + tx}>{copy.treatments[tx].name}</label>
                 </span>
@@ -61,7 +71,7 @@ export function JourneyPlanner({
                       id={"days-" + days}
                       name="days"
                       checked={input.days === days}
-                      onChange={() => setInput({ ...input, days })}
+                      onChange={() => change({ ...input, days })}
                     />
                     <label htmlFor={"days-" + days}>{days}</label>
                   </span>
@@ -78,7 +88,7 @@ export function JourneyPlanner({
                       id={"pax-" + pax}
                       name="pax"
                       checked={input.pax === pax}
-                      onChange={() => setInput({ ...input, pax })}
+                      onChange={() => change({ ...input, pax })}
                     />
                     <label htmlFor={"pax-" + pax}>
                       {
@@ -97,7 +107,11 @@ export function JourneyPlanner({
           {quoteLabel}
         </QuoteStartLink>
       </div>
-      <article className="plan updating" id="plan-card">
+      <article
+        className="plan"
+        id="plan-card"
+        data-intro={touched ? undefined : ""}
+      >
         <header className="plan-top">
           <div aria-live="polite" aria-atomic="true">
             <h2 id="plan-title">{plan.title}</h2>
@@ -110,43 +124,19 @@ export function JourneyPlanner({
             sizes="96px"
           />
         </header>
-        <ol className="days" key={`${input.tx}-${input.days}-${input.pax}`}>
-          {plan.days.map((day) => (
-            <li
-              className={"day" + (day.treat ? " is-treat" : "")}
-              key={day.label}
-            >
-              <div className="day-label">
-                <span>{day.label}</span>
-              </div>
-              <div>
-                <h3>{day.title}</h3>
-                <ul className="items">
-                  {day.items.map((item, i) => (
-                    <li className="item" key={i}>
-                      <span className="track" data-t={item.track}>
-                        {item.trackLabel}
-                      </span>
-                      <span>{item.text}</span>
-                      {item.badge ? (
-                        <span
-                          className={
-                            "okbadge" + (item.badge.wait ? " wait" : "")
-                          }
-                        >
-                          {item.badge.text}
-                        </span>
-                      ) : null}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
+        <ol className="days">
+          {days.map((p, i) => (
+            <PlanDay key={p.key} presence={p} index={i} />
           ))}
         </ol>
         <footer className="plan-foot">
           <span>
-            {copy.priceLabel} <strong id="price">{plan.price}</strong>
+            {copy.priceLabel}{" "}
+            <strong id="price">
+              <span key={price.v} data-roll={price.rolled ? "" : undefined}>
+                {price.v}
+              </span>
+            </strong>
             <small>{copy.priceNote}</small>
           </span>
           <span>
@@ -155,5 +145,64 @@ export function JourneyPlanner({
         </footer>
       </article>
     </>
+  );
+}
+
+function PlanDay({
+  presence: p,
+  index,
+}: {
+  presence: Presence<PlanView["days"][number]>;
+  index: number;
+}) {
+  const day = p.item;
+  const label = useMemo(() => [day.label], [day.label]);
+  const labels = usePresence(label, (s) => s);
+  const items = usePresence(day.items, (item) => item.track + "|" + item.text);
+  return (
+    <li
+      className={"day" + (day.treat ? " is-treat" : "")}
+      data-presence={p.state}
+      aria-hidden={p.state === "exit" || undefined}
+      inert={p.state === "exit"}
+      style={{ "--i": index } as React.CSSProperties}
+    >
+      <div className="day-label">
+        {labels.map((l) => (
+          <span
+            key={l.key}
+            data-presence={l.state}
+            aria-hidden={l.state === "exit" || undefined}
+            inert={l.state === "exit"}
+          >
+            {l.item}
+          </span>
+        ))}
+      </div>
+      <div>
+        <h3>{day.title}</h3>
+        <ul className="items">
+          {items.map(({ key, item, state }) => (
+            <li
+              className="item"
+              key={key}
+              data-presence={state}
+              aria-hidden={state === "exit" || undefined}
+              inert={state === "exit"}
+            >
+              <span className="track" data-t={item.track}>
+                {item.trackLabel}
+              </span>
+              <span>{item.text}</span>
+              {item.badge ? (
+                <span className={"okbadge" + (item.badge.wait ? " wait" : "")}>
+                  {item.badge.text}
+                </span>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </li>
   );
 }

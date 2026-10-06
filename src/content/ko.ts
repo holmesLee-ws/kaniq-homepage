@@ -147,6 +147,11 @@ const dictionary = {
     opensAtLaunch: "출시 때 열림",
   },
   doctorOk: {
+    scrub: {
+      label: "회복 일차",
+      todayTitle: "오늘 가능한 것",
+      todayNone: "오늘은 쉬며 의료진 확인을 기다립니다",
+    },
     badge: "Doctor OK",
     title: "회복에 맞춰 움직입니다",
     intro:
@@ -263,6 +268,7 @@ const dictionary = {
       seal: "환자 수수료 없음 · KANIQ",
     },
     records: {
+      verify: "등록 정보 확인",
       title: "진료를 함께하는 사람들",
       intro: "설명용 기록이며 현재 이용 가능한 병원 목록은 아닙니다.",
       figureAlt: "의사·환자·통역의 상담",
@@ -378,6 +384,7 @@ const dictionary = {
     ],
     signupNote: "가입과 추천 코드 발급은 출시 때 열립니다.",
     preview: {
+      giveTo: "환원처",
       title: "추천 현황",
       sample: "샘플 미리보기",
       code: "추천 코드",

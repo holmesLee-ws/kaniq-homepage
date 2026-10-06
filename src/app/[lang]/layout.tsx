@@ -1,3 +1,4 @@
+import { MotionRuntime } from "@/components/motion/MotionRuntime";
 import { notFound } from "next/navigation";
 import { LANGS, isLang } from "@/lib/i18n/langs";
 import { getDictionary } from "@/content";
@@ -37,6 +38,7 @@ export default async function Layout({
         {children}
         <SiteFooter dict={dict} />
         <MessengerBar dict={dict} />
+        <MotionRuntime />
       </body>
     </html>
   );

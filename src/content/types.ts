@@ -14,11 +14,7 @@ export type CareId =
   | "serious-referral"
   | "student-checkup";
 export type QuoteInterest =
-  | "screening"
-  | "dental"
-  | "eye"
-  | "womens-health"
-  | "fertility";
+  "screening" | "dental" | "eye" | "womens-health" | "fertility";
 type T2<T> = readonly [T, T];
 type T3<T> = readonly [T, T, T];
 type T4<T> = readonly [T, T, T, T];
@@ -63,6 +59,7 @@ export type Dictionary = {
     opensAtLaunch: string;
   };
   doctorOk: {
+    scrub: { label: string; todayTitle: string; todayNone: string };
     badge: string;
     title: string;
     intro: string;
@@ -105,6 +102,7 @@ export type Dictionary = {
       seal: string;
     };
     records: {
+      verify: string;
       title: string;
       intro: string;
       figureAlt: string;
@@ -146,6 +144,7 @@ export type Dictionary = {
     options: T4<{ label: string; note: string }>;
     signupNote: string;
     preview: {
+      giveTo: string;
       title: string;
       sample: string;
       code: string;
