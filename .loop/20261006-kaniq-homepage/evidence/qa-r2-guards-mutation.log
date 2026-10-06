@@ -1,0 +1,8 @@
+target=src/components/home/Ambassador.tsx
+mutation [className={"cta"}] -> vitest rc=1
+mutation [className={'cta cta--quote'}] -> vitest rc=1
+mutation [className = "cta"] -> vitest rc=1
+mutation [className={ `x cta` }] -> vitest rc=1
+mutation [className={"ctaX"}] -> vitest rc=0
+reverted -> vitest rc=0
+git status lines:        0

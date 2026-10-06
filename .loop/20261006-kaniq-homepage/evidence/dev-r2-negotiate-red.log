@@ -1,0 +1,48 @@
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+ ❯ tests/negotiate.test.ts (20 tests | 2 failed) 5ms
+   ❯ language negotiation (20)
+     × ja ;q=0.9 → ja 2ms
+     × ko ; q=0.5, en;q=0.4 → ko 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/negotiate.test.ts > language negotiation > ja ;q=0.9 → ja
+AssertionError: expected 'en' to be 'ja' // Object.is equality
+
+Expected: "ja"
+Received: "en"
+
+ ❯ tests/negotiate.test.ts:25:69
+     23|     ["ja ;q=0.9", "ja"],
+     24|     ["ko ; q=0.5, en;q=0.4", "ko"],
+     25|   ])("%s → %s", (header, lang) => expect(negotiateLanguage(header)).to…
+       |                                                                     ^
+     26| });
+     27|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/negotiate.test.ts > language negotiation > ko ; q=0.5, en;q=0.4 → ko
+AssertionError: expected 'en' to be 'ko' // Object.is equality
+
+Expected: "ko"
+Received: "en"
+
+ ❯ tests/negotiate.test.ts:25:69
+     23|     ["ja ;q=0.9", "ja"],
+     24|     ["ko ; q=0.5, en;q=0.4", "ko"],
+     25|   ])("%s → %s", (header, lang) => expect(negotiateLanguage(header)).to…
+       |                                                                     ^
+     26| });
+     27|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 18 passed (20)
+   Start at  20:14:15
+   Duration  97ms (transform 53%, import 23%, tests 17%, worker 7%)
+

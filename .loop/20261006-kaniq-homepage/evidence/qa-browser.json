@@ -1,0 +1,3193 @@
+{
+  "base": "http://localhost:3100",
+  "startedAt": "2026-10-06T11:05:51.197Z",
+  "A2": {
+    "d1440": {
+      "viewport": "1440x900",
+      "steps": [
+        {
+          "step": "initial",
+          "url": "http://localhost:3100/en",
+          "title": "Dental implants, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩2.4M–3.2M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Implant placement at the dental clinic",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Samgyetang, soft and lukewarm",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Flat walk along Cheonggyecheon",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Gyeongbokgung in hanbok",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Taste",
+                  "text": "Gwangjang Market food tour",
+                  "badge": "OK from day 3",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Day templestay",
+                  "badge": "OK from day 3",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-implants",
+            "days-7",
+            "pax-2"
+          ],
+          "active": "BODY"
+        },
+        {
+          "step": "tx→screening (Arrow×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-7",
+            "pax-2"
+          ],
+          "active": "tx-screening"
+        },
+        {
+          "step": "days→5 (Tab, ArrowLeft)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 5 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3",
+            "D4"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D4",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-5",
+            "pax-2"
+          ],
+          "active": "days-5"
+        },
+        {
+          "step": "days→10 (ArrowRight×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-2"
+          ],
+          "active": "days-10"
+        },
+        {
+          "step": "pax→1 (Tab, ArrowLeft)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For 1 traveler, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Hotel near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-1"
+          ],
+          "active": "pax-1"
+        },
+        {
+          "step": "pax→3 (ArrowRight×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For a group, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Family residence near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-3"
+          ],
+          "active": "pax-3"
+        },
+        {
+          "step": "Space on focused pax-3",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For a group, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Family residence near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-3"
+          ],
+          "active": "pax-3"
+        }
+      ],
+      "tabsToTx": 8,
+      "daysFocus": "days-7",
+      "paxFocus": "pax-2",
+      "assert": {
+        "a_title": true,
+        "a_price": true,
+        "a_items": true,
+        "a_labelsSame": true,
+        "b5_title": true,
+        "b5_labels": true,
+        "b5_price": true,
+        "b10_labels": true,
+        "b10_price": true,
+        "b10_title": true,
+        "c1_sub": true,
+        "c1_d1": true,
+        "c1_rest": true,
+        "c1_labels": true,
+        "c1_price": true,
+        "c1_title": true,
+        "c3_sub": true,
+        "c3_d1": true,
+        "c3_rest": true,
+        "c3_price": true,
+        "space_keeps": true,
+        "url_unchanged": true,
+        "badges_all_nontreat": false,
+        "keyboard_focus_path": true
+      }
+    },
+    "d390": {
+      "viewport": "390x844",
+      "steps": [
+        {
+          "step": "initial",
+          "url": "http://localhost:3100/en",
+          "title": "Dental implants, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩2.4M–3.2M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Implant placement at the dental clinic",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Samgyetang, soft and lukewarm",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Flat walk along Cheonggyecheon",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Gyeongbokgung in hanbok",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Taste",
+                  "text": "Gwangjang Market food tour",
+                  "badge": "OK from day 3",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Day templestay",
+                  "badge": "OK from day 3",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-implants",
+            "days-7",
+            "pax-2"
+          ],
+          "active": "BODY"
+        },
+        {
+          "step": "tx→screening (Arrow×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-7",
+            "pax-2"
+          ],
+          "active": "tx-screening"
+        },
+        {
+          "step": "days→5 (Tab, ArrowLeft)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 5 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3",
+            "D4"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D4",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-5",
+            "pax-2"
+          ],
+          "active": "days-5"
+        },
+        {
+          "step": "days→10 (ArrowRight×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Twin room near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-2"
+          ],
+          "active": "days-10"
+        },
+        {
+          "step": "pax→1 (Tab, ArrowLeft)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For 1 traveler, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Hotel near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-1"
+          ],
+          "active": "pax-1"
+        },
+        {
+          "step": "pax→3 (ArrowRight×2)",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For a group, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Family residence near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-3"
+          ],
+          "active": "pax-3"
+        },
+        {
+          "step": "Space on focused pax-3",
+          "url": "http://localhost:3100/en",
+          "title": "Health screening, 10 days",
+          "sub": "For a group, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "days": [
+            {
+              "label": "D-1",
+              "title": "Arrive",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Move",
+                  "text": "Airport pickup with a local-language driver",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Stay",
+                  "text": "Family residence near your hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D0",
+              "title": "Treatment",
+              "treat": true,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Full-day screening with sedated endoscopy",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "A coordinator accompanies you to the hospital",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D1–2",
+              "title": "Early recovery",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Taste",
+                  "text": "Rice porridge after the endoscopy",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "Changdeokgung secret garden",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Hanok tea ceremony",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D3–5",
+              "title": "Recovery and culture",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Results with an English report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Cooking class",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "See",
+                  "text": "DDP and Dongdaemun",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D6–8",
+              "title": "Free days",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Feel",
+                  "text": "Day trip to Suwon fortress",
+                  "badge": "Doctor OK",
+                  "wait": false
+                },
+                {
+                  "track": "Feel",
+                  "text": "Korean spa",
+                  "badge": "Doctor OK",
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "label": "D9",
+              "title": "Check-up and fly home",
+              "treat": false,
+              "items": [
+                {
+                  "track": "Treat",
+                  "text": "Final check and a written medical report",
+                  "badge": null,
+                  "wait": false
+                },
+                {
+                  "track": "Move",
+                  "text": "Airport drop-off and follow-up hotline",
+                  "badge": null,
+                  "wait": false
+                }
+              ]
+            }
+          ],
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-3"
+          ],
+          "active": "pax-3"
+        }
+      ],
+      "tabsToTx": 4,
+      "daysFocus": "days-7",
+      "paxFocus": "pax-2",
+      "assert": {
+        "a_title": true,
+        "a_price": true,
+        "a_items": true,
+        "a_labelsSame": true,
+        "b5_title": true,
+        "b5_labels": true,
+        "b5_price": true,
+        "b10_labels": true,
+        "b10_price": true,
+        "b10_title": true,
+        "c1_sub": true,
+        "c1_d1": true,
+        "c1_rest": true,
+        "c1_labels": true,
+        "c1_price": true,
+        "c1_title": true,
+        "c3_sub": true,
+        "c3_d1": true,
+        "c3_rest": true,
+        "c3_price": true,
+        "space_keeps": true,
+        "url_unchanged": true,
+        "badges_all_nontreat": false,
+        "keyboard_focus_path": true
+      }
+    }
+  },
+  "A3": {
+    "homes": {
+      "en": {
+        "lang": "en",
+        "htmlLang": "en",
+        "h1Inner": "Care your insurance won’t cover, planned in Korea.",
+        "h1Text": "Care your insurance won’t cover, planned in Korea.",
+        "band": "Preview site — KANIQ’s registration is in progress. Requests are not saved or answered yet.",
+        "bandTop": 0,
+        "care": [
+          "implants",
+          "lasik",
+          "screening",
+          "fertility"
+        ],
+        "careText": [
+          "Dental implants",
+          "LASIK",
+          "Health screening",
+          "Fertility consultation"
+        ],
+        "special": "An English medical report for your doctor at home",
+        "messengers": [
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Chat on WhatsApp Opens at launch",
+            "bg": "rgb(17, 132, 71)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          },
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Chat on WhatsApp Opens at launch",
+            "bg": "rgb(17, 132, 71)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          }
+        ],
+        "messengerHrefCount": 0,
+        "body24": null,
+        "ctaClasses": [
+          "cta--quote cta--primary",
+          "cta--messenger",
+          "cta--quote cta--text",
+          "cta--quote cta--quiet"
+        ],
+        "ctaCount": 10,
+        "buttonsOutsideForms": [],
+        "templateHrefs": [
+          {
+            "href": "/en/quote?interest=dental",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/en/quote?interest=eye",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/en/quote?interest=screening",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/en/quote?interest=womens-health",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/en/quote?interest=fertility",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/en/quote?interest=screening",
+            "text": "Get PDF / start quote",
+            "cls": "cta cta--quote cta--text"
+          }
+        ],
+        "navHrefs": [
+          "/en#care",
+          "/en#plan",
+          "/en#ambassador",
+          "/en#trust"
+        ],
+        "bodyLangSample": "CARE, IN YOUR LANGUAGE\n\nCare your insurance won’t cover, planned in Korea.\n\nPick your care, stay and company. See how recovery and Korea fit together.\n\nTreatment\nDental implants\nLASIK\nHealth screening",
+        "quoteLinks": [
+          "/en/quote?interest=dental",
+          "/en/quote?interest=dental",
+          "/en/quote?interest=eye",
+          "/en/quote?interest=screening",
+          "/en/quote?interest=womens-health",
+          "/en/quote?interest=fertility",
+          "/en/quote?interest=screening",
+          "/en/quote"
+        ],
+        "h1Collapsed": "Care your insurance won’t cover, planned in Korea.",
+        "h1Match": true,
+        "careMatch": true,
+        "messengerMatch": false,
+        "barVisible390": {
+          "pos": "fixed",
+          "bottom": 844,
+          "innerHeight": 844
+        }
+      },
+      "ja": {
+        "lang": "ja",
+        "htmlLang": "ja",
+        "h1Inner": "ソウルまで2時間。\n精密検診も歯科も、\n週末で。",
+        "h1Text": "ソウルまで2時間。精密検診も歯科も、週末で。",
+        "band": "事前公開サイトです — 登録手続き中のため、お申し込みは保存・返信されません。",
+        "bandTop": 0,
+        "care": [
+          "screening",
+          "dental",
+          "womens-wellness"
+        ],
+        "careText": [
+          "健康診断・人間ドック",
+          "歯科",
+          "女性のウェルネス"
+        ],
+        "special": "女性医療スタッフの指定が可能、JCB対応",
+        "messengers": [
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "LINEで相談 正式公開時に開始",
+            "bg": "rgb(4, 132, 61)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          },
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "LINEで相談 正式公開時に開始",
+            "bg": "rgb(4, 132, 61)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          }
+        ],
+        "messengerHrefCount": 0,
+        "body24": null,
+        "ctaClasses": [
+          "cta--quote cta--primary",
+          "cta--messenger",
+          "cta--quote cta--text",
+          "cta--quote cta--quiet"
+        ],
+        "ctaCount": 10,
+        "buttonsOutsideForms": [],
+        "templateHrefs": [
+          {
+            "href": "/ja/quote?interest=dental",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ja/quote?interest=eye",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ja/quote?interest=screening",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ja/quote?interest=womens-health",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ja/quote?interest=fertility",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ja/quote?interest=screening",
+            "text": "PDF / 見積もり開始",
+            "cls": "cta cta--quote cta--text"
+          }
+        ],
+        "navHrefs": [
+          "/ja#care",
+          "/ja#plan",
+          "/ja#ambassador",
+          "/ja#trust"
+        ],
+        "bodyLangSample": "あなたの言葉で医療を\n\nソウルまで2時間。\n精密検診も歯科も、\n週末で。\n\n診療・日数・人数を選んで、回復と韓国滞在の旅程を見てみましょう。\n\n診療\n歯科インプラント\nレーシック(LASIK)\n健康診断・人間ドック\n婦人科・女性の健康\n不妊相談\n韓国での日数\n5\n7\n10\n人数\n1名\n2名\n3名以上\nこの旅程で見積もりを始める\n歯科インプラント、7日間\n\n2名、仁川到着\n\nD-1\n到着\n移動\n母語",
+        "quoteLinks": [
+          "/ja/quote?interest=dental",
+          "/ja/quote?interest=dental",
+          "/ja/quote?interest=eye",
+          "/ja/quote?interest=screening",
+          "/ja/quote?interest=womens-health",
+          "/ja/quote?interest=fertility",
+          "/ja/quote?interest=screening",
+          "/ja/quote"
+        ],
+        "h1Collapsed": "ソウルまで2時間。精密検診も歯科も、週末で。",
+        "h1Match": true,
+        "careMatch": true,
+        "messengerMatch": true,
+        "barVisible390": {
+          "pos": "fixed",
+          "bottom": 844,
+          "innerHeight": 844
+        }
+      },
+      "id": {
+        "lang": "id",
+        "htmlLang": "id",
+        "h1Inner": "Perjalanan cek kesehatan yang aman, bersama seluruh keluarga.",
+        "h1Text": "Perjalanan cek kesehatan yang aman, bersama seluruh keluarga.",
+        "band": "Situs pratinjau — pendaftaran KANIQ sedang diproses. Permintaan belum disimpan atau dibalas.",
+        "bandTop": 0,
+        "care": [
+          "screening",
+          "dental",
+          "womens-health"
+        ],
+        "careText": [
+          "Pemeriksaan kesehatan",
+          "Perawatan gigi",
+          "Kesehatan wanita"
+        ],
+        "special": "Makanan halal dan ruang salat di dekat rumah sakit mitra",
+        "messengers": [
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Konsultasi via WhatsApp Dibuka saat peluncuran",
+            "bg": "rgb(17, 132, 71)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          },
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Konsultasi via WhatsApp Dibuka saat peluncuran",
+            "bg": "rgb(17, 132, 71)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          }
+        ],
+        "messengerHrefCount": 0,
+        "body24": null,
+        "ctaClasses": [
+          "cta--quote cta--primary",
+          "cta--messenger",
+          "cta--quote cta--text",
+          "cta--quote cta--quiet"
+        ],
+        "ctaCount": 10,
+        "buttonsOutsideForms": [],
+        "templateHrefs": [
+          {
+            "href": "/id/quote?interest=dental",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/id/quote?interest=eye",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/id/quote?interest=screening",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/id/quote?interest=womens-health",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/id/quote?interest=fertility",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/id/quote?interest=screening",
+            "text": "PDF / mulai estimasi",
+            "cls": "cta cta--quote cta--text"
+          }
+        ],
+        "navHrefs": [
+          "/id#care",
+          "/id#plan",
+          "/id#ambassador",
+          "/id#trust"
+        ],
+        "bodyLangSample": "PERAWATAN DALAM BAHASA ANDA\n\nPerjalanan cek kesehatan yang aman, bersama seluruh keluarga.\n\nPilih perawatan, lama tinggal, dan pendamping. Lihat rencana pemulihan dan kunjungan ke Korea.\n\nPerawatan\nIm",
+        "quoteLinks": [
+          "/id/quote?interest=dental",
+          "/id/quote?interest=dental",
+          "/id/quote?interest=eye",
+          "/id/quote?interest=screening",
+          "/id/quote?interest=womens-health",
+          "/id/quote?interest=fertility",
+          "/id/quote?interest=screening",
+          "/id/quote"
+        ],
+        "h1Collapsed": "Perjalanan cek kesehatan yang aman, bersama seluruh keluarga.",
+        "h1Match": true,
+        "careMatch": true,
+        "messengerMatch": false,
+        "barVisible390": {
+          "pos": "fixed",
+          "bottom": 844,
+          "innerHeight": 844
+        }
+      },
+      "mn": {
+        "lang": "mn",
+        "htmlLang": "mn",
+        "h1Inner": "Солонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.",
+        "h1Text": "Солонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.",
+        "band": "Урьдчилсан нээлттэй сайт — бүртгэлийн үйл явц үргэлжилж байна. Хүсэлтийг хадгалахгүй, хариу өгөхгүй.",
+        "bandTop": 0,
+        "care": [
+          "screening",
+          "womens-health",
+          "serious-referral"
+        ],
+        "careText": [
+          "Эрүүл мэндийн үзлэг",
+          "Эмэгтэйчүүдийн эрүүл мэнд",
+          "Хүнд өвчний эмнэлэгт илгээх"
+        ],
+        "special": "Визийн урилга болон удаан хугацааны байрны дэмжлэг",
+        "messengers": [
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Messenger-ээр зөвлөгөө Нээлтийн үед эхэлнэ",
+            "bg": "rgb(7, 89, 214)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          },
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "Messenger-ээр зөвлөгөө Нээлтийн үед эхэлнэ",
+            "bg": "rgb(7, 89, 214)",
+            "color": "rgb(255, 255, 255)",
+            "state": "soon"
+          }
+        ],
+        "messengerHrefCount": 0,
+        "body24": null,
+        "ctaClasses": [
+          "cta--quote cta--primary",
+          "cta--messenger",
+          "cta--quote cta--text",
+          "cta--quote cta--quiet"
+        ],
+        "ctaCount": 10,
+        "buttonsOutsideForms": [],
+        "templateHrefs": [
+          {
+            "href": "/mn/quote?interest=dental",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/mn/quote?interest=eye",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/mn/quote?interest=screening",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/mn/quote?interest=womens-health",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/mn/quote?interest=fertility",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/mn/quote?interest=screening",
+            "text": "PDF / үнийн хүсэлт",
+            "cls": "cta cta--quote cta--text"
+          }
+        ],
+        "navHrefs": [
+          "/mn#care",
+          "/mn#plan",
+          "/mn#ambassador",
+          "/mn#trust"
+        ],
+        "bodyLangSample": "ТАНЫ ХЭЛЭЭРХ ЭМЧИЛГЭЭ\n\nСолонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.\n\nЭмчилгээ, хоног, хамт явах хүнийг сонгоод нөхөн сэргэлт болон Солонгосын аяллыг төлөвлөөрэй.\n\nЭмчилгээ\nШүдний имп",
+        "quoteLinks": [
+          "/mn/quote?interest=dental",
+          "/mn/quote?interest=dental",
+          "/mn/quote?interest=eye",
+          "/mn/quote?interest=screening",
+          "/mn/quote?interest=womens-health",
+          "/mn/quote?interest=fertility",
+          "/mn/quote?interest=screening",
+          "/mn/quote"
+        ],
+        "h1Collapsed": "Солонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.",
+        "h1Match": true,
+        "careMatch": true,
+        "messengerMatch": true,
+        "barVisible390": {
+          "pos": "fixed",
+          "bottom": 844,
+          "innerHeight": 844
+        }
+      },
+      "ko": {
+        "lang": "ko",
+        "htmlLang": "ko",
+        "h1Inner": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "h1Text": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "band": "등록 절차 중인 사전 공개 사이트입니다 — 신청은 저장·회신되지 않습니다.",
+        "bandTop": 0,
+        "care": [
+          "student-checkup",
+          "dental",
+          "eye"
+        ],
+        "careText": [
+          "유학생 검진",
+          "치과",
+          "안과"
+        ],
+        "special": "학생증 인증 할인",
+        "messengers": [
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "KakaoTalk 상담 출시 때 열림",
+            "bg": "rgb(254, 229, 0)",
+            "color": "rgb(25, 25, 25)",
+            "state": "soon"
+          },
+          {
+            "tag": "SPAN",
+            "href": null,
+            "text": "KakaoTalk 상담 출시 때 열림",
+            "bg": "rgb(254, 229, 0)",
+            "color": "rgb(25, 25, 25)",
+            "state": "soon"
+          }
+        ],
+        "messengerHrefCount": 0,
+        "body24": null,
+        "ctaClasses": [
+          "cta--quote cta--primary",
+          "cta--messenger",
+          "cta--quote cta--text",
+          "cta--quote cta--quiet"
+        ],
+        "ctaCount": 10,
+        "buttonsOutsideForms": [],
+        "templateHrefs": [
+          {
+            "href": "/ko/quote?interest=dental",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ko/quote?interest=eye",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ko/quote?interest=screening",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ko/quote?interest=womens-health",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ko/quote?interest=fertility",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          },
+          {
+            "href": "/ko/quote?interest=screening",
+            "text": "PDF 받기 / 견적 시작",
+            "cls": "cta cta--quote cta--text"
+          }
+        ],
+        "navHrefs": [
+          "/ko#care",
+          "/ko#plan",
+          "/ko#ambassador",
+          "/ko#trust"
+        ],
+        "bodyLangSample": "내 언어로 시작하는 의료 여정\n\n동포와 유학생의 검진부터 기관 제휴까지, 한국어로.\n\n진료·일수·인원을 고르면 회복과 한국 여행이 하나의 여정으로 펼쳐집니다.\n\n진료\n치과 임플란트\n라식(LASIK)\n건강검진\n여성 건강\n난임 상담\n한국 체류 일수\n5\n7\n10\n인원\n1명\n2명\n3명 이상\n이 여정으로 견적 시작\n치과 임플란트, 7일\n\n2명, 인천 도착\n\nD-1\n",
+        "quoteLinks": [
+          "/ko/quote?interest=dental",
+          "/ko/quote?interest=dental",
+          "/ko/quote?interest=eye",
+          "/ko/quote?interest=screening",
+          "/ko/quote?interest=womens-health",
+          "/ko/quote?interest=fertility",
+          "/ko/quote?interest=screening",
+          "/ko/quote"
+        ],
+        "h1Collapsed": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "h1Match": true,
+        "careMatch": true,
+        "messengerMatch": true,
+        "barVisible390": {
+          "pos": "fixed",
+          "bottom": 844,
+          "innerHeight": 844
+        }
+      }
+    },
+    "switcher": {
+      "open": true,
+      "links": [
+        "/en/quote",
+        "/ja/quote",
+        "/id/quote",
+        "/mn/quote",
+        "/ko/quote"
+      ],
+      "disabled": [
+        {
+          "text": "हिन्दी · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        },
+        {
+          "text": "Русский · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        },
+        {
+          "text": "Tiếng Việt · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        },
+        {
+          "text": "中文 · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        },
+        {
+          "text": "Español · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        },
+        {
+          "text": "ไทย · Opens in December",
+          "tag": "SPAN",
+          "tabIndex": -1,
+          "hasHref": false
+        }
+      ],
+      "tabSeq": [
+        "/en/quote",
+        "/ja/quote",
+        "/id/quote",
+        "/mn/quote",
+        "/ko/quote",
+        "INPUT:",
+        "BUTTON:Next",
+        "/en#trust-steps"
+      ],
+      "escClosed": true,
+      "afterJa": "http://localhost:3100/ja/quote"
+    }
+  },
+  "A4": {
+    "receiptTotal": "What you pay KANIQ ₩0",
+    "receiptRows": [
+      "Your treatment Paid to the hospital Walk-in price",
+      "Pickup and hotel Paid to the provider before booking As quoted",
+      "Coordinator, interpreter and local-language hotline KANIQ ₩0",
+      "KANIQ coordination Paid by the hospital Not yours"
+    ],
+    "seal": true,
+    "sampleInTrust": [
+      "Sample",
+      "Sample",
+      "Sample",
+      "Sample"
+    ],
+    "records": 2,
+    "doctors": 2,
+    "footers": {
+      "/en": {
+        "reg": "Medical tourism registration: SAMPLE-0000-000 Sample Travel agency registration: SAMPLE-0000-000 Sample",
+        "samples": [
+          "Sample",
+          "Sample"
+        ]
+      },
+      "/en/quote": {
+        "reg": "Medical tourism registration: SAMPLE-0000-000 Sample Travel agency registration: SAMPLE-0000-000 Sample",
+        "samples": [
+          "Sample",
+          "Sample"
+        ]
+      },
+      "/mn": {
+        "reg": "Эмнэлгийн аяллын бүртгэл: SAMPLE-0000-000 Жишээ Аяллын агентлагийн бүртгэл: SAMPLE-0000-000 Жишээ",
+        "samples": [
+          "Жишээ",
+          "Жишээ"
+        ]
+      },
+      "/ja": {
+        "reg": "外国人患者誘致業登録: SAMPLE-0000-000 サンプル 旅行業登録: SAMPLE-0000-000 サンプル",
+        "samples": [
+          "サンプル",
+          "サンプル"
+        ]
+      },
+      "/ko/quote": {
+        "reg": "유치업 등록번호: SAMPLE-0000-000 샘플 여행업 등록번호: SAMPLE-0000-000 샘플",
+        "samples": [
+          "샘플",
+          "샘플"
+        ]
+      }
+    },
+    "jaTotal": "KANIQへのお支払い ₩0"
+  },
+  "A5": {
+    "doctorOkRows": 5,
+    "recoveryRows": 4,
+    "recoveryIsTable": true,
+    "recoveryHead": [
+      "Stage",
+      "Stay",
+      "See",
+      "Eat",
+      "Culture"
+    ],
+    "steps": 4,
+    "templates": 6,
+    "giveOptions": 4,
+    "previewRows": [
+      "Person Inquiry Consultation Booking Care",
+      "A. Health screening Inquiry ✓ Consultation — Booking — Care —",
+      "B. Dental care Inquiry ✓ Consultation ✓ Booking — Care —",
+      "C. Eye care Inquiry ✓ Consultation ✓ Booking ✓ Care —"
+    ],
+    "previewMoney": false,
+    "previewText": "Referral overview\nSample preview\n\nReferral code: —\n\nPerson\tInquiry\tConsultation\tBooking\tCare\nA.\nHealth screening\n\t\nInquiry ✓\n\t\nConsultation —\n\t\nBooking —\n\t\nCare —\n\nB.\nDental care\n\t\nInquiry ✓\n\t\nConsultation ✓\n\t\nBooking —\n\t\nCare —\n\nC.\nEye care\n\t\nInquiry ✓\n\t\nConsultation ✓\n\t\nBooking ✓\n\t\nCare —\n\nOnly a preview; no amounts or issued codes.",
+    "orgs": 4,
+    "orgText": "For institutions, too\n\nPartnership models for organizations connecting people with care in Korea.\n\nUniversities\nStudent check-ups and visiting families\nCommunity associations\nLocal-language care guidance\nFaith organizations\nCare journeys and community support\nPublic institutions\nGroup screening and cooperation\n\nPartnership inquiries open at launch.",
+    "ambassadorKeyboard": {
+      "before": "give-0",
+      "after": "give-1"
+    },
+    "ja": {
+      "recoveryRows": 4,
+      "templates": 6
+    },
+    "mn": {
+      "give": 4,
+      "orgs": 4,
+      "previewMoney": false
+    }
+  },
+  "A6": {
+    "steps": [
+      {
+        "n": "Q1 interest=dental preselect",
+        "url": "/ja/quote?interest=dental",
+        "heading": "3ステップの1番目 · 診療",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [],
+        "active": "BODY",
+        "checkedInterest": "interest-dental",
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q2 step1 empty → next",
+        "url": "/ja/quote",
+        "heading": "3ステップの1番目 · 診療",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [
+          "この項目を入力してください。"
+        ],
+        "active": "interest",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q3 step1 ok → step2",
+        "url": "/ja/quote",
+        "heading": "3ステップの2番目 · 日程",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [],
+        "active": "H2",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q4 step2 empty timing → next",
+        "url": "/ja/quote",
+        "heading": "3ステップの2番目 · 日程",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [
+          "この項目を入力してください。"
+        ],
+        "active": "timing",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q5 step2 ok → step3",
+        "url": "/ja/quote",
+        "heading": "3ステップの3番目 · 連絡先",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [],
+        "active": "H2",
+        "checkedInterest": null,
+        "privacy": "見積もり準備のため診療・日程・名前・連絡先・居住地を確認し、事前公開では保存せず、正式公開後は最長1年保存して選択した病院に提供します。",
+        "consent": true,
+        "done": null
+      },
+      {
+        "n": "Q6 step3 empty → submit",
+        "url": "/ja/quote",
+        "heading": "3ステップの3番目 · 連絡先",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [
+          "この項目を入力してください。",
+          "この項目を入力してください。",
+          "この項目を入力してください。"
+        ],
+        "active": "name",
+        "checkedInterest": null,
+        "privacy": "見積もり準備のため診療・日程・名前・連絡先・居住地を確認し、事前公開では保存せず、正式公開後は最長1年保存して選択した病院に提供します。",
+        "consent": true,
+        "done": null
+      },
+      {
+        "n": "Q7 invalid email → submit",
+        "url": "/ja/quote",
+        "heading": "3ステップの3番目 · 連絡先",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [
+          "入力内容を確認してください。"
+        ],
+        "active": "contact",
+        "checkedInterest": null,
+        "privacy": "見積もり準備のため診療・日程・名前・連絡先・居住地を確認し、事前公開では保存せず、正式公開後は最長1年保存して選択した病院に提供します。",
+        "consent": true,
+        "done": null
+      },
+      {
+        "n": "Q8 back → step2 values kept",
+        "url": "/ja/quote",
+        "heading": "3ステップの2番目 · 日程",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [],
+        "active": "H2",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q11 server 422 (intercepted) → error shown",
+        "url": "/ja/quote",
+        "heading": "3ステップの2番目 · 日程",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [
+          "この項目を入力してください。"
+        ],
+        "active": "timing",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": null
+      },
+      {
+        "n": "Q10 real submit → done",
+        "url": "/ja/quote",
+        "heading": "体験が完了しました",
+        "notice": "登録前のため、お申し込みは保存・返信されません。",
+        "errors": [],
+        "active": "H2",
+        "checkedInterest": null,
+        "privacy": null,
+        "consent": false,
+        "done": "体験が完了しました\n\n登録前のため、お申し込みは保存・返信されません。\n\n入力を確認しました。保存されておらず、返信はありません。\n\nホームへ"
+      }
+    ],
+    "backKept": {
+      "timing": true,
+      "pickup": true,
+      "stay": "near-hospital"
+    },
+    "step3Kept": {
+      "name": "QA Test",
+      "consent": true
+    },
+    "posts": [
+      {
+        "method": "POST",
+        "keys": [
+          "lang",
+          "interest",
+          "timing",
+          "name",
+          "contactMethod",
+          "contact",
+          "consent",
+          "pickup",
+          "stay"
+        ]
+      },
+      {
+        "method": "POST",
+        "keys": [
+          "lang",
+          "interest",
+          "timing",
+          "name",
+          "contactMethod",
+          "contact",
+          "consent",
+          "pickup",
+          "stay"
+        ]
+      }
+    ],
+    "resps": [
+      422,
+      200
+    ]
+  },
+  "A7": {
+    "widths": [
+      {
+        "path": "/en",
+        "w": 390,
+        "closed": [
+          390,
+          390
+        ],
+        "open": [
+          390,
+          390
+        ],
+        "ok": true
+      },
+      {
+        "path": "/en",
+        "w": 768,
+        "closed": [
+          768,
+          768
+        ],
+        "open": [
+          768,
+          768
+        ],
+        "ok": true
+      },
+      {
+        "path": "/en",
+        "w": 1440,
+        "closed": [
+          1440,
+          1440
+        ],
+        "open": [
+          1440,
+          1440
+        ],
+        "ok": true
+      },
+      {
+        "path": "/mn",
+        "w": 390,
+        "closed": [
+          390,
+          390
+        ],
+        "open": [
+          390,
+          390
+        ],
+        "ok": true
+      },
+      {
+        "path": "/mn",
+        "w": 768,
+        "closed": [
+          768,
+          768
+        ],
+        "open": [
+          768,
+          768
+        ],
+        "ok": true
+      },
+      {
+        "path": "/mn",
+        "w": 1440,
+        "closed": [
+          1440,
+          1440
+        ],
+        "open": [
+          1440,
+          1440
+        ],
+        "ok": true
+      },
+      {
+        "path": "/en/quote",
+        "w": 390,
+        "closed": [
+          390,
+          390
+        ],
+        "open": [
+          390,
+          390
+        ],
+        "ok": true
+      },
+      {
+        "path": "/en/quote",
+        "w": 768,
+        "closed": [
+          768,
+          768
+        ],
+        "open": [
+          768,
+          768
+        ],
+        "ok": true
+      },
+      {
+        "path": "/en/quote",
+        "w": 1440,
+        "closed": [
+          1440,
+          1440
+        ],
+        "open": [
+          1440,
+          1440
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ja",
+        "w": 390,
+        "closed": [
+          390,
+          390
+        ],
+        "open": [
+          390,
+          390
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ja",
+        "w": 768,
+        "closed": [
+          768,
+          768
+        ],
+        "open": [
+          768,
+          768
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ja",
+        "w": 1440,
+        "closed": [
+          1440,
+          1440
+        ],
+        "open": [
+          1440,
+          1440
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ko",
+        "w": 390,
+        "closed": [
+          390,
+          390
+        ],
+        "open": [
+          390,
+          390
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ko",
+        "w": 768,
+        "closed": [
+          768,
+          768
+        ],
+        "open": [
+          768,
+          768
+        ],
+        "ok": true
+      },
+      {
+        "path": "/ko",
+        "w": 1440,
+        "closed": [
+          1440,
+          1440
+        ],
+        "open": [
+          1440,
+          1440
+        ],
+        "ok": true
+      }
+    ],
+    "focus": {
+      "seq": [
+        {
+          "el": "A.skip",
+          "text": "Skip to content",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A.logo",
+          "text": "KANIQ",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A",
+          "text": "Find care",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A",
+          "text": "Your journey",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A",
+          "text": "Refer someone",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A",
+          "text": "Trust",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "SUMMARY",
+          "text": "English",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "INPUT#tx-implants",
+          "text": "",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "INPUT#days-7",
+          "text": "",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "INPUT#pax-2",
+          "text": "",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A.cta",
+          "text": "Start a quote for this p",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        },
+        {
+          "el": "A.cta",
+          "text": "Get PDF / start quote",
+          "outline": "solid 3px rgb(35, 69, 63)",
+          "boxShadow": "none"
+        }
+      ],
+      "chip": "solid 3px rgb(35, 69, 63)",
+      "barQuote": {
+        "el": "cta cta--quote cta--quiet",
+        "outline": "solid 3px rgb(35, 69, 63)"
+      }
+    },
+    "reduced": {
+      "matches": true,
+      "sealAnim": "none",
+      "chipTransition": "0s",
+      "scrollBehavior": "auto",
+      "elementsWithAnimation": [],
+      "animCount": 0,
+      "elementsWithTransition": [],
+      "transCount": 0
+    },
+    "noPref": {
+      "sealAnim": "stamp",
+      "chipTransition": "0.15s, 0.15s",
+      "scrollBehavior": "smooth"
+    },
+    "rerunAt": "2026-10-06T11:07:34.922Z"
+  },
+  "pageErrors": [],
+  "consoleErrors": [
+    "http://localhost:3100/ja/quote Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)"
+  ],
+  "finishedAt": "2026-10-06T11:06:59.099Z"
+}

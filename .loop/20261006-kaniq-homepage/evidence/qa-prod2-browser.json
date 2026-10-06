@@ -1,0 +1,358 @@
+[
+  {
+    "h1": "ソウルまで2時間。\n精密検診も歯科も、\n週末で。",
+    "h1FontSize": "35.2px",
+    "h1WordBreak": "normal",
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "ソウルまで2時間。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 1,
+        "text": "\n精密検診も歯科も、",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 2,
+        "text": "\n週末で。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ja",
+    "width": 390,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": true,
+    "noOverflow": true
+  },
+  {
+    "h1": "ソウルまで2時間。\n精密検診も歯科も、\n週末で。",
+    "h1FontSize": "39.36px",
+    "h1WordBreak": "normal",
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "ソウルまで2時間。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 1,
+        "text": "\n精密検診も歯科も、",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 2,
+        "text": "\n週末で。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ja",
+    "width": 768,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": true,
+    "noOverflow": true
+  },
+  {
+    "h1": "ソウルまで2時間。\n精密検診も歯科も、\n週末で。",
+    "h1FontSize": "48px",
+    "h1WordBreak": "normal",
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "ソウルまで2時間。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 1,
+        "text": "\n精密検診も歯科も、",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      },
+      {
+        "i": 2,
+        "text": "\n週末で。",
+        "ws": "nowrap",
+        "wb": "normal",
+        "lines": 1
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ja",
+    "width": 1440,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": true,
+    "noOverflow": true
+  },
+  {
+    "h1": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+    "h1FontSize": "35.2px",
+    "h1WordBreak": "keep-all",
+    "lines": [
+      "동포와 유학생의 검진부터",
+      "기관 제휴까지, 한국어로."
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "ws": "normal",
+        "wb": "keep-all",
+        "lines": 2
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ko",
+    "width": 390,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": null,
+    "noOverflow": true
+  },
+  {
+    "h1": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+    "h1FontSize": "40.896px",
+    "h1WordBreak": "keep-all",
+    "lines": [
+      "동포와 유학생의 검진부터 기관 제휴까지,",
+      "한국어로."
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "ws": "normal",
+        "wb": "keep-all",
+        "lines": 2
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ko",
+    "width": 768,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": null,
+    "noOverflow": true
+  },
+  {
+    "h1": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+    "h1FontSize": "52.8px",
+    "h1WordBreak": "keep-all",
+    "lines": [
+      "동포와 유학생의",
+      "검진부터 기관",
+      "제휴까지, 한국어로."
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+        "ws": "normal",
+        "wb": "keep-all",
+        "lines": 3
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "ko",
+    "width": 1440,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": null,
+    "noOverflow": true
+  },
+  {
+    "h1": "Care your insurance won’t cover, planned in Korea.",
+    "h1FontSize": "52.8px",
+    "h1WordBreak": "normal",
+    "lines": [
+      "Care your",
+      "insurance won’t",
+      "cover, planned",
+      "in Korea."
+    ],
+    "spans": [
+      {
+        "i": 0,
+        "text": "Care your insurance won’t cover, planned in Korea.",
+        "ws": "normal",
+        "wb": "normal",
+        "lines": 4
+      }
+    ],
+    "midWordBreaks": [],
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "messengers": [
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      },
+      {
+        "tag": "SPAN",
+        "href": null,
+        "state": "soon"
+      }
+    ],
+    "anchorMessengerHrefs": [],
+    "body24": null,
+    "favicon": [
+      "/favicon.ico?favicon.3nrc6gywq_iwb.ico"
+    ],
+    "lang": "en",
+    "width": 1440,
+    "pageErrors": [],
+    "badResponses": [],
+    "spansIntact": null,
+    "noOverflow": true
+  }
+]

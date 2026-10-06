@@ -1,0 +1,38 @@
+# QA r2 A1 curl — baseline e1730b90f7453fc2b3eaf4b40cc59d05d99cb1bf, npm start :3100, 2026-10-06 20:18:42 KST
+## redirects (header | status | location | vary)
+[en] | 307 | /en | Accept-Language
+[ja] | 307 | /ja | Accept-Language
+[id] | 307 | /id | Accept-Language
+[mn] | 307 | /mn | Accept-Language
+[ko] | 307 | /ko | Accept-Language
+[ko-KR] | 307 | /ko | Accept-Language
+[ko;q=0.1, en;q=0.9] | 307 | /en | Accept-Language
+[fr] | 307 | /en | Accept-Language
+[__NONE__] | 307 | /en | Accept-Language
+[ja ;q=0.9] | 307 | /ja | Accept-Language
+[ko ; q=0.5, en;q=0.4] | 307 | /ko | Accept-Language
+## homes + quote (path | status | html lang)
+/en | 200 | <html lang="en"
+/en/quote | 200 | <html lang="en"
+/ja | 200 | <html lang="ja"
+/ja/quote | 200 | <html lang="ja"
+/id | 200 | <html lang="id"
+/id/quote | 200 | <html lang="id"
+/mn | 200 | <html lang="mn"
+/mn/quote | 200 | <html lang="mn"
+/ko | 200 | <html lang="ko"
+/ko/quote | 200 | <html lang="ko"
+## phase-2 langs (expect 404)
+/hi | 404
+/ru | 404
+/vi | 404
+/zh | 404
+/es | 404
+/th | 404
+## regression R10 (matcher: only / redirects)
+/sitemap.xml | 200 
+/robots.txt | 200 
+/favicon.ico | 404 
+/en | 200 
+/en?x=1 | 200 
+quote POST valid | 422(expect 422 on empty body)

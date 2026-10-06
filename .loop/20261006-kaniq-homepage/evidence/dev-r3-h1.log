@@ -1,0 +1,66 @@
+[
+  {
+    "lang": "ja",
+    "width": 390,
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "scrollWidth": 390,
+    "innerWidth": 390
+  },
+  {
+    "lang": "ja",
+    "width": 768,
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "scrollWidth": 768,
+    "innerWidth": 768
+  },
+  {
+    "lang": "ja",
+    "width": 1440,
+    "lines": [
+      "ソウルまで2時間。",
+      "精密検診も歯科も、",
+      "週末で。"
+    ],
+    "scrollWidth": 1440,
+    "innerWidth": 1440
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "lines": [
+      "동포와 유학생의 검진부터",
+      "기관 제휴까지, 한국어로."
+    ],
+    "scrollWidth": 390,
+    "innerWidth": 390
+  },
+  {
+    "lang": "ko",
+    "width": 768,
+    "lines": [
+      "동포와 유학생의 검진부터 기관 제휴까지,",
+      "한국어로."
+    ],
+    "scrollWidth": 768,
+    "innerWidth": 768
+  },
+  {
+    "lang": "ko",
+    "width": 1440,
+    "lines": [
+      "동포와 유학생의",
+      "검진부터 기관",
+      "제휴까지, 한국어로."
+    ],
+    "scrollWidth": 1440,
+    "innerWidth": 1440
+  }
+]

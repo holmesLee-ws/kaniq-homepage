@@ -1,0 +1,32 @@
+Vercel CLI 54.7.1 (Node.js 22.23.1)
+Fetching deployment "kaniq-homepage-c66o12l4l-wishket-aidp.vercel.app" in wishket-aidp
+> Fetched deployment "kaniq-homepage-c66o12l4l-wishket-aidp.vercel.app" in wishket-aidp [413ms]
+
+  General
+
+    id		dpl_HoS737YjPzBKTUv416fLpPRM1jm1
+    name	kaniq-homepage
+    target	production
+    status	● Ready
+    url		https://kaniq-homepage-c66o12l4l-wishket-aidp.vercel.app
+    created	Tue Oct 06 2026 20:22:40 GMT+0900 (Korean Standard Time) [43s ago]
+
+
+  Aliases
+
+    ╶ https://kaniq-care.vercel.app
+    ╶ https://kaniq-homepage.vercel.app
+    ╶ https://kaniq-homepage-wishket-aidp.vercel.app
+    
+
+  Builds
+
+    ┌ .        [0ms]
+    ├── λ [lang] (650.15KB) [iad1]
+    ├── λ [lang].rsc (650.15KB) [iad1]
+    ├── λ [lang]/quote (650.15KB) [iad1]
+    ├── λ [lang]/quote.rsc (650.15KB) [iad1]
+    ├── λ _global-error (650.15KB) [iad1]
+    └── 59 output items hidden
+    
+

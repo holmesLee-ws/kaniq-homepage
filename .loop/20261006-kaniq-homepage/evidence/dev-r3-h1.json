@@ -1,0 +1,231 @@
+{
+  "rows": [
+    {
+      "lang": "ja",
+      "width": 390,
+      "lines": [
+        "ソウルまで2時間。",
+        "精密検診も歯科も、",
+        "週末で。"
+      ],
+      "words": [
+        {
+          "word": "ソウルまで2時間。",
+          "lineCount": 1
+        },
+        {
+          "word": "精密検診も歯科も、",
+          "lineCount": 1
+        },
+        {
+          "word": "週末で。",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "fontSize": "35.2px",
+      "h1Width": 350,
+      "h1Right": 370,
+      "maxTextRight": 336.8125,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    },
+    {
+      "lang": "ja",
+      "width": 768,
+      "lines": [
+        "ソウルまで2時間。",
+        "精密検診も歯科も、",
+        "週末で。"
+      ],
+      "words": [
+        {
+          "word": "ソウルまで2時間。",
+          "lineCount": 1
+        },
+        {
+          "word": "精密検診も歯科も、",
+          "lineCount": 1
+        },
+        {
+          "word": "週末で。",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "fontSize": "39.36px",
+      "h1Width": 728,
+      "h1Right": 748,
+      "maxTextRight": 374.25,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    },
+    {
+      "lang": "ja",
+      "width": 1440,
+      "lines": [
+        "ソウルまで2時間。",
+        "精密検診も歯科も、",
+        "週末で。"
+      ],
+      "words": [
+        {
+          "word": "ソウルまで2時間。",
+          "lineCount": 1
+        },
+        {
+          "word": "精密検診も歯科も、",
+          "lineCount": 1
+        },
+        {
+          "word": "週末で。",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "fontSize": "48px",
+      "h1Width": 470,
+      "h1Right": 590,
+      "maxTextRight": 552,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    },
+    {
+      "lang": "ko",
+      "width": 390,
+      "lines": [
+        "동포와 유학생의 검진부터",
+        "기관 제휴까지, 한국어로."
+      ],
+      "words": [
+        {
+          "word": "동포와",
+          "lineCount": 1
+        },
+        {
+          "word": "유학생의",
+          "lineCount": 1
+        },
+        {
+          "word": "검진부터",
+          "lineCount": 1
+        },
+        {
+          "word": "기관",
+          "lineCount": 1
+        },
+        {
+          "word": "제휴까지,",
+          "lineCount": 1
+        },
+        {
+          "word": "한국어로.",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "fontSize": "35.2px",
+      "h1Width": 350,
+      "h1Right": 370,
+      "maxTextRight": 369.109375,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    },
+    {
+      "lang": "ko",
+      "width": 768,
+      "lines": [
+        "동포와 유학생의 검진부터 기관 제휴까지,",
+        "한국어로."
+      ],
+      "words": [
+        {
+          "word": "동포와",
+          "lineCount": 1
+        },
+        {
+          "word": "유학생의",
+          "lineCount": 1
+        },
+        {
+          "word": "검진부터",
+          "lineCount": 1
+        },
+        {
+          "word": "기관",
+          "lineCount": 1
+        },
+        {
+          "word": "제휴까지,",
+          "lineCount": 1
+        },
+        {
+          "word": "한국어로.",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "fontSize": "40.896px",
+      "h1Width": 728,
+      "h1Right": 748,
+      "maxTextRight": 666.40625,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    },
+    {
+      "lang": "ko",
+      "width": 1440,
+      "lines": [
+        "동포와 유학생의",
+        "검진부터 기관",
+        "제휴까지, 한국어로."
+      ],
+      "words": [
+        {
+          "word": "동포와",
+          "lineCount": 1
+        },
+        {
+          "word": "유학생의",
+          "lineCount": 1
+        },
+        {
+          "word": "검진부터",
+          "lineCount": 1
+        },
+        {
+          "word": "기관",
+          "lineCount": 1
+        },
+        {
+          "word": "제휴까지,",
+          "lineCount": 1
+        },
+        {
+          "word": "한국어로.",
+          "lineCount": 1
+        }
+      ],
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "fontSize": "52.8px",
+      "h1Width": 470,
+      "h1Right": 590,
+      "maxTextRight": 528.078125,
+      "icons": [
+        "/favicon.ico?favicon.1h34ys-3ex26n.ico"
+      ]
+    }
+  ],
+  "pageErrors": []
+}

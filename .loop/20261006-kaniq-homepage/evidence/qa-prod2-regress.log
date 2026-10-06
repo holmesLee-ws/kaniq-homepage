@@ -1,0 +1,44 @@
+# qa-prod2-regress 2026-10-06T11:44:55Z
+## favicon
+HTTP/2 200 
+content-type: image/vnd.microsoft.icon
+x-matched-path: /favicon.ico
+content-length: 512
+bytes=     512 sha=d7fd94173310 repo=d7fd94173310
+## <link rel=icon> in /ja
+<link rel="icon" href="/favicon.ico?favicon.3nrc6gywq_iwb.ico" sizes="32x32" type="image/x-icon"/>
+## A1 headers
+[en] HTTP/2 307  loc=/en vary=Accept-Language
+[ja] HTTP/2 307  loc=/ja vary=Accept-Language
+[id] HTTP/2 307  loc=/id vary=Accept-Language
+[mn] HTTP/2 307  loc=/mn vary=Accept-Language
+[ko] HTTP/2 307  loc=/ko vary=Accept-Language
+[ko-KR] HTTP/2 307  loc=/ko vary=Accept-Language
+[ko;q=0.1, en;q=0.9] HTTP/2 307  loc=/en vary=Accept-Language
+[fr] HTTP/2 307  loc=/en vary=Accept-Language
+[NONE] HTTP/2 307  loc=/en vary=Accept-Language
+## 2-stage 404
+/hi 404
+/ru 404
+/vi 404
+/zh 404
+/es 404
+/th 404
+## home/quote 200 + lang
+/en 200 lang="en" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/en/quote 200 lang="en" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/ja 200 lang="ja" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/ja/quote 200 lang="ja" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/id 200 lang="id" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/id/quote 200 lang="id" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/mn 200 lang="mn" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/mn/quote 200 lang="mn" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/ko 200 lang="ko" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+/ko/quote 200 lang="ko" data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+## /api/quote invalid
+body={} -> {"ok":false,"errors":[{"field":"lang","code":"required"},{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":
+body=not-json -> {"ok":false,"errors":[{"field":"_body","code":"invalid"}]} HTTP422
+body={"care":"x","email":"bad"} -> {"ok":false,"errors":[{"field":"lang","code":"required"},{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":
+code body={} -> 422
+code body=not-json -> 422
+code body={"care":"x","email":"bad"} -> 422

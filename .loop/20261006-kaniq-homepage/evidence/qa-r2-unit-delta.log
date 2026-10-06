@@ -1,0 +1,31 @@
+
+ RUN  v5.0.3 /private/tmp/leh-20261006-kaniq-homepage-qa-cand
+
+ ✓ tests/guards.test.ts > CTA ownership, preview mode and public copy guards 5ms
+ ✓ tests/negotiate.test.ts > language negotiation > en → en 1ms
+ ✓ tests/negotiate.test.ts > language negotiation > ja → ja 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > id → id 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > mn → mn 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko-KR → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=0.1, en;q=0.9 → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > fr → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > null → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation >  → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > * → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > KO → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > mn-MN → mn 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > zh-CN,ko;q=0.5 → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=0, ja;q=0.1 → ja 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ja;q=abc, id → id 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > en;q=0.5, ja;q=0.5 → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=2,id → id 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ja ;q=0.9 → ja 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko ; q=0.5, en;q=0.4 → ko 0ms
+
+ Test Files  2 passed (2)
+      Tests  21 passed (21)
+   Start at  20:18:11
+   Duration  82ms (transform 56%, import 21%, tests 17%, worker 6%)
+
+rc=0

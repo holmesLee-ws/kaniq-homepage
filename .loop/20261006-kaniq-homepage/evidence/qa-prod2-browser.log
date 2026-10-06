@@ -1,0 +1,7 @@
+ja 390 ["ソウルまで2時間。","精密検診も歯科も、","週末で。"] fs 35.2px spansIntact true midWord [] sw/iw 390 390 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+ja 768 ["ソウルまで2時間。","精密検診も歯科も、","週末で。"] fs 39.36px spansIntact true midWord [] sw/iw 768 768 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+ja 1440 ["ソウルまで2時間。","精密検診も歯科も、","週末で。"] fs 48px spansIntact true midWord [] sw/iw 1440 1440 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+ko 390 ["동포와 유학생의 검진부터","기관 제휴까지, 한국어로."] fs 35.2px spansIntact null midWord [] sw/iw 390 390 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+ko 768 ["동포와 유학생의 검진부터 기관 제휴까지,","한국어로."] fs 40.896px spansIntact null midWord [] sw/iw 768 768 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+ko 1440 ["동포와 유학생의","검진부터 기관","제휴까지, 한국어로."] fs 52.8px spansIntact null midWord [] sw/iw 1440 1440 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []
+en 1440 ["Care your","insurance won’t","cover, planned","in Korea."] fs 52.8px spansIntact null midWord [] sw/iw 1440 1440 msg [{"tag":"SPAN","href":null,"state":"soon"},{"tag":"SPAN","href":null,"state":"soon"}] aHref 0 24h null err 0 bad []

@@ -1,0 +1,118 @@
+2026-10-06T12:04:50.282438+00:00
+GET/POST /en
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 12:04:51 GMT
+etag: "5fa0ba8a0defa5e62d5c20cd099b1b9a"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /en
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: PRERENDER
+x-vercel-id: icn1::zv8tc-1791288290496-194e2163bd0b
+content-length: 90441
+
+
+
+PASS
+GET/POST /ja
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 12:04:51 GMT
+etag: "3b6fedecba391102f6d8b0a94dc3dde8"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /ja
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: PRERENDER
+x-vercel-id: icn1::x2gzd-1791288291285-6fe64d0784b6
+content-length: 91450
+
+
+
+PASS
+GET/POST /
+HTTP/2 307 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Tue, 06 Oct 2026 12:04:53 GMT
+location: /ja
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: Accept-Language
+x-vercel-id: icn1::z9kg6-1791288293070-ba067272b081
+
+
+
+PASS
+GET/POST /hi
+HTTP/2 404 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="404"
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 12:04:53 GMT
+etag: "f9d6ca61e33aa9518fef9ea7a910063f"
+last-modified: Tue, 06 Oct 2026 12:04:53 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /404
+x-vercel-cache: MISS
+x-vercel-id: icn1::hhpz2-1791288293537-5c4922a4f411
+content-length: 5402
+
+
+
+PASS
+GET/POST /favicon.ico
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="favicon.ico"
+content-type: image/vnd.microsoft.icon
+date: Tue, 06 Oct 2026 12:04:54 GMT
+etag: "d7e5b0f7fb511f647c6b090c1b3b8556"
+last-modified: Tue, 06 Oct 2026 12:04:54 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /favicon.ico
+x-vercel-cache: MISS
+x-vercel-id: icn1::kxnd8-1791288294070-14ea7955e5e3
+content-length: 512
+
+
+
+PASS
+GET/POST /api/quote
+HTTP/2 422 
+cache-control: public, max-age=0, must-revalidate
+content-type: application/json
+date: Tue, 06 Oct 2026 12:04:54 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /api/quote
+x-vercel-cache: MISS
+x-vercel-id: icn1::iad1::h2p7b-1791288294397-1c46c70d0410
+
+
+
+PASS
+PASS 6/6

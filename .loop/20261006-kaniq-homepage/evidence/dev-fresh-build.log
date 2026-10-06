@@ -1,0 +1,53 @@
+
+> build
+> next build
+
+▲ Next.js 16.3.8 (Turbopack)
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build/.qa-tmp/fresh/package-lock.json
+
+✓ Running next.config.ts took 13ms
+- Experiments (use with caution):
+  ✓ globalNotFound
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.5s
+  Running TypeScript ...
+  Finished TypeScript in 2.2s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/16) ...
+  Generating static pages using 9 workers (4/16) 
+  Generating static pages using 9 workers (8/16) 
+  Generating static pages using 9 workers (12/16) 
+✓ Generating static pages using 9 workers (16/16) in 381ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /_not-found
+├   /[lang]
+│ ├ ● /en
+│ ├ ● /ja
+│ ├ ● /id
+│ └ ● [+2 more paths]
+├   /-/opengraph-image.jpg
+│ └ ● /-/opengraph-image.jpg
+├   /[lang]/quote
+│ ├ ● /en/quote
+│ ├ ● /ja/quote
+│ ├ ● /id/quote
+│ └ ● [+2 more paths]
+├ ƒ /api/quote
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

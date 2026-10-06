@@ -1,0 +1,11 @@
+# A6 curl — 2026-10-06 20:03:24 KST
+## valid
+{"ok":true} 200
+## invalid
+{"ok":false,"errors":[{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":"required"},{"field":"contact","code":"required"},{"field":"consent","code":"required"}]} 422
+## broken json
+{"ok":false,"errors":[{"field":"_body","code":"invalid"}]} 422
+## consent false
+{"ok":false,"errors":[{"field":"consent","code":"required"}]} 422
+## server log grep for request body markers (t@example.com / Test)
+0

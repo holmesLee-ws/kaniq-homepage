@@ -1,0 +1,545 @@
+{
+  "run": "20261006-kaniq-homepage",
+  "shape": "feature",
+  "review_tier": "standard",
+  "size": "L",
+  "estimate": {
+    "size": "L",
+    "reason": "그린필드 독립 앱(DB·외부 통합 없음, 규칙 9 → L): Next.js 신규 구축 + 5개 언어권 홈(i18n 라우팅·현지화 콘텐츠) + 인터랙티브 여정 플래너 + 견적 폼/API + Vercel 신규 배포. 브라우저 판정 항목 다수(규칙 12 신호는 L에 포함)",
+    "mode": "default",
+    "shape": "feature",
+    "estimated_at": 1791280220,
+    "browser_items": 7,
+    "rework": {
+      "share": 89,
+      "cost_x": 2.0,
+      "n": 105
+    },
+    "rounds": {
+      "developer": {
+        "p50": 3.0,
+        "low": 2.0,
+        "high": 5.0,
+        "p80": 5.0,
+        "n": 105
+      },
+      "review_qa": {
+        "p50": 4.0,
+        "low": 2.0,
+        "high": 7.0,
+        "p80": 8.0,
+        "n": 105
+      }
+    },
+    "wall_s": {
+      "p50": 14194.0,
+      "low": 8641.0,
+      "high": 25498.0,
+      "p80": 32005.6,
+      "basis": "history",
+      "n": 105
+    },
+    "tokens_total": {
+      "p50": 173438501.5,
+      "low": 106282088.0,
+      "high": 372855650.0,
+      "p80": 479347862.6,
+      "basis": "history",
+      "n": 94
+    },
+    "cost_usd": {
+      "p50": 109.7213,
+      "low": 52.101,
+      "high": 158.7005,
+      "p80": 159.68815999999998,
+      "basis": "history",
+      "n": 29,
+      "era": "era"
+    },
+    "scope": "size=L,mode=default",
+    "basis": "history"
+  },
+  "estimate_initial": {
+    "size": "L",
+    "reason": "그린필드 독립 앱(DB·외부 통합 없음, 규칙 9 → L): Next.js 신규 구축 + 5개 언어권 홈(i18n 라우팅·현지화 콘텐츠) + 인터랙티브 여정 플래너 + 견적 폼/API + Vercel 신규 배포. 브라우저 판정 항목 다수(규칙 12 신호는 L에 포함)",
+    "mode": "default",
+    "shape": "feature",
+    "estimated_at": 1791280220,
+    "browser_items": 7,
+    "rework": {
+      "share": 89,
+      "cost_x": 2.0,
+      "n": 105
+    },
+    "rounds": {
+      "developer": {
+        "p50": 3.0,
+        "low": 2.0,
+        "high": 5.0,
+        "p80": 5.0,
+        "n": 105
+      },
+      "review_qa": {
+        "p50": 4.0,
+        "low": 2.0,
+        "high": 7.0,
+        "p80": 8.0,
+        "n": 105
+      }
+    },
+    "wall_s": {
+      "p50": 14194.0,
+      "low": 8641.0,
+      "high": 25498.0,
+      "p80": 32005.6,
+      "basis": "history",
+      "n": 105
+    },
+    "tokens_total": {
+      "p50": 173438501.5,
+      "low": 106282088.0,
+      "high": 372855650.0,
+      "p80": 479347862.6,
+      "basis": "history",
+      "n": 94
+    },
+    "cost_usd": {
+      "p50": 109.7213,
+      "low": 52.101,
+      "high": 158.7005,
+      "p80": 159.68815999999998,
+      "basis": "history",
+      "n": 29,
+      "era": "era"
+    },
+    "scope": "size=L,mode=default",
+    "basis": "history"
+  },
+  "diff": {
+    "files": 71,
+    "lines": 14062,
+    "risk": false,
+    "deps": true
+  },
+  "execution_surface": "orca-tui",
+  "phase": "closeout",
+  "waiting_on": null,
+  "roster": {
+    "windows": {
+      "grok-4.7": "500k",
+      "grok-4.6": "500k",
+      "grok-4.5": "500k",
+      "claude-opus-5": "1M",
+      "claude-sonnet-5": "1M",
+      "claude-fable-5": "1M",
+      "gpt-5.6-sol": "1.05M",
+      "gpt-5.6-terra": "1.05M",
+      "gpt-5.6-luna": "1.05M",
+      "gpt-6-astra": "1.05M",
+      "gpt-5.5": "1.05M",
+      "gemini-3.8-flash-high": "1M",
+      "gemini-3.8-flash-medium": "1M",
+      "gemini-3.8-flash-low": "1M",
+      "gemini-3.8-flash": "1M",
+      "claude-opus-5-5": "1M",
+      "gpt-6-sol": "1.05M",
+      "gpt-6-luna": "1.05M",
+      "gpt-6.1-sol": "1.05M"
+    },
+    "roles": {
+      "po": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "designer": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "developer": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      },
+      "reviewer": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "qa": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "releaser": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      }
+    }
+  },
+  "initial_roster": {
+    "windows": {
+      "grok-4.7": "500k",
+      "grok-4.6": "500k",
+      "grok-4.5": "500k",
+      "claude-opus-5": "1M",
+      "claude-sonnet-5": "1M",
+      "claude-fable-5": "1M",
+      "gpt-5.6-sol": "1.05M",
+      "gpt-5.6-terra": "1.05M",
+      "gpt-5.6-luna": "1.05M",
+      "gpt-6-astra": "1.05M",
+      "gpt-5.5": "1.05M",
+      "gemini-3.8-flash-high": "1M",
+      "gemini-3.8-flash-medium": "1M",
+      "gemini-3.8-flash-low": "1M",
+      "gemini-3.8-flash": "1M",
+      "claude-opus-5-5": "1M",
+      "gpt-6-sol": "1.05M",
+      "gpt-6-luna": "1.05M",
+      "gpt-6.1-sol": "1.05M"
+    },
+    "roles": {
+      "po": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "designer": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "developer": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      },
+      "reviewer": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "qa": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "releaser": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      }
+    }
+  },
+  "model_experiment": {
+    "id": "developer-astra-low-2026-09",
+    "role": "developer",
+    "candidate": {
+      "tui": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low"
+    },
+    "baseline": {
+      "tui": "codex",
+      "model": "gpt-5.6-sol",
+      "effort": "medium",
+      "note": "Pre-canary runs without an explicit roster snapshot are not attributed retroactively."
+    },
+    "started_on": "2026-09-06",
+    "review_on": "2026-09-20",
+    "review_after_completed_runs": 10,
+    "criteria": {
+      "quality_floor": "First-pass acceptance must not fall more than 5 percentage points versus an attributed Sol-medium baseline.",
+      "efficiency_target": "Average credits or developer wall time should improve by at least 15 percent.",
+      "safety_floor": "No new failure class, scope drift, or increased human intervention.",
+      "decision": "Keep Astra low, escalate selected tasks to Astra medium, or roll back to Sol medium."
+    }
+  },
+  "workers": {
+    "reviewer": {
+      "round": 8,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791280321,
+          "detected_done_at": 1791280532,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791280614,
+          "detected_done_at": 1791280768,
+          "outcome": "done"
+        },
+        {
+          "round": 3,
+          "sent_at": 1791281651,
+          "detected_done_at": 1791282290,
+          "outcome": "done"
+        },
+        {
+          "round": 4,
+          "sent_at": 1791284533,
+          "detected_done_at": 1791285111,
+          "outcome": "done"
+        },
+        {
+          "round": 5,
+          "sent_at": 1791285448,
+          "detected_done_at": 1791285612,
+          "outcome": "done"
+        },
+        {
+          "round": 6,
+          "sent_at": 1791286536,
+          "detected_done_at": 1791286819,
+          "outcome": "done"
+        },
+        {
+          "round": 7,
+          "sent_at": 1791287299,
+          "detected_done_at": 1791287533,
+          "outcome": "done"
+        },
+        {
+          "round": 8,
+          "sent_at": 1791287793,
+          "detected_done_at": 1791288133,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791288133,
+      "status": "stopped",
+      "reserved_at": 1791287785,
+      "handle": "term_2056404b-f66c-4785-a080-dcefe39500d2",
+      "tabId": "a75ecc28-45d5-4d91-8800-4e0fc2d671ad",
+      "spawned_at": 1791287793,
+      "sent_at": 1791287793,
+      "stopped_at": 1791288149
+    },
+    "designer": {
+      "status": "stopped",
+      "reserved_at": 1791280875,
+      "handle": "term_45c94d1f-855d-424d-bce4-c8f076168cf4",
+      "tabId": "6ce707b5-6379-46b2-bd9c-d31d2c28f8d0",
+      "sent_at": 1791280913,
+      "round": 1,
+      "detected_done_at": 1791281637,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791280913,
+          "detected_done_at": 1791281637,
+          "outcome": "done"
+        }
+      ],
+      "stopped_at": 1791281650
+    },
+    "developer": {
+      "round": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791282338,
+          "detected_done_at": 1791284521,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791285221,
+          "detected_done_at": 1791285420,
+          "outcome": "done"
+        },
+        {
+          "round": 3,
+          "sent_at": 1791286201,
+          "detected_done_at": 1791286518,
+          "outcome": "done"
+        },
+        {
+          "round": 4,
+          "sent_at": 1791287609,
+          "detected_done_at": 1791287767,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791287767,
+      "status": "stopped",
+      "reserved_at": 1791287597,
+      "handle": "term_66a5a4a5-9906-4e19-b371-5f03768bcecf",
+      "tabId": "cdedd193-1433-455d-aafb-010fd59ce6d0",
+      "spawned_at": 1791287608,
+      "sent_at": 1791287609,
+      "stopped_at": 1791288155
+    },
+    "qa": {
+      "round": 4,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791284535,
+          "detected_done_at": 1791285044,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791285458,
+          "detected_done_at": 1791285578,
+          "outcome": "done"
+        },
+        {
+          "round": 3,
+          "sent_at": 1791285889,
+          "detected_done_at": 1791286160,
+          "outcome": "done"
+        },
+        {
+          "round": 4,
+          "sent_at": 1791287058,
+          "detected_done_at": 1791287231,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791287231,
+      "status": "stopped",
+      "reserved_at": 1791286860,
+      "handle": "term_84955379-d699-49b2-aca1-f60ba5d2858c",
+      "tabId": "58a46b07-43e6-441b-951c-ffccdbfd8e08",
+      "spawned_at": 1791286868,
+      "sent_at": 1791287058,
+      "stopped_at": 1791287254
+    },
+    "releaser": {
+      "round": 3,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791285647,
+          "detected_done_at": 1791285869,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791286847,
+          "detected_done_at": 1791287039,
+          "outcome": "done"
+        },
+        {
+          "round": 3,
+          "sent_at": 1791288165,
+          "detected_done_at": 1791288319,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791288319,
+      "status": "stopped",
+      "reserved_at": 1791288156,
+      "handle": "term_55961980-8814-41d8-ba1e-c27fa528e9cc",
+      "tabId": "2f77f5f4-2519-4ebc-b318-759998c8ca24",
+      "spawned_at": 1791288164,
+      "sent_at": 1791288165,
+      "stopped_at": 1791288350
+    }
+  },
+  "ledger": {
+    "requestId": null,
+    "status": null
+  },
+  "branch": "feat/kaniq-homepage",
+  "pr": "https://github.com/holmesLee-ws/kaniq-homepage/pull/1",
+  "release_pr": "https://github.com/holmesLee-ws/kaniq-homepage/pull/1",
+  "decisions": [
+    "spec:auto-confirm-by-delegation",
+    "design:A-base+B-trust+C-localization",
+    "ledger:none(po-skip)",
+    "release_mode:full",
+    "gates:G1-G5 with independent reviewer score>=85",
+    "gate:G1 PASS 90 (r1 68 CHANGES → r2 90 APPROVE)",
+    "gate:G2 PASS 91 (designer r1 → reviewer r3 APPROVE)",
+    "gate:G3 PASS reviewer 92 / qa 100 (9/9); minor 2 → dev r2 pre-merge",
+    "gate:G3 FINAL reviewer r5 96 APPROVE / qa r2 PASS 9/9 (baseline e1730b9)",
+    "release: squash edd3834 → vercel cli prod dpl_HoS737YjPzBKTUv416fLpPRM1jm1 (git connect failed)",
+    "gate:G4 PASS qa r3 98 (10/10); fix-forward PR#2 for ja H1 + favicon",
+    "fix-forward PR#2 head f8904be (globals.css, seo.ts, favicon.ico)",
+    "release fix-forward: PR#2 squash 91cdbf5 → dpl_6Mjd6j1o; dirty dpl_BPKv removed",
+    "gate:G4 FINAL qa r4 100 (10/10) after fix-forward",
+    "security: public repo exposure — guards.test KPI tokens → PR#3; .loop artifacts redacted to [내부수치] before closeout",
+    "release G5: PR#3 squash eb0c41a → dpl_26A1HbyyNSr3ZtrrdT4KLFGEASEn; QA re-run skipped (test-only diff, runtime tree identical; orchestrator smoke /en /ja /favicon 200, /hi 404)"
+  ],
+  "user_interventions": 1,
+  "_schema": "execution_surface는 항상 orca-tui이며 direct CLI/subagent fallback은 금지. shape: feature|ship (SKILL §2.1). review_tier: light|standard|deep (feature만, SKILL §2.2 — 가판정은 leh.sh set, 확정은 leh.sh review-tier --apply, 승격만·강등 금지). size: XS|S|M|L|XL, estimate/estimate_initial: `leh.sh estimate`가 쓰는 예상(p50·범위·근거; initial은 최초값 불변) — 실측은 state가 아니라 `estimate.json`(`leh.sh actual`) (SKILL §2.7). diff: `review-tier --apply`가 남기는 {files,lines,risk,deps} 실측. roster.roles[role]: {tui, model, effort, context, tier?} — run 시작 전에 leh.sh snapshot-roster가 effective 전체를 roster와 immutable initial_roster에 고정하고 이후 roster 변경은 leh.sh set-model만 쓴다. model_experiment는 snapshot 시점 canary 계약이다. workers[role]: {status: spawning|active|idle|stopped|leaked, handle, tabId, reserved_at, spawned_at, sent_at(라운드 시작; 재촉은 안 바꿈), round(=산출물 인덱스 1-based), detected_done_at(종료 STATUS done|blocked|needs_decision 감지 시각), stopped_at, rounds[](완료 라운드 이력 — tick이 terminal 감지 시 append: {round, sent_at, detected_done_at, outcome:done|blocked|needs_decision|exited}; 진행 중 라운드는 flat 필드에만 있고 완료 시 여기에 쌓인다 — 스테이지 소요/병목 계측용)}. 워커 필드는 leh.sh spawn/dispatch/send(idle 경로)/tick/stop/handoff/cleanup/orphans 가, 나머지(run·shape·phase·decisions·ledger·branch·pr·release_pr·waiting_on·user_interventions)는 `leh.sh set <run> '<jq>'` 가 쓴다. 사람 원문은 leh.sh archive (inputs.jsonl / ~/.claude/.loop). 손편집 금지.",
+  "reclaimer": {
+    "handle": "term_b738ca03-0bbf-4d65-98b1-69a90dc94ce0",
+    "tabId": "f7758311-0be2-4571-9c32-f0dd3fdaf026",
+    "report": "/Users/holmesmac/.claude/.loop/reclaim-receipts/report-20261006-kaniq-homepage-20261006T185019.json",
+    "started_at": 1791280220,
+    "status": "closed"
+  },
+  "ab": {
+    "experiment": "developer-opus-ui-ab-2026-09",
+    "arms": {
+      "control": {
+        "tui": "codex",
+        "model": "gpt-6-sol",
+        "effort": "medium",
+        "weight": 1
+      },
+      "opus": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "weight": 3
+      }
+    },
+    "ui": true,
+    "arm": null,
+    "reason": "experiment closed"
+  },
+  "scratch": [
+    {
+      "name": "qa-cand",
+      "path": "/private/tmp/leh-20261006-kaniq-homepage-qa-cand",
+      "ref": "e1730b90f7453fc2b3eaf4b40cc59d05d99cb1bf",
+      "created_at": 1791284561,
+      "status": "removed",
+      "moved_at": 1791285483
+    },
+    {
+      "name": "review-verify",
+      "path": "/private/tmp/leh-20261006-kaniq-homepage-review-verify",
+      "ref": "HEAD",
+      "created_at": 1791284794,
+      "status": "removed"
+    },
+    {
+      "name": "rel-main",
+      "path": "/private/tmp/leh-20261006-kaniq-homepage-rel-main",
+      "ref": "eb0c41a1d486f92197b892edc690deb8fdb3d0ae",
+      "created_at": 1791285717,
+      "status": "removed",
+      "moved_at": 1791288212
+    },
+    {
+      "name": "review-cand",
+      "path": "/private/tmp/leh-20261006-kaniq-homepage-review-cand",
+      "ref": "f8904be49e076eff3ec247f01a56db8079af88f4",
+      "created_at": 1791286686,
+      "status": "removed"
+    }
+  ]
+}

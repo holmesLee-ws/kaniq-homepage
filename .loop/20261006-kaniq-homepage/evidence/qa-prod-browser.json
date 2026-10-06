@@ -1,0 +1,234 @@
+{
+  "base": "https://kaniq-homepage.vercel.app",
+  "startedAt": "2026-10-06T11:27:18.810Z",
+  "pages": {
+    "en": {
+      "lang": "en",
+      "status": 200,
+      "htmlLang": "en",
+      "h1": "Care your insurance won’t cover, planned in Korea.",
+      "band": "Preview site — KANIQ’s registration is in progress. Requests are not saved or answered yet.",
+      "messengers": [
+        {
+          "tag": "SPAN",
+          "href": null,
+          "text": "Chat on WhatsApp Opens at launch",
+          "state": "soon"
+        },
+        {
+          "tag": "SPAN",
+          "href": null,
+          "text": "Chat on WhatsApp Opens at launch",
+          "state": "soon"
+        }
+      ],
+      "body24": null,
+      "fontsLoaded": [
+        "Schibsted Grotesk",
+        "Schibsted Grotesk",
+        "Schibsted Grotesk Fallback"
+      ],
+      "imgsBroken": [],
+      "scrollW1440": 1440,
+      "innerW": 1440,
+      "h1Collapsed": "Care your insurance won’t cover, planned in Korea.",
+      "h1Match": true,
+      "messengerMatch": false,
+      "tabsToTx": 8,
+      "planner": {
+        "s0": {
+          "url": "https://kaniq-homepage.vercel.app/en",
+          "title": "Dental implants, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩2.4M–3.2M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "badges": 6,
+          "checked": [
+            "tx-implants",
+            "days-7",
+            "pax-2"
+          ]
+        },
+        "s1": {
+          "url": "https://kaniq-homepage.vercel.app/en",
+          "title": "Health screening, 7 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "badges": 5,
+          "checked": [
+            "tx-screening",
+            "days-7",
+            "pax-2"
+          ]
+        },
+        "s2": {
+          "url": "https://kaniq-homepage.vercel.app/en",
+          "title": "Health screening, 10 days",
+          "sub": "For 2 travelers, arriving at Incheon",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "badges": 7,
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-2"
+          ]
+        },
+        "assert": {
+          "tx_changes_title_price": true,
+          "days_changes_labels_not_price": true,
+          "url_unchanged": true,
+          "badges_present": true
+        }
+      },
+      "bar390": {
+        "pos": "fixed",
+        "bottom": 844,
+        "innerHeight": 844,
+        "scrollW": 390,
+        "innerW": 390,
+        "text": "Chat on WhatsApp Opens at launch Start your quote"
+      },
+      "bar390mid": {
+        "bottom": 844,
+        "innerHeight": 844
+      }
+    },
+    "ja": {
+      "lang": "ja",
+      "status": 200,
+      "htmlLang": "ja",
+      "h1": "ソウルまで2時間。\n精密検診も歯科も、\n週末で。",
+      "band": "事前公開サイトです — 登録手続き中のため、お申し込みは保存・返信されません。",
+      "messengers": [
+        {
+          "tag": "SPAN",
+          "href": null,
+          "text": "LINEで相談 正式公開時に開始",
+          "state": "soon"
+        },
+        {
+          "tag": "SPAN",
+          "href": null,
+          "text": "LINEで相談 正式公開時に開始",
+          "state": "soon"
+        }
+      ],
+      "body24": null,
+      "fontsLoaded": [
+        "Schibsted Grotesk",
+        "Schibsted Grotesk",
+        "Schibsted Grotesk Fallback"
+      ],
+      "imgsBroken": [],
+      "scrollW1440": 1440,
+      "innerW": 1440,
+      "h1Collapsed": "ソウルまで2時間。精密検診も歯科も、週末で。",
+      "h1Match": true,
+      "messengerMatch": true,
+      "tabsToTx": 8,
+      "planner": {
+        "s0": {
+          "url": "https://kaniq-homepage.vercel.app/ja",
+          "title": "歯科インプラント、7日間",
+          "sub": "2名、仁川到着",
+          "price": "₩2.4M–3.2M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "badges": 6,
+          "checked": [
+            "tx-implants",
+            "days-7",
+            "pax-2"
+          ]
+        },
+        "s1": {
+          "url": "https://kaniq-homepage.vercel.app/ja",
+          "title": "健康診断・人間ドック、7日間",
+          "sub": "2名、仁川到着",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6"
+          ],
+          "badges": 5,
+          "checked": [
+            "tx-screening",
+            "days-7",
+            "pax-2"
+          ]
+        },
+        "s2": {
+          "url": "https://kaniq-homepage.vercel.app/ja",
+          "title": "健康診断・人間ドック、10日間",
+          "sub": "2名、仁川到着",
+          "price": "₩0.5M–1.5M",
+          "labels": [
+            "D-1",
+            "D0",
+            "D1–2",
+            "D3–5",
+            "D6–8",
+            "D9"
+          ],
+          "badges": 7,
+          "checked": [
+            "tx-screening",
+            "days-10",
+            "pax-2"
+          ]
+        },
+        "assert": {
+          "tx_changes_title_price": true,
+          "days_changes_labels_not_price": true,
+          "url_unchanged": true,
+          "badges_present": true
+        }
+      },
+      "bar390": {
+        "pos": "fixed",
+        "bottom": 844,
+        "innerHeight": 844,
+        "scrollW": 390,
+        "innerW": 390,
+        "text": "LINEで相談 正式公開時に開始 見積もりを始める"
+      },
+      "bar390mid": {
+        "bottom": 844,
+        "innerHeight": 844
+      }
+    }
+  },
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "finishedAt": "2026-10-06T11:27:29.825Z"
+}

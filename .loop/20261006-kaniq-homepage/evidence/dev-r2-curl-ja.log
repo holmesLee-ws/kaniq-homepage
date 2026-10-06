@@ -1,0 +1,8 @@
+HTTP/1.1 307 Temporary Redirect
+location: /ja
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 11:15:21 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+

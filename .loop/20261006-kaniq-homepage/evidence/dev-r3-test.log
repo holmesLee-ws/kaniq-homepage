@@ -1,0 +1,13 @@
+
+> test
+> vitest run
+
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+
+ Test Files  9 passed (9)
+      Tests  75 passed (75)
+   Start at  20:31:19
+   Duration  147ms (transform 63%, import 22%, tests 11%, worker 3%)
+
