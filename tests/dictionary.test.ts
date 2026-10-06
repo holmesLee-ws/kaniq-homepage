@@ -47,3 +47,14 @@ for (const lang of LANGS)
     expect(d.trust.records.hospitals).toHaveLength(2);
     for (const t of d.templates.items) expect(INTERESTS).toContain(t.interest);
   });
+
+it("provides localized interaction labels", () => {
+  for (const lang of LANGS) {
+    const d = getDictionary(lang);
+    expect(Object.values(d.doctorOk.scrub).every((s) => s.length > 0)).toBe(
+      true,
+    );
+    expect(d.trust.records.verify.length).toBeGreaterThan(0);
+    expect(d.ambassador.preview.giveTo.length).toBeGreaterThan(0);
+  }
+});

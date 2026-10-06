@@ -5,10 +5,13 @@ export function ProblemSteps({
   copy: Dictionary["trust"]["steps"];
 }) {
   return (
-    <section id="trust-steps">
+    <section id="trust-steps" data-scroll-host>
       <h2>{c.title}</h2>
       <p className="intro">{c.intro}</p>
-      <ol className="steps">
+      <div className="steps-line" aria-hidden="true">
+        <i />
+      </div>
+      <ol className="steps" data-scroll="view">
         {c.items.map((s, i) => (
           <li key={s.title}>
             <span aria-hidden="true">0{i + 1}</span>

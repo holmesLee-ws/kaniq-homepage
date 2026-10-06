@@ -5,7 +5,7 @@ export function TrustReceipt({
   copy: Dictionary["trust"]["receipt"];
 }) {
   return (
-    <div className="receipt-wrap">
+    <div className="receipt-wrap" data-reveal>
       <svg className="rosette" viewBox="-100 -100 200 200" aria-hidden="true">
         {Array.from({ length: 60 }, (_, i) => (
           <ellipse
@@ -23,8 +23,8 @@ export function TrustReceipt({
         <h2>{c.title}</h2>
         <p className="r-sub">{c.sub}</p>
         <ul className="rows">
-          {c.rows.map((r) => (
-            <li key={r.what}>
+          {c.rows.map((r, i) => (
+            <li key={r.what} style={{ "--i": i } as React.CSSProperties}>
               <span className="what">{r.what}</span>
               <span className="who">{r.who}</span>
               <span className="amt">{r.amount}</span>

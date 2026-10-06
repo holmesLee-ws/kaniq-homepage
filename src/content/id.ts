@@ -183,6 +183,11 @@ const dictionary = {
     opensAtLaunch: "Dibuka saat peluncuran",
   },
   doctorOk: {
+    scrub: {
+      label: "Hari pemulihan",
+      todayTitle: "Bisa hari ini",
+      todayNone: "Hari ini istirahat sambil menunggu pemeriksaan tim medis",
+    },
     badge: "Doctor OK",
     title: "Pemulihan menentukan ritme",
     intro:
@@ -299,6 +304,7 @@ const dictionary = {
       seal: "TANPA BIAYA PASIEN · KANIQ",
     },
     records: {
+      verify: "Cek data registrasi",
       title: "Orang di balik perawatan",
       intro:
         "Catatan ilustratif, bukan daftar penyedia yang tersedia saat ini.",
@@ -416,6 +422,7 @@ const dictionary = {
     ],
     signupNote: "Pendaftaran dan kode referensi dibuka saat peluncuran.",
     preview: {
+      giveTo: "Disalurkan ke",
       title: "Ringkasan referensi",
       sample: "Pratinjau contoh",
       code: "Kode referensi",

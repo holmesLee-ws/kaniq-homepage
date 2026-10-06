@@ -5,7 +5,9 @@ export function QuoteStartLink({
   interest,
   children,
   variant = "primary",
+  describedBy,
 }: {
+  describedBy?: string;
   lang: Lang;
   interest?: QuoteInterest;
   children: React.ReactNode;
@@ -13,6 +15,7 @@ export function QuoteStartLink({
 }) {
   return (
     <a
+      aria-describedby={describedBy}
       className={`cta cta--quote cta--${variant}`}
       href={`/${lang}/quote${interest ? "?interest=" + interest : ""}`}
     >

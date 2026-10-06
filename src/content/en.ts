@@ -184,6 +184,11 @@ const dictionary = {
     opensAtLaunch: "Opens at launch",
   },
   doctorOk: {
+    scrub: {
+      label: "Recovery day",
+      todayTitle: "Possible today",
+      todayNone: "Rest today while your care team checks in",
+    },
     badge: "Doctor OK",
     title: "Your recovery sets the pace",
     intro:
@@ -301,6 +306,7 @@ const dictionary = {
       seal: "NO PATIENT FEE · KANIQ",
     },
     records: {
+      verify: "Check registration",
       title: "The people behind your care",
       intro:
         "Illustrative records, not a list of currently available providers.",
@@ -418,6 +424,7 @@ const dictionary = {
     ],
     signupNote: "Joining and referral codes open at launch.",
     preview: {
+      giveTo: "Thanks goes to",
       title: "Referral overview",
       sample: "Sample preview",
       code: "Referral code",

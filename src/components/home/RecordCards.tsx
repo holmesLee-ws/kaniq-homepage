@@ -1,3 +1,4 @@
+import { RecordFlip } from "./RecordFlip";
 import Image from "next/image";
 import photo from "../../../public/img/b-consult.jpg";
 import { RECORDS } from "@/content/shared/records";
@@ -19,39 +20,52 @@ export function RecordCards({ dict: d }: { dict: Dictionary }) {
         </figure>
         <div>
           {RECORDS.map((r, i) => (
-            <article className="record" key={r.registration}>
-              <header>
-                <h3>{d.lang === "ko" ? r.nameKo : r.nameLatin}</h3>
-                <span className="sample">{d.trust.sample}</span>
-              </header>
-              <p>{c.hospitals[i].kind}</p>
-              <dl>
-                {Object.entries(c.labels).map(([k, t]) => (
-                  <div key={k}>
-                    <dt>{t}</dt>
-                    <dd>
-                      {k === "languages"
-                        ? c.hospitals[i].languages
-                        : k === "specialists"
-                          ? c.hospitals[i].specialists
-                          : r[k as "registration" | "accreditation"]}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-              <div className="doctor">
-                <span className="mono" aria-hidden="true">
-                  {r.mono}
-                </span>
-                <div>
-                  <strong>
-                    {d.lang === "ko" ? r.doctorKo : r.doctorLatin}
-                  </strong>{" "}
+            <RecordFlip
+              key={r.registration}
+              label={c.verify}
+              header={
+                <>
+                  <h3>{d.lang === "ko" ? r.nameKo : r.nameLatin}</h3>
                   <span className="sample">{d.trust.sample}</span>
-                  <p>{c.hospitals[i].doctorBio}</p>
-                </div>
-              </div>
-            </article>
+                </>
+              }
+              front={
+                <>
+                  <p>{c.hospitals[i].kind}</p>{" "}
+                  <div className="doctor">
+                    <span className="mono" aria-hidden="true">
+                      {r.mono}
+                    </span>
+                    <div>
+                      <strong>
+                        {d.lang === "ko" ? r.doctorKo : r.doctorLatin}
+                      </strong>{" "}
+                      <span className="sample">{d.trust.sample}</span>
+                      <p>{c.hospitals[i].doctorBio}</p>
+                    </div>
+                  </div>
+                </>
+              }
+              back={
+                <>
+                  {" "}
+                  <dl>
+                    {Object.entries(c.labels).map(([k, t]) => (
+                      <div key={k}>
+                        <dt>{t}</dt>
+                        <dd>
+                          {k === "languages"
+                            ? c.hospitals[i].languages
+                            : k === "specialists"
+                              ? c.hospitals[i].specialists
+                              : r[k as "registration" | "accreditation"]}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </>
+              }
+            />
           ))}
         </div>
       </div>

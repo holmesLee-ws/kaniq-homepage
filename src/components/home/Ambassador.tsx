@@ -1,5 +1,8 @@
+"use client";
+import { useState } from "react";
 import type { Dictionary } from "@/content/types";
 export function Ambassador({ copy: c }: { copy: Dictionary["ambassador"] }) {
+  const [give, setGive] = useState(0);
   return (
     <section id="ambassador" className="section wrap">
       <div className="amb">
@@ -15,7 +18,8 @@ export function Ambassador({ copy: c }: { copy: Dictionary["ambassador"] }) {
                     type="radio"
                     id={"give-" + i}
                     name="give"
-                    defaultChecked={i === 0}
+                    checked={give === i}
+                    onChange={() => setGive(i)}
                   />
                   <label htmlFor={"give-" + i}>
                     <strong>{o.label}</strong>
@@ -27,7 +31,12 @@ export function Ambassador({ copy: c }: { copy: Dictionary["ambassador"] }) {
           </fieldset>
           <p>{c.signupNote}</p>
         </div>
-        <div className="ref-preview">
+        <div className="ref-preview" data-reveal>
+          <p className="give-to" aria-live="polite">
+            <span>{c.preview.giveTo}</span>{" "}
+            <strong key={give}>{c.options[give].label}</strong> ·{" "}
+            {c.options[give].note}
+          </p>
           <h3>{c.preview.title}</h3>
           <span className="sample">{c.preview.sample}</span>
           <p>{c.preview.code}: —</p>
@@ -42,7 +51,7 @@ export function Ambassador({ copy: c }: { copy: Dictionary["ambassador"] }) {
               </tr>
             </thead>
             <tbody>
-              {c.preview.rows.map((r) => (
+              {c.preview.rows.map((r, row) => (
                 <tr key={r.name}>
                   <th scope="row">
                     {r.name}
@@ -51,6 +60,12 @@ export function Ambassador({ copy: c }: { copy: Dictionary["ambassador"] }) {
                   {[1, 2, 3, 4].map((i) => (
                     <td key={i}>
                       <span
+                        key={`${give}-${i}`}
+                        style={
+                          {
+                            "--d": (i - 1) * 90 + row * 40,
+                          } as React.CSSProperties
+                        }
                         className={
                           "dot " +
                           (i < r.stage ? "done" : i === r.stage ? "now" : "")

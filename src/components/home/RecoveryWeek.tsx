@@ -1,5 +1,11 @@
 import type { Dictionary } from "@/content/types";
-export function RecoveryWeek({ copy: c }: { copy: Dictionary["recovery"] }) {
+export function RecoveryWeek({
+  copy: c,
+  activeRow,
+}: {
+  copy: Dictionary["recovery"];
+  activeRow: number;
+}) {
   return (
     <section className="section wrap recovery">
       <h2>{c.title}</h2>
@@ -15,8 +21,12 @@ export function RecoveryWeek({ copy: c }: { copy: Dictionary["recovery"] }) {
           </tr>
         </thead>
         <tbody>
-          {c.rows.map((r) => (
-            <tr key={r.stage}>
+          {c.rows.map((r, i) => (
+            <tr
+              key={r.stage}
+              data-active={i === activeRow || undefined}
+              aria-current={i === activeRow ? "true" : undefined}
+            >
               <th scope="row" className="stage">
                 {r.stage}
                 <small>{r.note}</small>

@@ -147,6 +147,11 @@ const dictionary = {
     opensAtLaunch: "正式公開時に開始",
   },
   doctorOk: {
+    scrub: {
+      label: "回復日数",
+      todayTitle: "今日できること",
+      todayNone: "今日は休養し、医療スタッフの確認を待ちます",
+    },
     badge: "Doctor OK",
     title: "回復に合わせた活動",
     intro: "回復ルールの例です。活動は担当医が状態に合わせて確認します。",
@@ -262,6 +267,7 @@ const dictionary = {
       seal: "患者手数料なし · KANIQ",
     },
     records: {
+      verify: "登録情報を確認",
       title: "診療を支える人々",
       intro: "説明用の記録です。現在の提供医療機関一覧ではありません。",
       figureAlt: "医師・患者・通訳の相談",
@@ -377,6 +383,7 @@ const dictionary = {
     ],
     signupNote: "加入と紹介コードは正式公開時に開始します。",
     preview: {
+      giveTo: "還元先",
       title: "紹介状況",
       sample: "表示例",
       code: "紹介コード",

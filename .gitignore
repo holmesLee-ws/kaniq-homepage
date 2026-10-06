@@ -6,4 +6,3 @@ next-env.d.ts
 /evidence/
 .qa-tmp/
 .loop/
-.lessons/
