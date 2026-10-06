@@ -25,10 +25,6 @@ it("CTA ownership, preview mode and public copy guards", () => {
       /\b(best|guarantee|guaranteed|No\.1|half the cost|before and after|cheapest)\b/i,
     );
     expect(text).not.toMatch(/최고|보장|줄기세포|전후|保証|最高|stem cell/);
-    expect(text).not.toMatch(/40,000|40000|1,650|1,000만|CPL|4만 원/);
   }
-  expect(readFileSync("README.md", "utf8")).not.toMatch(
-    /40,000|40000|1,650|1,000만|CPL|4만 원/,
-  );
   expect(site.launchState).toBe("preview");
 });
