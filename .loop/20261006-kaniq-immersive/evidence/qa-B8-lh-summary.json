@@ -1,0 +1,49 @@
+{
+ "runs": [
+  {
+   "run": 1,
+   "perf": 97,
+   "a11y": 100,
+   "bp": 100,
+   "seo": 100,
+   "cls": 0,
+   "lcpMs": 2688,
+   "tbtMs": 3,
+   "lhVersion": "13.5.0",
+   "url": "http://localhost:3200/en"
+  },
+  {
+   "run": 2,
+   "perf": 97,
+   "a11y": 100,
+   "bp": 100,
+   "seo": 100,
+   "cls": 0,
+   "lcpMs": 2688,
+   "tbtMs": 5,
+   "lhVersion": "13.5.0",
+   "url": "http://localhost:3200/en"
+  },
+  {
+   "run": 3,
+   "perf": 97,
+   "a11y": 100,
+   "bp": 100,
+   "seo": 100,
+   "cls": 0,
+   "lcpMs": 2687,
+   "tbtMs": 3,
+   "lhVersion": "13.5.0",
+   "url": "http://localhost:3200/en"
+  }
+ ],
+ "median": {
+  "perf": 97,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "cls": 0,
+  "lcpMs": 2688,
+  "tbtMs": 3
+ }
+}

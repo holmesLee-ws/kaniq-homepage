@@ -1,0 +1,5 @@
+protected design/drafts diff: empty
+lessons check-ignore: rc1, no ignored match
+outside confidential pattern scan: rc1, zero matching files
+product diff: 39 files, no loop/lesson/protected/human-gate files
+PR #5 OPEN, main base, remote head matches local candidate

@@ -1,0 +1,538 @@
+{
+ "a": {
+  "frames": {
+   "700": {
+    "n": 7,
+    "rows": [
+     "1.00",
+     "1.00",
+     "1.00",
+     "1.00"
+    ],
+    "totalLine": "matrix(0, 0, 0, 1, 0, 0) op1",
+    "total": "0.00",
+    "seal": "0.00",
+    "sealTf": "matrix(1.11584, -0.27821, 0.27821, 1.11584, 0, 0)",
+    "ends": [
+     ":220",
+     ":360",
+     ":500",
+     ":640",
+     "total::before:1040",
+     ":1100",
+     "seal:1750"
+    ]
+   },
+   "1150": {
+    "n": 7,
+    "rows": [
+     "1.00",
+     "1.00",
+     "1.00",
+     "1.00"
+    ],
+    "totalLine": "matrix(1, 0, 0, 1, 0, 0) op1",
+    "total": "1.00",
+    "seal": "0.00",
+    "sealTf": "matrix(1.11584, -0.27821, 0.27821, 1.11584, 0, 0)",
+    "ends": [
+     ":220",
+     ":360",
+     ":500",
+     ":640",
+     "total::before:1040",
+     ":1100",
+     "seal:1750"
+    ]
+   },
+   "1800": {
+    "n": 7,
+    "rows": [
+     "1.00",
+     "1.00",
+     "1.00",
+     "1.00"
+    ],
+    "totalLine": "matrix(1, 0, 0, 1, 0, 0) op1",
+    "total": "1.00",
+    "seal": "0.88",
+    "sealTf": "matrix(0.970296, -0.241922, 0.241922, 0.970296, 0, 0)",
+    "ends": [
+     ":220",
+     ":360",
+     ":500",
+     ":640",
+     "total::before:1040",
+     ":1100",
+     "seal:1750"
+    ]
+   }
+  },
+  "ends": [
+   ":220",
+   ":360",
+   ":500",
+   ":640",
+   "total::before:1040",
+   ":1100",
+   "seal:1750"
+  ],
+  "replay": {
+   "inview": true,
+   "running": 0,
+   "seal": "0.88"
+  }
+ },
+ "b": {
+  "no-preference": [
+   {
+    "step": "initial",
+    "pressed": "false",
+    "frontInert": false,
+    "frontHidden": null,
+    "backInert": true,
+    "backHidden": "true",
+    "focus": false,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - paragraph: Dental implants and prosthetics, Seoul\n  - strong: Dr. Seo Ji-won\n  - text: Sample\n  - paragraph: Prosthodontist; Korean and English\n  - button \"Check registration\""
+   },
+   {
+    "step": "click",
+    "pressed": "true",
+    "frontInert": true,
+    "frontHidden": "true",
+    "backInert": false,
+    "backHidden": null,
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - term: Registration\n  - definition: SAMPLE-2025-0412\n  - term: Accreditation\n  - definition: KAHF\n  - term: Specialists\n  - definition: \"14\"\n  - term: Languages\n  - definition: English, Japanese, Mongolian\n  - button \"Check registration\" [pressed]"
+   },
+   {
+    "step": "Enter",
+    "pressed": "false",
+    "frontInert": false,
+    "frontHidden": null,
+    "backInert": true,
+    "backHidden": "true",
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - paragraph: Dental implants and prosthetics, Seoul\n  - strong: Dr. Seo Ji-won\n  - text: Sample\n  - paragraph: Prosthodontist; Korean and English\n  - button \"Check registration\""
+   },
+   {
+    "step": "Space",
+    "pressed": "true",
+    "frontInert": true,
+    "frontHidden": "true",
+    "backInert": false,
+    "backHidden": null,
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - term: Registration\n  - definition: SAMPLE-2025-0412\n  - term: Accreditation\n  - definition: KAHF\n  - term: Specialists\n  - definition: \"14\"\n  - term: Languages\n  - definition: English, Japanese, Mongolian\n  - button \"Check registration\" [pressed]"
+   }
+  ],
+  "reduce": [
+   {
+    "step": "initial",
+    "pressed": "false",
+    "frontInert": false,
+    "frontHidden": null,
+    "backInert": true,
+    "backHidden": "true",
+    "focus": false,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - paragraph: Dental implants and prosthetics, Seoul\n  - strong: Dr. Seo Ji-won\n  - text: Sample\n  - paragraph: Prosthodontist; Korean and English\n  - button \"Check registration\""
+   },
+   {
+    "step": "click",
+    "pressed": "true",
+    "frontInert": true,
+    "frontHidden": "true",
+    "backInert": false,
+    "backHidden": null,
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - term: Registration\n  - definition: SAMPLE-2025-0412\n  - term: Accreditation\n  - definition: KAHF\n  - term: Specialists\n  - definition: \"14\"\n  - term: Languages\n  - definition: English, Japanese, Mongolian\n  - button \"Check registration\" [pressed]"
+   },
+   {
+    "step": "Enter",
+    "pressed": "false",
+    "frontInert": false,
+    "frontHidden": null,
+    "backInert": true,
+    "backHidden": "true",
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - paragraph: Dental implants and prosthetics, Seoul\n  - strong: Dr. Seo Ji-won\n  - text: Sample\n  - paragraph: Prosthodontist; Korean and English\n  - button \"Check registration\""
+   },
+   {
+    "step": "Space",
+    "pressed": "true",
+    "frontInert": true,
+    "frontHidden": "true",
+    "backInert": false,
+    "backHidden": null,
+    "focus": true,
+    "h": 262.203125,
+    "ax": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - term: Registration\n  - definition: SAMPLE-2025-0412\n  - term: Accreditation\n  - definition: KAHF\n  - term: Specialists\n  - definition: \"14\"\n  - term: Languages\n  - definition: English, Japanese, Mongolian\n  - button \"Check registration\" [pressed]"
+   }
+  ]
+ },
+ "c": {
+  "no-preference-1440": {
+   "top": 0,
+   "mid": 0.5003999837239583,
+   "past": 1,
+   "back": 0.5003999837239583,
+   "running": 2,
+   "pass": true
+  },
+  "no-preference-390": {
+   "top": 0,
+   "mid": 0.5001999773297992,
+   "past": 1,
+   "back": 0.5001999773297992,
+   "running": 2,
+   "pass": true
+  },
+  "reduce-1440": {
+   "top": 0,
+   "mid": 0.5003999837239583,
+   "past": 1,
+   "back": 0.5003999837239583,
+   "running": 0,
+   "pass": true
+  },
+  "reduce-390": {
+   "top": 0,
+   "mid": 0.5001999773297992,
+   "past": 1,
+   "back": 0.5001999773297992,
+   "running": 0,
+   "pass": true
+  }
+ },
+ "d": {
+  "390": {
+   "closed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geo0": {
+    "ul": 903.84375,
+    "amb": 9583.25,
+    "sw": 390,
+    "iw": 390
+   },
+   "hover1": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geo1": {
+    "ul": 903.84375,
+    "amb": 9583.234375,
+    "sw": 390,
+    "iw": 390
+   },
+   "hoverClip": "inset(0px round 14px)",
+   "unhover": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "focus3": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "focusEl": 2,
+   "desc": [
+    "D-1 ArriveD0 TreatmentD1–2 Early recoveryD3 Recovery and cul"
+   ],
+   "focusNext": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "backOut": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "backEl": "in-tpl",
+   "blurOut": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geoF": {
+    "ul": 903.84375,
+    "amb": 9583.234375,
+    "sw": 390,
+    "iw": 390
+   }
+  },
+  "1440": {
+   "closed": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geo0": {
+    "ul": 390.28125,
+    "amb": 6580.296875,
+    "sw": 1440,
+    "iw": 1440
+   },
+   "hover1": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geo1": {
+    "ul": 390.28125,
+    "amb": 6580.28125,
+    "sw": 1440,
+    "iw": 1440
+   },
+   "hoverClip": "inset(0px round 14px)",
+   "unhover": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "focus3": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "focusEl": 2,
+   "desc": [
+    "D-1 ArriveD0 TreatmentD1–2 Early recoveryD3 Recovery and cul"
+   ],
+   "focusNext": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "backOut": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "backEl": "in-tpl",
+   "blurOut": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "geoF": {
+    "ul": 390.28125,
+    "amb": 6580.28125,
+    "sw": 1440,
+    "iw": 1440
+   }
+  }
+ },
+ "e": {
+  "dots0": [
+   [
+    {
+     "cls": "dot now",
+     "delay": "0s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ],
+   [
+    {
+     "cls": "dot done",
+     "delay": "0.04s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot now",
+     "delay": "0.13s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ],
+   [
+    {
+     "cls": "dot done",
+     "delay": "0.08s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot done",
+     "delay": "0.17s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot now",
+     "delay": "0.26s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ]
+  ],
+  "click": {
+   "text": "Community fund",
+   "strongRunning": true,
+   "dotNew": true,
+   "dotRunning": 6,
+   "at": 83.30000001192093,
+   "running500": 0,
+   "previewOp": "1"
+  },
+  "opts": [
+   "Personal",
+   "Mission support",
+   "Community fund",
+   "Scholarship"
+  ],
+  "dots1": [
+   [
+    {
+     "cls": "dot now",
+     "delay": "0s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ],
+   [
+    {
+     "cls": "dot done",
+     "delay": "0.04s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot now",
+     "delay": "0.13s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ],
+   [
+    {
+     "cls": "dot done",
+     "delay": "0.08s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot done",
+     "delay": "0.17s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot now",
+     "delay": "0.26s",
+     "anim": "dot-fill"
+    },
+    {
+     "cls": "dot ",
+     "delay": "0s",
+     "anim": "none"
+    }
+   ]
+  ],
+  "kbd": {
+   "checked": "give-3",
+   "text": "Scholarship",
+   "running": 1
+  }
+ }
+}

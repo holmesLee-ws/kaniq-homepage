@@ -1,0 +1,9 @@
+## git (candidate 5f5fd82)
+design/drafts diff vs origin/main: [0 lines]
+check-ignore .lessons/_index.md rc=1
+.gitignore:
+4:.vercel/
+7:.qa-tmp/
+8:.loop/
+human_gate/protected paths touched:
+       0

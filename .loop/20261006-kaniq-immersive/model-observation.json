@@ -1,0 +1,38 @@
+{
+  "observation_id": "13dd7dcbc3c5ff12d4e0038b",
+  "recorded_at": "2026-10-06T15:00:34.985275+00:00",
+  "project_hash": "f7461fa70fb07ae8",
+  "run": "20261006-kaniq-immersive",
+  "shape": "feature",
+  "review_tier": "standard",
+  "developer": {
+    "tui": "codex",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "context": "1.05M"
+  },
+  "developer_final": {
+    "tui": "codex",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "context": "1.05M"
+  },
+  "escalated": false,
+  "completed": true,
+  "first_pass": false,
+  "developer_rounds": 1,
+  "developer_seconds": 1166,
+  "reviewer_rounds": 7,
+  "qa_rounds": 2,
+  "reviewer_changes": true,
+  "qa_failed": false,
+  "qa_fail_rounds": 0,
+  "user_interventions": 1,
+  "credits": null,
+  "input_tokens": 7171702,
+  "cached_input_tokens": 7006848,
+  "output_tokens": 40809,
+  "developer_cost_usd": 1.4385,
+  "run_cost_usd": 20.2778,
+  "run_wall_s": 6198
+}

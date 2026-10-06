@@ -1,0 +1,38 @@
+## language negotiation
+HTTP/1.1 307 Temporary Redirect
+location: /ja
+vary: Accept-Language
+HTTP/1.1 307 Temporary Redirect
+location: /ko
+HTTP/1.1 307 Temporary Redirect
+location: /en
+## 2-level 404
+/xx 404
+/en/xx 404
+/ko/zz 404
+## locales 200
+ko 200
+ko/quote 200
+en 200
+en/quote 200
+ja 200
+ja/quote 200
+id 200
+id/quote 200
+mn 200
+mn/quote 200
+## quote API
+POST {} -> 422
+## preview mode: messenger href / 24h wording (per locale)
+ko messengerHref=0 waMe=0 kakaoLink=0 24h=0 cta--messenger=4 cta--quote=15 data-intro=1
+en messengerHref=0 waMe=0 kakaoLink=0 24h=0 cta--messenger=4 cta--quote=15 data-intro=1
+ja messengerHref=0 waMe=0 kakaoLink=0 24h=0 cta--messenger=4 cta--quote=15 data-intro=1
+id messengerHref=0 waMe=0 kakaoLink=0 24h=0 cta--messenger=4 cta--quote=15 data-intro=1
+mn messengerHref=0 waMe=0 kakaoLink=0 24h=0 cta--messenger=4 cta--quote=15 data-intro=1
+## initial HTML contains hero/planner text (en)
+Care your: 3
+Dental implants, 7 days: 1
+Who pays what: 4
+Check registration: 4
+Referral overview: 2
+   2 <span class="cta cta--messenger" style="background:#118447;color:#fff;border-color:#118447" data-state="soon">

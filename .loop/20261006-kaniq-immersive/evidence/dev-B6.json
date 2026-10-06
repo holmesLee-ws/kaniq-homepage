@@ -1,0 +1,135 @@
+[
+  {
+    "mode": "no-preference",
+    "step": 1,
+    "ratio": 0.3333333895351347
+  },
+  {
+    "mode": "no-preference",
+    "step": 2,
+    "ratio": 0.6666666947675673,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": true
+        },
+        {
+          "state": "leave",
+          "inert": true,
+          "running": true
+        }
+      ]
+    }
+  },
+  {
+    "mode": "no-preference",
+    "step": 3,
+    "ratio": 1,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": true
+        },
+        {
+          "state": "leave",
+          "inert": true,
+          "running": true
+        }
+      ]
+    }
+  },
+  {
+    "mode": "no-preference",
+    "step": 3,
+    "ratio": 1,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": true
+        },
+        {
+          "state": "leave",
+          "inert": true,
+          "running": true
+        }
+      ]
+    }
+  },
+  {
+    "mode": "no-preference",
+    "done": {
+      "animations": [
+        "finished",
+        "finished",
+        "finished"
+      ],
+      "text": "体験が完了しました登録前のため、お申し込みは保存・返信されません。入力を確認しました。保存されておらず、返信はありません。ホームへ"
+    }
+  },
+  {
+    "mode": "reduce",
+    "step": 1,
+    "ratio": 0.3333333895351347
+  },
+  {
+    "mode": "reduce",
+    "step": 2,
+    "ratio": 0.6666666947675673,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": false
+        }
+      ]
+    }
+  },
+  {
+    "mode": "reduce",
+    "step": 3,
+    "ratio": 1,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": false
+        }
+      ]
+    }
+  },
+  {
+    "mode": "reduce",
+    "step": 3,
+    "ratio": 1,
+    "start": {
+      "elapsed": 81,
+      "animations": [
+        {
+          "state": "enter",
+          "inert": false,
+          "running": false
+        }
+      ]
+    }
+  },
+  {
+    "mode": "reduce",
+    "done": {
+      "animations": [],
+      "text": "体験が完了しました登録前のため、お申し込みは保存・返信されません。入力を確認しました。保存されておらず、返信はありません。ホームへ"
+    }
+  }
+]

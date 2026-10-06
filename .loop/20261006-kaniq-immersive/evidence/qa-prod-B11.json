@@ -1,0 +1,246 @@
+{
+ "no-preference-1440": {
+  "p0": 0,
+  "h0": 78.109375,
+  "pos": "sticky",
+  "h1": 57.296875,
+  "careShift": -0.015625,
+  "headTop": 0,
+  "logoFocus": true,
+  "logoFocusRing": "solid 3px",
+  "langFocus": true,
+  "compactAfterTab": true,
+  "hyst": {
+   "0:0": false,
+   "1:79": false,
+   "2:80": true,
+   "3:60": true,
+   "4:41": true,
+   "5:39": false,
+   "6:79": false,
+   "7:80": true
+  },
+  "pEnd": 1,
+  "anchors": {
+   "care": {
+    "top": 87.671875,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "plan": {
+    "top": 88.46875,
+    "headH": 78.109375,
+    "headBottom": 88.46875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "trust": {
+    "top": 87.5625,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "ambassador": {
+    "top": 88.28125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "trust-steps": {
+    "top": 88.171875,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:footer"
+   }
+  },
+  "pass": true
+ },
+ "no-preference-390": {
+  "p0": 0,
+  "h0": 78.109375,
+  "pos": "sticky",
+  "h1": 57.296875,
+  "careShift": -0.015625,
+  "headTop": 0,
+  "logoFocus": true,
+  "logoFocusRing": "solid 3px",
+  "langFocus": true,
+  "compactAfterTab": true,
+  "hyst": {
+   "0:0": false,
+   "1:79": false,
+   "2:80": true,
+   "3:60": true,
+   "4:41": true,
+   "5:39": false,
+   "6:79": false,
+   "7:80": true
+  },
+  "pEnd": 1,
+  "anchors": {
+   "care": {
+    "top": 87.8125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "plan": {
+    "top": 87.796875,
+    "headH": 78.109375,
+    "headBottom": 87.796875,
+    "ok": true,
+    "via": "hash"
+   },
+   "trust": {
+    "top": 88.078125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "ambassador": {
+    "top": 88.234375,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "trust-steps": {
+    "top": 87.859375,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:footer"
+   }
+  },
+  "pass": true
+ },
+ "reduce-1440": {
+  "p0": 0,
+  "h0": 78.109375,
+  "pos": "sticky",
+  "h1": 57.296875,
+  "careShift": -0.015625,
+  "headTop": 0,
+  "logoFocus": true,
+  "logoFocusRing": "solid 3px",
+  "langFocus": true,
+  "compactAfterTab": true,
+  "hyst": {
+   "0:0": false,
+   "1:79": false,
+   "2:80": true,
+   "3:60": true,
+   "4:41": true,
+   "5:39": false,
+   "6:79": false,
+   "7:80": true
+  },
+  "pEnd": 1,
+  "anchors": {
+   "care": {
+    "top": 87.671875,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "plan": {
+    "top": 88.46875,
+    "headH": 78.109375,
+    "headBottom": 88.46875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "trust": {
+    "top": 87.5625,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "ambassador": {
+    "top": 88.28125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:header"
+   },
+   "trust-steps": {
+    "top": 88.171875,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:footer"
+   }
+  },
+  "pass": true
+ },
+ "reduce-390": {
+  "p0": 0,
+  "h0": 78.109375,
+  "pos": "sticky",
+  "h1": 57.296875,
+  "careShift": -0.015625,
+  "headTop": 0,
+  "logoFocus": true,
+  "logoFocusRing": "solid 3px",
+  "langFocus": true,
+  "compactAfterTab": true,
+  "hyst": {
+   "0:0": false,
+   "1:79": false,
+   "2:80": true,
+   "3:60": true,
+   "4:41": true,
+   "5:39": false,
+   "6:79": false,
+   "7:80": true
+  },
+  "pEnd": 1,
+  "anchors": {
+   "care": {
+    "top": 88.8125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "plan": {
+    "top": 87.796875,
+    "headH": 78.109375,
+    "headBottom": 87.796875,
+    "ok": true,
+    "via": "hash"
+   },
+   "trust": {
+    "top": 88.078125,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "ambassador": {
+    "top": 88.234375,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "hash"
+   },
+   "trust-steps": {
+    "top": 87.859375,
+    "headH": 57.296875,
+    "headBottom": 57.296875,
+    "ok": true,
+    "via": "link:footer"
+   }
+  },
+  "pass": true
+ }
+}

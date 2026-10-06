@@ -1,0 +1,42 @@
+[
+ {
+  "url": "/en",
+  "errors": []
+ },
+ {
+  "url": "/en/quote",
+  "errors": []
+ },
+ {
+  "url": "/ja",
+  "errors": []
+ },
+ {
+  "url": "/ja/quote",
+  "errors": []
+ },
+ {
+  "url": "/id",
+  "errors": []
+ },
+ {
+  "url": "/id/quote",
+  "errors": []
+ },
+ {
+  "url": "/mn",
+  "errors": []
+ },
+ {
+  "url": "/mn/quote",
+  "errors": []
+ },
+ {
+  "url": "/ko",
+  "errors": []
+ },
+ {
+  "url": "/ko/quote",
+  "errors": []
+ }
+]

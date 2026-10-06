@@ -1,0 +1,2252 @@
+{
+ "ko-no-preference": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 진료 당일",
+   "active": "scrub-day",
+   "running": 7,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — 회복 초기",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "온천 당일 여행"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — 회복 초기",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "온천 당일 여행",
+    "한복으로 경복궁"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — 의료진 경과 확인 후",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 진료 당일",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "pointer": {
+  "drag": {
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true
+  },
+  "click": {
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true
+  },
+  "dragVal": 2,
+  "clickVal": 5
+ },
+ "en-no-preference": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Treatment day",
+   "active": "scrub-day",
+   "running": 6,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Early recovery",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Hot spring day trip"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Early recovery",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Hot spring day trip",
+    "Gyeongbokgung in hanbok"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — After your doctor’s check",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Treatment day",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "ja-no-preference": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 診療当日",
+   "active": "scrub-day",
+   "running": 6,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — 回復初期",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "温泉の日帰り"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — 回復初期",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "温泉の日帰り",
+    "韓服で景福宮"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — 医師の経過確認後",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 診療当日",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "id-no-preference": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Hari perawatan",
+   "active": "scrub-day",
+   "running": 6,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Pemulihan awal",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Perjalanan ke pemandian air panas"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Pemulihan awal",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Perjalanan ke pemandian air panas",
+    "Gyeongbokgung dengan hanbok"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — Setelah kontrol dokter",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Hari perawatan",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "mn-no-preference": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Эмчилгээний өдөр",
+   "active": "scrub-day",
+   "running": 6,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Эрт сэргэлт",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Халуун рашааны аялал"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Эрт сэргэлт",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Халуун рашааны аялал",
+    "Ханбоктой Кёнбокгун ордон"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — Эмчийн хяналтын дараа",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Эмчилгээний өдөр",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "ko-reduce": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 진료 당일",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — 회복 초기",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "온천 당일 여행"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — 회복 초기",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "온천 당일 여행",
+    "한복으로 경복궁"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — 의료진 경과 확인 후",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 회복과 문화",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "찜질방",
+    "온천 당일 여행",
+    "매운 음식",
+    "한복으로 경복궁",
+    "1박 템플스테이"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 진료 당일",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "en-reduce": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Treatment day",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Early recovery",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Hot spring day trip"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Early recovery",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Hot spring day trip",
+    "Gyeongbokgung in hanbok"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — After your doctor’s check",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Recovery and culture",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Hot spring day trip",
+    "Spicy food",
+    "Gyeongbokgung in hanbok",
+    "Overnight templestay"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Treatment day",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "ja-reduce": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 診療当日",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — 回復初期",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "温泉の日帰り"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — 回復初期",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "温泉の日帰り",
+    "韓服で景福宮"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — 医師の経過確認後",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — 回復と文化",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "チムジルバン",
+    "温泉の日帰り",
+    "辛い食事",
+    "韓服で景福宮",
+    "宿泊テンプルステイ"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — 診療当日",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "id-reduce": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Hari perawatan",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Pemulihan awal",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Perjalanan ke pemandian air panas"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Pemulihan awal",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Perjalanan ke pemandian air panas",
+    "Gyeongbokgung dengan hanbok"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — Setelah kontrol dokter",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Pemulihan dan budaya",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Jjimjilbang",
+    "Perjalanan ke pemandian air panas",
+    "Makanan pedas",
+    "Gyeongbokgung dengan hanbok",
+    "Templestay menginap"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Hari perawatan",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ],
+ "mn-reduce": [
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Эмчилгээний өдөр",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 1,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D1 — Эрт сэргэлт",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1
+   ],
+   "today": [
+    "Халуун рашааны аялал"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 2,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D2 — Эрт сэргэлт",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    1,
+    3
+   ],
+   "today": [
+    "Халуун рашааны аялал",
+    "Ханбоктой Кёнбокгун ордон"
+   ],
+   "tableActive": [
+    1
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 3,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D3 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 4,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D4 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "ArrowRight",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "End",
+   "d": 6,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D6 — Эмчийн хяналтын дараа",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    3
+   ]
+  },
+  {
+   "key": "ArrowLeft",
+   "d": 5,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D5 — Сэргэлт ба соёл",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "today": [
+    "Солонгос саун",
+    "Халуун рашааны аялал",
+    "Халуун ногоотой хоол",
+    "Ханбоктой Кёнбокгун ордон",
+    "Сүмд хоноглох"
+   ],
+   "tableActive": [
+    2
+   ]
+  },
+  {
+   "key": "Home",
+   "d": 0,
+   "okA": true,
+   "okB": true,
+   "okC": true,
+   "okD": true,
+   "pass": true,
+   "aria": "D0 — Эмчилгээний өдөр",
+   "active": "scrub-day",
+   "running": 0,
+   "rowsOn": [],
+   "today": [],
+   "tableActive": [
+    0
+   ]
+  }
+ ]
+}

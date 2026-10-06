@@ -1,0 +1,6 @@
+{"path": "/en", "method": "GET", "status": 200, "expected": 200, "location": null, "pass": true}
+{"path": "/ko", "method": "GET", "status": 200, "expected": 200, "location": null, "pass": true}
+{"path": "/", "method": "GET", "status": 307, "expected": 307, "location": "/ja", "pass": true}
+{"path": "/hi", "method": "GET", "status": 404, "expected": 404, "location": null, "pass": true}
+{"path": "/favicon.ico", "method": "GET", "status": 200, "expected": 200, "location": null, "pass": true}
+{"path": "/api/quote", "method": "POST", "status": 422, "expected": 422, "location": null, "pass": true}

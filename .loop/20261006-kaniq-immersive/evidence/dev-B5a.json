@@ -1,0 +1,20 @@
+{
+  "frames": [
+    {
+      "amount": "0",
+      "seal": "0",
+      "line": 0
+    },
+    {
+      "amount": "1",
+      "seal": "0",
+      "line": 1
+    },
+    {
+      "amount": "1",
+      "seal": "0.88",
+      "line": 1
+    }
+  ],
+  "reentryRunning": 0
+}

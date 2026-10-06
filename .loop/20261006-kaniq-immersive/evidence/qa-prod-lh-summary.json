@@ -1,0 +1,25 @@
+{
+ "tool": "lighthouse 13.5.0",
+ "url": "https://kaniq-homepage.vercel.app/en",
+ "formFactor": "mobile",
+ "runs": 1,
+ "fetchTime": "2026-10-06T14:51:48.371Z",
+ "performance": 99,
+ "accessibility": 100,
+ "bestPractices": 100,
+ "seo": 100,
+ "LCP_ms": 2168,
+ "CLS": 0,
+ "TBT_ms": 10,
+ "FCP_ms": 1208,
+ "nonPerfectAudits": [
+  "first-contentful-paint",
+  "image-delivery-insight",
+  "interactive",
+  "largest-contentful-paint",
+  "legacy-javascript-insight",
+  "network-dependency-tree-insight",
+  "render-blocking-insight",
+  "unused-javascript"
+ ]
+}

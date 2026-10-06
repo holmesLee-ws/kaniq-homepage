@@ -1,0 +1,488 @@
+{
+  "transitions": [
+    {
+      "id": "tx-lasik",
+      "elapsed": 84.29999995231628,
+      "hasIntro": false,
+      "priceChanged": true,
+      "start": [
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "running",
+          "delay": 0
+        }
+      ],
+      "end": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "exits": 0
+    },
+    {
+      "id": "days-10",
+      "elapsed": 81.69999998807907,
+      "hasIntro": false,
+      "priceChanged": false,
+      "start": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "end": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "exits": 0
+    },
+    {
+      "id": "days-5",
+      "elapsed": 81,
+      "hasIntro": false,
+      "priceChanged": false,
+      "start": [
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "end": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "exits": 0
+    },
+    {
+      "id": "pax-3",
+      "elapsed": 82.5,
+      "hasIntro": false,
+      "priceChanged": false,
+      "start": [
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "end": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "exits": 0
+    },
+    {
+      "id": "tx-fertility",
+      "elapsed": 82.09999996423721,
+      "hasIntro": false,
+      "priceChanged": true,
+      "start": [
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "exit",
+          "price": false,
+          "play": "running",
+          "delay": 0
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "running",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "running",
+          "delay": 0
+        }
+      ],
+      "end": [
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "state": "enter",
+          "price": false,
+          "play": "finished",
+          "delay": 60
+        },
+        {
+          "price": true,
+          "play": "finished",
+          "delay": 0
+        }
+      ],
+      "exits": 0
+    }
+  ],
+  "firstDaysPriceAnimations": 0
+}

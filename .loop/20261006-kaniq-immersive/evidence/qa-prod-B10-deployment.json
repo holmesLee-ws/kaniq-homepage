@@ -1,0 +1,24 @@
+{
+ "id": "dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD",
+ "readyState": "READY",
+ "target": "production",
+ "alias": [
+  "kaniq-care.vercel.app",
+  "kaniq-homepage-wishket-aidp.vercel.app",
+  "kaniq-homepage.vercel.app"
+ ],
+ "meta.gitCommitSha": "16db6a34d47180d6c8af79f5cd3a36b84fe23479",
+ "meta.sourceCommitSha": "16db6a34d47180d6c8af79f5cd3a36b84fe23479",
+ "gitDirtyKeyPresent": false,
+ "metaKeys": [
+  "actor",
+  "bundler",
+  "gitCommitAuthorEmail",
+  "gitCommitAuthorName",
+  "gitCommitMessage",
+  "gitCommitRef",
+  "gitCommitSha",
+  "lambdaRuntimeStats",
+  "sourceCommitSha"
+ ]
+}

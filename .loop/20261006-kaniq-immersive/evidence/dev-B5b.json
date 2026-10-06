@@ -1,0 +1,35 @@
+{
+  "states": [
+    {
+      "action": "click",
+      "pressed": "true",
+      "front": true,
+      "back": false,
+      "frontHidden": "true",
+      "backHidden": null,
+      "focus": true,
+      "height": 262.203125
+    },
+    {
+      "action": "Enter",
+      "pressed": "false",
+      "front": false,
+      "back": true,
+      "frontHidden": null,
+      "backHidden": "true",
+      "focus": true,
+      "height": 262.203125
+    },
+    {
+      "action": "Space",
+      "pressed": "true",
+      "front": true,
+      "back": false,
+      "frontHidden": "true",
+      "backHidden": null,
+      "focus": true,
+      "height": 262.203125
+    }
+  ],
+  "accessibleTree": "- article:\n  - heading \"Hanbit Dental Hospital\" [level=3]\n  - text: Sample\n  - term: Registration\n  - definition: SAMPLE-2025-0412\n  - term: Accreditation\n  - definition: KAHF\n  - term: Specialists\n  - definition: \"14\"\n  - term: Languages\n  - definition: English, Japanese, Mongolian\n  - button \"Check registration\" [pressed]"
+}

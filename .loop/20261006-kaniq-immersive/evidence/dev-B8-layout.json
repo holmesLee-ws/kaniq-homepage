@@ -1,0 +1,61 @@
+{
+  "widths": [
+    {
+      "w": 390,
+      "mode": "no-preference",
+      "overflow": 0
+    },
+    {
+      "w": 768,
+      "mode": "no-preference",
+      "overflow": 0
+    },
+    {
+      "w": 1440,
+      "mode": "no-preference",
+      "overflow": 0
+    },
+    {
+      "w": 1860,
+      "mode": "no-preference",
+      "overflow": 0
+    },
+    {
+      "w": 390,
+      "mode": "reduce",
+      "overflow": 0
+    },
+    {
+      "w": 768,
+      "mode": "reduce",
+      "overflow": 0
+    },
+    {
+      "w": 1440,
+      "mode": "reduce",
+      "overflow": 0
+    },
+    {
+      "w": 1860,
+      "mode": "reduce",
+      "overflow": 0
+    }
+  ],
+  "focus": [
+    {
+      "sel": "scrub-day",
+      "outline": "3px",
+      "visible": true
+    },
+    {
+      "sel": "flip-btn",
+      "outline": "3px",
+      "visible": true
+    },
+    {
+      "sel": "give-2",
+      "outline": "3px",
+      "visible": true
+    }
+  ]
+}
