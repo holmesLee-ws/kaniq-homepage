@@ -1,0 +1,5 @@
+curl / Accept-Language ja → 307 Location /ja, Vary Accept-Language
+curl /xx → 404
+curl /en/xx → 404
+curl POST /api/quote {} → 422
+curl /en → server headline, initial itinerary, data-intro present; no messenger href or live reply promise

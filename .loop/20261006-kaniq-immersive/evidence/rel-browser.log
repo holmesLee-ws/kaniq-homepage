@@ -1,0 +1,13 @@
+ko 1440 no-preference pass= true ratio 1.250 nat 1280 1600 need 1126 1408 secH 767.5 / 1260 dTy 51.20 dSc 0.000 end 500 0s,0.09s,0.18s
+ko 390 no-preference pass= true ratio 0.750 nat 1280 1600 need 770 578 secH 753.0 / 1181.6 dTy 21.00 dSc 0.000 end 500 0s,0.09s,0.18s
+en 1440 no-preference pass= true ratio 1.250 nat 1280 1600 need 1126 1408 secH 767.5 / 1260 dTy 51.20 dSc 0.000 end 590.0000000000001 0s,0.09s,0.18s,0.27s
+en 390 no-preference pass= true ratio 0.750 nat 1280 1600 need 770 578 secH 861.8 / 1181.6 dTy 21.00 dSc 0.000 end 590.0000000000001 0s,0.09s,0.18s,0.27s
+ko 1440 reduce pass= true ratio 1.250 nat 1280 1600 need 1024 1280 secH 767.5 / 1260 dTy 0.00 dSc 0.000 end 0 0s,0s,0s
+ko 390 reduce pass= true ratio 0.750 nat 1280 1600 need 700 525 secH 753.0 / 1181.6 dTy 0.00 dSc 0.000 end 0 0s,0s,0s
+en 1440 reduce pass= true ratio 1.250 nat 1280 1600 need 1024 1280 secH 767.5 / 1260 dTy 0.00 dSc 0.000 end 0 0s,0s,0s,0s
+en 390 reduce pass= true ratio 0.750 nat 1280 1600 need 700 525 secH 861.8 / 1181.6 dTy 0.00 dSc 0.000 end 0 0s,0s,0s,0s
+ko no-preference focus scrub-day all true D0 — 진료 당일 | D3 — 회복과 문화 | D6 — 의료진 경과 확인 후 maxRunningAfter 5
+pointer drag 2 click 5
+en no-preference focus scrub-day all true D0 — Treatment day | D3 — Recovery and culture | D6 — After your doctor’s check maxRunningAfter 6
+ko reduce focus scrub-day all true D0 — 진료 당일 | D3 — 회복과 문화 | D6 — 의료진 경과 확인 후 maxRunningAfter 0
+en reduce focus scrub-day all true D0 — Treatment day | D3 — Recovery and culture | D6 — After your doctor’s check maxRunningAfter 0

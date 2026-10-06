@@ -1,0 +1,49 @@
+# qa-prod-regression 2026-10-06T14:51:20Z base=https://kaniq-homepage.vercel.app
+## A1 Accept-Language 9 cases: GET / -> status location vary
+en | 307 /en | vary=Accept-Language; | expect /en | PASS
+ja | 307 /ja | vary=Accept-Language; | expect /ja | PASS
+id | 307 /id | vary=Accept-Language; | expect /id | PASS
+mn | 307 /mn | vary=Accept-Language; | expect /mn | PASS
+ko | 307 /ko | vary=Accept-Language; | expect /ko | PASS
+ko-KR | 307 /ko | vary=Accept-Language; | expect /ko | PASS
+ko;q=0.1, en;q=0.9 | 307 /en | vary=Accept-Language; | expect /en | PASS
+fr | 307 /en | vary=Accept-Language; | expect /en | PASS
+none | 307 /en | vary=Accept-Language; | expect /en | PASS
+## home 200 + html lang
+en 200 
+ja 200 
+id 200 
+mn 200 
+ko 200 
+## 2-level 404
+/hi 404
+/ru 404
+/vi 404
+/zh 404
+/es 404
+/th 404
+/xx 404
+/en/xx 404
+/ko/zz 404
+## preview mode per locale (home)
+en messengerHref=0 24h=0 soon=2 cta--messenger=4 cta--quote=15
+ja messengerHref=0 24h=0 soon=2 cta--messenger=4 cta--quote=15
+id messengerHref=0 24h=0 soon=2 cta--messenger=4 cta--quote=15
+mn messengerHref=0 24h=0 soon=2 cta--messenger=4 cta--quote=15
+ko messengerHref=0 24h=0 soon=2 cta--messenger=4 cta--quote=15
+## quote pages 200 + messenger href
+en/quote 200 messengerHref=0 24h=0
+ja/quote 200 messengerHref=0 24h=0
+id/quote 200 messengerHref=0 24h=0
+mn/quote 200 messengerHref=0 24h=0
+ko/quote 200 messengerHref=0 24h=0
+## /api/quote invalid only
+POST {} -> 422
+body keys: ['errors', 'ok']
+GET /api/quote -> 405
+## html lang (재추출 — 위 grep 패턴이 data-dpl-id 속성 앞에서 놓침)
+en lang="en" dpl=data-dpl-id="dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD"
+ja lang="ja" dpl=data-dpl-id="dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD"
+id lang="id" dpl=data-dpl-id="dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD"
+mn lang="mn" dpl=data-dpl-id="dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD"
+ko lang="ko" dpl=data-dpl-id="dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD"

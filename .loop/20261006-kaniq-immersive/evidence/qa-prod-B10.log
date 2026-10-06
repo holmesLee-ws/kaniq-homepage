@@ -1,0 +1,19 @@
+# qa-prod-B10 2026-10-06T14:49:00Z
+## HEAD https://kaniq-homepage.vercel.app/en
+HTTP/2 200 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+x-vercel-id: <redacted>
+## HEAD https://kaniq-care.vercel.app/en
+HTTP/2 200 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+x-vercel-id: <redacted>
+## gh main
+main=16db6a34d47180d6c8af79f5cd3a36b84fe23479
+origin/main=16db6a34d47180d6c8af79f5cd3a36b84fe23479
+merge tree=3ac237d2cf3a7b65378561041e3c553fc5dea2fb
+baseline 5f5fd82 tree=3ac237d2cf3a7b65378561041e3c553fc5dea2fb
+diff merge..baseline files: 0
+merge parent=7379aa591b23ce9c46512a4d7864a29d43af64fc ; parents count=2
+pr5 state=MERGED merge=16db6a34d47180d6c8af79f5cd3a36b84fe23479 head=5f5fd82f89807e10c100bc460e008996bd259d2d

@@ -1,0 +1,708 @@
+{
+ "np-1440": {
+  "0": {
+   "T": 0,
+   "maxEnd": 1100,
+   "lineDisplay": "block",
+   "lineTf": "matrix(1, 0, 0, 0, 0, 0)",
+   "lineScaleY": 0,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 615.453125,
+   "h1Op": "0",
+   "planOp": "0",
+   "dayOps": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "ol.days::before",
+     "name": "line-draw",
+     "delay": 480,
+     "end": 1080
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  },
+  "400": {
+   "T": 400,
+   "maxEnd": 1100,
+   "lineDisplay": "block",
+   "lineTf": "matrix(1, 0, 0, 0, 0, 0)",
+   "lineScaleY": 0,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 615.453125,
+   "h1Op": "0.99963",
+   "planOp": "0.865461",
+   "dayOps": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "ol.days::before",
+     "name": "line-draw",
+     "delay": 480,
+     "end": 1080
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  },
+  "1200": {
+   "T": 1200,
+   "maxEnd": 1100,
+   "lineDisplay": "block",
+   "lineTf": "matrix(1, 0, 0, 1, 0, 0)",
+   "lineScaleY": 1,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 615.453125,
+   "h1Op": "1",
+   "planOp": "1",
+   "dayOps": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "ol.days::before",
+     "name": "line-draw",
+     "delay": 480,
+     "end": 1080
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  }
+ },
+ "np-390": {
+  "0": {
+   "T": 0,
+   "maxEnd": 1100,
+   "lineDisplay": "none",
+   "lineTf": "none",
+   "lineScaleY": 1,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 1100.78125,
+   "h1Op": "0",
+   "planOp": "0",
+   "dayOps": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  },
+  "400": {
+   "T": 400,
+   "maxEnd": 1100,
+   "lineDisplay": "none",
+   "lineTf": "none",
+   "lineScaleY": 1,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 1100.78125,
+   "h1Op": "0.99963",
+   "planOp": "0.865461",
+   "dayOps": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  },
+  "1200": {
+   "T": 1200,
+   "maxEnd": 1100,
+   "lineDisplay": "none",
+   "lineTf": "none",
+   "lineScaleY": 1,
+   "lineTop": "8px",
+   "lineBottom": "8px",
+   "daysH": 1100.78125,
+   "h1Op": "1",
+   "planOp": "1",
+   "dayOps": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "info": [
+    {
+     "el": "p.eyebrow",
+     "name": "fade",
+     "delay": 0,
+     "end": 300
+    },
+    {
+     "el": "span.",
+     "name": "rise",
+     "delay": 0,
+     "end": 420
+    },
+    {
+     "el": "p.lede",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "form.",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "a.cta cta--quote cta--primary",
+     "name": "rise-sm",
+     "delay": 200,
+     "end": 560
+    },
+    {
+     "el": "article.plan",
+     "name": "lift",
+     "delay": 240,
+     "end": 659.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 480,
+     "end": 780
+    },
+    {
+     "el": "li.day is-treat",
+     "name": "slot-in",
+     "delay": 559.9999999999999,
+     "end": 859.9999999999999
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 640,
+     "end": 940
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 720,
+     "end": 1020
+    },
+    {
+     "el": "li.day",
+     "name": "slot-in",
+     "delay": 800,
+     "end": 1100
+    },
+    {
+     "el": "footer.plan-foot",
+     "name": "fade",
+     "delay": 600,
+     "end": 899.9999999999999
+    }
+   ]
+  }
+ },
+ "order": [
+  {
+   "el": "p.eyebrow",
+   "name": "fade",
+   "delay": 0,
+   "end": 300
+  },
+  {
+   "el": "span.",
+   "name": "rise",
+   "delay": 0,
+   "end": 420
+  },
+  {
+   "el": "p.lede",
+   "name": "rise-sm",
+   "delay": 200,
+   "end": 560
+  },
+  {
+   "el": "form.",
+   "name": "rise-sm",
+   "delay": 200,
+   "end": 560
+  },
+  {
+   "el": "a.cta cta--quote cta--primary",
+   "name": "rise-sm",
+   "delay": 200,
+   "end": 560
+  },
+  {
+   "el": "article.plan",
+   "name": "lift",
+   "delay": 240,
+   "end": 659.9999999999999
+  },
+  {
+   "el": "ol.days::before",
+   "name": "line-draw",
+   "delay": 480,
+   "end": 1080
+  },
+  {
+   "el": "li.day",
+   "name": "slot-in",
+   "delay": 480,
+   "end": 780
+  },
+  {
+   "el": "li.day is-treat",
+   "name": "slot-in",
+   "delay": 559.9999999999999,
+   "end": 859.9999999999999
+  },
+  {
+   "el": "li.day",
+   "name": "slot-in",
+   "delay": 640,
+   "end": 940
+  },
+  {
+   "el": "li.day",
+   "name": "slot-in",
+   "delay": 720,
+   "end": 1020
+  },
+  {
+   "el": "li.day",
+   "name": "slot-in",
+   "delay": 800,
+   "end": 1100
+  },
+  {
+   "el": "footer.plan-foot",
+   "name": "fade",
+   "delay": 600,
+   "end": 899.9999999999999
+  }
+ ],
+ "reduce-1440": {
+  "commit": {
+   "anims": 0,
+   "lineTf": "none",
+   "lineDisplay": "block",
+   "top": "8px",
+   "bottom": "8px"
+  },
+  "load": {
+   "anims": 0,
+   "running": 0
+  }
+ },
+ "reduce-390": {
+  "commit": {
+   "anims": 0,
+   "lineTf": "none",
+   "lineDisplay": "none",
+   "top": "8px",
+   "bottom": "8px"
+  },
+  "load": {
+   "anims": 0,
+   "running": 0
+  }
+ },
+ "nojs": {
+  "h1": "1",
+  "h1spans": [
+   "1"
+  ],
+  "days": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "plan": "1",
+  "chips": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ]
+ }
+}

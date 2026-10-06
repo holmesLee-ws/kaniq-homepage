@@ -1,0 +1,14 @@
+B5c [{"mode":"no-preference","w":1440,"ratios":[0,0.5003999837239583,1,0.5003999837239583]},{"mode":"no-preference","w":390,"ratios":[0,0.5001000104631697,1,0.5001000104631697]},{"mode":"reduce","w":1440,"ratios":[0,0.5003999837239583,1,0.5003999837239583]},{"mode":"reduce","w":390,"ratios":[0,0.5001000104631697,1,0.5001000104631697]}]
+B11 [{"mode":"no-preference","w":1440,"h0":78.109375,"h1":57.296875,"careShift":-0.015625,"history":[true,false,false,true],"anchors":[{"id":"care","top":87.671875,"head":57.296875},{"id":"plan","top":88.46875,"head":78.109375},{"id":"trust","top":87.5625,"head":57.296875},{"id":"ambassador","top":88.28125,"head":57.296875},{"id":"trust-steps","top":88.171875,"head":57.296875}],"start":0,"end":1},{"mode":"no-preference","w":390,"h0":78.109375,"h1":57.296875,"careShift":-0.015625,"history":[true,false,false,true],"anchors":[{"id":"care","top":87.8125,"head":57.296875},{"id":"plan","top":87.796875,"head":78.109375},{"id":"trust","top":88.328125,"head":57.296875},{"id":"ambassador","top":139.484375,"head":57.296875},{"id":"trust-steps","top":115.109375,"head":57.296875}],"start":0.0005204718846541185,"end":1},{"mode":"reduce","w":1440,"h0":78.109375,"h1":57.296875,"careShift":-0.015625,"history":[true,false,false,true],"anchors":[{"id":"care","top":87.671875,"head":57.296875},{"id":"plan","top":88.46875,"head":78.109375},{"id":"trust","top":87.5625,"head":57.296875},{"id":"ambassador","top":88.28125,"head":57.296875},{"id":"trust-steps","top":88.171875,"head":57.296875}],"start":0,"end":1},{"mode":"reduce","w":390,"h0":78.109375,"h1":57.296875,"careShift":-0.015625,"history":[true,false,false,true],"anchors":[{"id":"care","top":88.8125,"head":57.296875},{"id":"plan","top":87.796875,"head":78.109375},{"id":"trust","top":88.328125,"head":57.296875},{"id":"ambassador","top":87.484375,"head":57.296875},{"id":"trust-steps","top":88.109375,"head":57.296875}],"start":0,"end":1}]
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(visible==='visible')
+
+    at /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-immersive/.qa-tmp/interactions-rest.cjs:32:350 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

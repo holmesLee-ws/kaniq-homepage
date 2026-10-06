@@ -1,0 +1,6 @@
+Base 7379aa5, production :3101
+curl /xx → 404
+curl /en/xx → 404
+Server output: Error: Internal: NoFallbackError; at ignore-listed frames
+Candidate same output during unknown-route requests; HTTP status remains 404.
+Both verification servers stopped.

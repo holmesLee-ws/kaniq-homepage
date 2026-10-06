@@ -1,0 +1,14 @@
+{
+  "delays": [
+    "0s",
+    "0.04s",
+    "0.13s",
+    "0.08s",
+    "0.17s",
+    "0.26s"
+  ],
+  "strong": {
+    "text": "Community fund",
+    "running": true
+  }
+}

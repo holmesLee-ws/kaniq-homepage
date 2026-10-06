@@ -1,0 +1,454 @@
+[
+ {
+  "lang": "ko",
+  "w": 1440,
+  "h": 900,
+  "mode": "no-preference",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 563.199951171875,
+  "rh": 704,
+  "ratio": 1.2500001083720909,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 1126.39990234375,
+  "needH": 1408,
+  "secH": 767.453125,
+  "cap": 1260,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": false,
+  "chipDelays": [
+   "0s",
+   "0.09s",
+   "0.18s"
+  ],
+  "chipNames": [
+   "chip-in",
+   "chip-in",
+   "chip-in"
+  ],
+  "chipMaxEnd": 500,
+  "chipOpacity": [
+   "0.228846",
+   "0",
+   "0"
+  ],
+  "parallax": {
+   "dTy": 51.2,
+   "dSc": 0,
+   "A": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, 25.6)",
+    "m42": 25.6,
+    "sc": 1.1
+   },
+   "B": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, -25.6)",
+    "m42": -25.6,
+    "sc": 1.1
+   }
+  },
+  "delaysIncreasing": true,
+  "pass": true
+ },
+ {
+  "lang": "ko",
+  "w": 390,
+  "h": 844,
+  "mode": "no-preference",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 385,
+  "rh": 288.75,
+  "ratio": 0.75,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 770,
+  "needH": 577.5,
+  "secH": 753.03125,
+  "cap": 1181.6,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": true,
+  "chipDelays": [
+   "0s",
+   "0.09s",
+   "0.18s"
+  ],
+  "chipNames": [
+   "chip-in",
+   "chip-in",
+   "chip-in"
+  ],
+  "chipMaxEnd": 500,
+  "chipOpacity": [
+   "0.428935",
+   "0",
+   "0"
+  ],
+  "parallax": {
+   "dTy": 21,
+   "dSc": 0,
+   "A": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, 10.5)",
+    "m42": 10.5,
+    "sc": 1.1
+   },
+   "B": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, -10.5)",
+    "m42": -10.5,
+    "sc": 1.1
+   }
+  },
+  "delaysIncreasing": true,
+  "pass": true
+ },
+ {
+  "lang": "en",
+  "w": 1440,
+  "h": 900,
+  "mode": "no-preference",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 563.199951171875,
+  "rh": 704,
+  "ratio": 1.2500001083720909,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 1126.39990234375,
+  "needH": 1408,
+  "secH": 767.453125,
+  "cap": 1260,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": false,
+  "chipDelays": [
+   "0s",
+   "0.09s",
+   "0.18s",
+   "0.27s"
+  ],
+  "chipNames": [
+   "chip-in",
+   "chip-in",
+   "chip-in",
+   "chip-in"
+  ],
+  "chipMaxEnd": 590.0000000000001,
+  "chipOpacity": [
+   "0.429057",
+   "0",
+   "0",
+   "0"
+  ],
+  "parallax": {
+   "dTy": 51.2,
+   "dSc": 0,
+   "A": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, 25.6)",
+    "m42": 25.6,
+    "sc": 1.1
+   },
+   "B": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, -25.6)",
+    "m42": -25.6,
+    "sc": 1.1
+   }
+  },
+  "delaysIncreasing": true,
+  "pass": true
+ },
+ {
+  "lang": "en",
+  "w": 390,
+  "h": 844,
+  "mode": "no-preference",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 385,
+  "rh": 288.75,
+  "ratio": 0.75,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 770,
+  "needH": 577.5,
+  "secH": 861.828125,
+  "cap": 1181.6,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": true,
+  "chipDelays": [
+   "0s",
+   "0.09s",
+   "0.18s",
+   "0.27s"
+  ],
+  "chipNames": [
+   "chip-in",
+   "chip-in",
+   "chip-in",
+   "chip-in"
+  ],
+  "chipMaxEnd": 590.0000000000001,
+  "chipOpacity": [
+   "0.429323",
+   "0",
+   "0",
+   "0"
+  ],
+  "parallax": {
+   "dTy": 21,
+   "dSc": 0,
+   "A": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, 10.5)",
+    "m42": 10.5,
+    "sc": 1.1
+   },
+   "B": {
+    "tf": "matrix(1.1, 0, 0, 1.1, 0, -10.5)",
+    "m42": -10.5,
+    "sc": 1.1
+   }
+  },
+  "delaysIncreasing": true,
+  "pass": true
+ },
+ {
+  "lang": "ko",
+  "w": 1440,
+  "h": 900,
+  "mode": "reduce",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 512,
+  "rh": 640,
+  "ratio": 1.25,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 1024,
+  "needH": 1280,
+  "secH": 767.453125,
+  "cap": 1260,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": false,
+  "chipDelays": [
+   "0s",
+   "0s",
+   "0s"
+  ],
+  "chipNames": [
+   "none",
+   "none",
+   "none"
+  ],
+  "chipMaxEnd": 0,
+  "chipOpacity": [
+   "1",
+   "1",
+   "1"
+  ],
+  "parallax": {
+   "dTy": 0,
+   "dSc": 0,
+   "A": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   },
+   "B": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   }
+  },
+  "delaysIncreasing": false,
+  "pass": true
+ },
+ {
+  "lang": "ko",
+  "w": 390,
+  "h": 844,
+  "mode": "reduce",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 350,
+  "rh": 262.5,
+  "ratio": 0.75,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 700,
+  "needH": 525,
+  "secH": 753.03125,
+  "cap": 1181.6,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": true,
+  "chipDelays": [
+   "0s",
+   "0s",
+   "0s"
+  ],
+  "chipNames": [
+   "none",
+   "none",
+   "none"
+  ],
+  "chipMaxEnd": 0,
+  "chipOpacity": [
+   "1",
+   "1",
+   "1"
+  ],
+  "parallax": {
+   "dTy": 0,
+   "dSc": 0,
+   "A": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   },
+   "B": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   }
+  },
+  "delaysIncreasing": false,
+  "pass": true
+ },
+ {
+  "lang": "en",
+  "w": 1440,
+  "h": 900,
+  "mode": "reduce",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 512,
+  "rh": 640,
+  "ratio": 1.25,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 1024,
+  "needH": 1280,
+  "secH": 767.453125,
+  "cap": 1260,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": false,
+  "chipDelays": [
+   "0s",
+   "0s",
+   "0s",
+   "0s"
+  ],
+  "chipNames": [
+   "none",
+   "none",
+   "none",
+   "none"
+  ],
+  "chipMaxEnd": 0,
+  "chipOpacity": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "parallax": {
+   "dTy": 0,
+   "dSc": 0,
+   "A": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   },
+   "B": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   }
+  },
+  "delaysIncreasing": false,
+  "pass": true
+ },
+ {
+  "lang": "en",
+  "w": 390,
+  "h": 844,
+  "mode": "reduce",
+  "scrollOk": true,
+  "waitOk": true,
+  "currentSrc": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fc-family-palace.3xnmygpcel0vh.jpg&w=1920&q=75",
+  "rw": 350,
+  "rh": 262.5,
+  "ratio": 0.75,
+  "natW": 1280,
+  "natH": 1600,
+  "needW": 700,
+  "needH": 525,
+  "secH": 861.828125,
+  "cap": 1181.6,
+  "h2": true,
+  "chips": true,
+  "special": true,
+  "messenger": true,
+  "panelAbovePhoto": true,
+  "chipDelays": [
+   "0s",
+   "0s",
+   "0s",
+   "0s"
+  ],
+  "chipNames": [
+   "none",
+   "none",
+   "none",
+   "none"
+  ],
+  "chipMaxEnd": 0,
+  "chipOpacity": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "parallax": {
+   "dTy": 0,
+   "dSc": 0,
+   "A": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   },
+   "B": {
+    "tf": "none",
+    "m42": 0,
+    "sc": 1
+   }
+  },
+  "delaysIncreasing": false,
+  "pass": true
+ }
+]

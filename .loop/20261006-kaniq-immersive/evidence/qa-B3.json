@@ -1,0 +1,577 @@
+{
+ "introBefore": true,
+ "dayDelayAfterFirst": [
+  "0s",
+  "0s",
+  "0s",
+  "0s",
+  "0s"
+ ],
+ "kbdChecked": "tx-womens-health",
+ "seq": [
+  {
+   "label": "tx implants→lasik",
+   "at100ms": 84,
+   "priceBefore": "₩2.4M–3.2M",
+   "priceAfter": "₩1.6M–2.4M",
+   "priceChanged": true,
+   "exitRunning": [
+    "LI:TreatImplant placement a",
+    "LI:TasteSamgyetang, soft an",
+    "LI:FeelHanok tea ceremonyDo",
+    "LI:SeeFlat walk along Cheon",
+    "LI:FeelGyeongbokgung in han",
+    "LI:TasteGwangjang Market fo",
+    "LI:FeelDay templestayOK fro"
+   ],
+   "enterRunning": [
+    "LI:TreatEye exam and LASIK",
+    "LI:StayRest with eyes close",
+    "LI:FeelIndoor hanbok portra",
+    "LI:TasteHanjeongsik lunchDo",
+    "LI:SeeBukchon and Namsan by",
+    "LI:FeelNanta performanceDoc",
+    "LI:FeelJjimjilbangOK from d"
+   ],
+   "priceRunning": true,
+   "intro100": false,
+   "running450": 0,
+   "exitNodes450": 0,
+   "all100": [
+    {
+     "pres": "exit",
+     "node": "LI:TreatImplant placement a",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:TreatEye exam and LASIK",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:TasteSamgyetang, soft an",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelHanok tea ceremonyDo",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:SeeFlat walk along Cheon",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:StayRest with eyes close",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelIndoor hanbok portra",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:TasteHanjeongsik lunchDo",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelGyeongbokgung in han",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:TasteGwangjang Market fo",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelDay templestayOK fro",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:SeeBukchon and Namsan by",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelNanta performanceDoc",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelJjimjilbangOK from d",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": null,
+     "node": "SPAN",
+     "price": true,
+     "st": "running",
+     "name": "price-roll"
+    }
+   ]
+  },
+  {
+   "label": "days 7→10",
+   "at100ms": 83,
+   "priceBefore": "₩1.6M–2.4M",
+   "priceAfter": "₩1.6M–2.4M",
+   "priceChanged": false,
+   "exitRunning": [
+    "SPAN:D6"
+   ],
+   "enterRunning": [
+    "LI:D6–8Free daysFeelHan Riv",
+    "SPAN:D9"
+   ],
+   "priceRunning": false,
+   "intro100": false,
+   "running450": 0,
+   "exitNodes450": 0,
+   "all100": [
+    {
+     "pres": "enter",
+     "node": "LI:D6–8Free daysFeelHan Riv",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "SPAN:D6",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D9",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": null,
+     "node": "SPAN",
+     "price": true,
+     "st": "finished",
+     "name": "price-roll"
+    }
+   ]
+  },
+  {
+   "label": "days 10→5",
+   "at100ms": 83,
+   "priceBefore": "₩1.6M–2.4M",
+   "priceAfter": "₩1.6M–2.4M",
+   "priceChanged": false,
+   "exitRunning": [
+    "SPAN:D3–5",
+    "LI:FeelJjimjilbangOK from d",
+    "LI:D6–8Free daysFeelHan Riv",
+    "SPAN:D9"
+   ],
+   "enterRunning": [
+    "SPAN:D3",
+    "SPAN:D4"
+   ],
+   "priceRunning": false,
+   "intro100": false,
+   "running450": 0,
+   "exitNodes450": 0,
+   "all100": [
+    {
+     "pres": "exit",
+     "node": "SPAN:D3–5",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D3",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelJjimjilbangOK from d",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:D6–8Free daysFeelHan Riv",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "SPAN:D9",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D4",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": null,
+     "node": "SPAN",
+     "price": true,
+     "st": "finished",
+     "name": "price-roll"
+    }
+   ]
+  },
+  {
+   "label": "pax 2→3",
+   "at100ms": 870,
+   "priceBefore": "₩1.6M–2.4M",
+   "priceAfter": "₩1.6M–2.4M",
+   "priceChanged": false,
+   "exitRunning": [
+    "LI:StayTwin room near your "
+   ],
+   "enterRunning": [
+    "LI:StayFamily residence nea"
+   ],
+   "priceRunning": false,
+   "intro100": false,
+   "running450": 2,
+   "exitNodes450": 1,
+   "all100": [
+    {
+     "pres": "exit",
+     "node": "LI:StayTwin room near your ",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:StayFamily residence nea",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D3",
+     "price": false,
+     "st": "finished",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D4",
+     "price": false,
+     "st": "finished",
+     "name": "node-in"
+    },
+    {
+     "pres": null,
+     "node": "SPAN",
+     "price": true,
+     "st": "finished",
+     "name": "price-roll"
+    }
+   ]
+  },
+  {
+   "label": "kbd screening→ArrowRight",
+   "at100ms": 83,
+   "priceBefore": "₩1.6M–2.4M",
+   "priceAfter": "₩3.0M–5.0M",
+   "priceChanged": true,
+   "exitRunning": [
+    "LI:TreatEye exam and LASIK",
+    "LI:StayRest with eyes close",
+    "LI:FeelIndoor hanbok portra",
+    "LI:TasteHanjeongsik lunchDo",
+    "LI:SeeBukchon and Namsan by",
+    "LI:FeelNanta performanceDoc"
+   ],
+   "enterRunning": [
+    "LI:TreatGynecologic check-u",
+    "LI:StayQuiet room, female c",
+    "LI:FeelHanok tea ceremonyDo",
+    "LI:TasteTemple food lunchDo",
+    "LI:FeelHerbal medicine cons",
+    "LI:FeelGyeongbokgung in han"
+   ],
+   "priceRunning": true,
+   "intro100": false,
+   "running450": 0,
+   "exitNodes450": 0,
+   "all100": [
+    {
+     "pres": "exit",
+     "node": "LI:TreatEye exam and LASIK",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:TreatGynecologic check-u",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:StayRest with eyes close",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelIndoor hanbok portra",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:TasteHanjeongsik lunchDo",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:StayQuiet room, female c",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelHanok tea ceremonyDo",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:TasteTemple food lunchDo",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D3",
+     "price": false,
+     "st": "finished",
+     "name": "node-in"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:SeeBukchon and Namsan by",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "exit",
+     "node": "LI:FeelNanta performanceDoc",
+     "price": false,
+     "st": "running",
+     "name": "node-out"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelHerbal medicine cons",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "LI:FeelGyeongbokgung in han",
+     "price": false,
+     "st": "running",
+     "name": "node-in"
+    },
+    {
+     "pres": "enter",
+     "node": "SPAN:D4",
+     "price": false,
+     "st": "finished",
+     "name": "node-in"
+    },
+    {
+     "pres": null,
+     "node": "SPAN",
+     "price": true,
+     "st": "running",
+     "name": "price-roll"
+    }
+   ]
+  }
+ ],
+ "firstDays": {
+  "label": "fresh first days 7→10",
+  "at100ms": 82,
+  "priceBefore": "₩2.4M–3.2M",
+  "priceAfter": "₩2.4M–3.2M",
+  "priceChanged": false,
+  "exitRunning": [
+   "SPAN:D6"
+  ],
+  "enterRunning": [
+   "LI:D6–8Free daysFeelHot spr",
+   "SPAN:D9"
+  ],
+  "priceRunning": false,
+  "intro100": false,
+  "running450": 0,
+  "exitNodes450": 0,
+  "all100": [
+   {
+    "pres": "enter",
+    "node": "LI:D6–8Free daysFeelHot spr",
+    "price": false,
+    "st": "running",
+    "name": "node-in"
+   },
+   {
+    "pres": "exit",
+    "node": "SPAN:D6",
+    "price": false,
+    "st": "running",
+    "name": "node-out"
+   },
+   {
+    "pres": "enter",
+    "node": "SPAN:D9",
+    "price": false,
+    "st": "running",
+    "name": "node-in"
+   }
+  ]
+ },
+ "reduce": {
+  "label": "reduce tx→lasik",
+  "at100ms": 82,
+  "priceBefore": "₩2.4M–3.2M",
+  "priceAfter": "₩1.6M–2.4M",
+  "priceChanged": true,
+  "exitRunning": [],
+  "enterRunning": [],
+  "priceRunning": false,
+  "intro100": false,
+  "running450": 0,
+  "exitNodes450": 0,
+  "all100": []
+ },
+ "paxRetry": [
+  {
+   "pre": [],
+   "before": "₩2.4M–3.2M",
+   "at": 83.89999997615814,
+   "s1": {
+    "run": [
+     {
+      "pres": "exit",
+      "txt": "StayTwin room near your hospit",
+      "price": false,
+      "name": "node-out"
+     },
+     {
+      "pres": "enter",
+      "txt": "StayFamily residence near your",
+      "price": false,
+      "name": "node-in"
+     }
+    ],
+    "exitN": 1,
+    "price": "₩2.4M–3.2M"
+   },
+   "s2": {
+    "run": [],
+    "exitN": 0,
+    "price": "₩2.4M–3.2M"
+   },
+   "sub0": "For 2 travelers, arriving at Incheon",
+   "sub1": "For a group, arriving at Incheon"
+  },
+  {
+   "pre": [
+    "tx-lasik",
+    "days-5"
+   ],
+   "before": "₩1.6M–2.4M",
+   "at": 84.30000001192093,
+   "s1": {
+    "run": [
+     {
+      "pres": "exit",
+      "txt": "StayTwin room near your hospit",
+      "price": false,
+      "name": "node-out"
+     },
+     {
+      "pres": "enter",
+      "txt": "StayFamily residence near your",
+      "price": false,
+      "name": "node-in"
+     }
+    ],
+    "exitN": 1,
+    "price": "₩1.6M–2.4M"
+   },
+   "s2": {
+    "run": [],
+    "exitN": 0,
+    "price": "₩1.6M–2.4M"
+   },
+   "sub0": "For 2 travelers, arriving at Incheon",
+   "sub1": "For a group, arriving at Incheon"
+  }
+ ]
+}

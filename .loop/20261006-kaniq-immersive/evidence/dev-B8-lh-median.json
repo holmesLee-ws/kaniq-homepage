@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "CLS": 0,
+      "run": 1
+    },
+    {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "CLS": 0,
+      "run": 2
+    },
+    {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "CLS": 0,
+      "run": 3
+    }
+  ],
+  "median": {
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "CLS": 0
+  },
+  "url": "http://localhost:3102/en",
+  "formFactor": "mobile",
+  "throttling": "simulate",
+  "rawReports": ".qa-tmp/lh-final-{1,2,3}.json"
+}

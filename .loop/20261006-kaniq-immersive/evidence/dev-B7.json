@@ -1,0 +1,81 @@
+{
+  "actions": [
+    {
+      "label": "quote-step-2",
+      "running": 0
+    },
+    {
+      "label": "quote-step-3",
+      "running": 0
+    },
+    {
+      "label": "quote-step-3",
+      "running": 0
+    },
+    {
+      "label": "quote-done",
+      "running": 0
+    },
+    {
+      "label": "load",
+      "running": 0
+    },
+    {
+      "label": "tx-lasik",
+      "running": 0
+    },
+    {
+      "label": "days-10",
+      "running": 0
+    },
+    {
+      "label": "pax-3",
+      "running": 0
+    },
+    {
+      "label": "scrub-Home",
+      "running": 0
+    },
+    {
+      "label": "scrub-ArrowRight",
+      "running": 0
+    },
+    {
+      "label": "scrub-End",
+      "running": 0
+    },
+    {
+      "label": "flip",
+      "running": 0
+    },
+    {
+      "label": "template",
+      "running": 0
+    },
+    {
+      "label": "give",
+      "running": 0
+    },
+    {
+      "label": "header",
+      "running": 0
+    }
+  ],
+  "care": {
+    "transform": "none",
+    "chips": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "receipt": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "0.88"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD",
+  "url": "kaniq-homepage-hvnyojla6-wishket-aidp.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "alias": [
+    "kaniq-care.vercel.app",
+    "kaniq-homepage.vercel.app",
+    "kaniq-homepage-wishket-aidp.vercel.app"
+  ],
+  "meta": {
+    "gitCommitSha": "16db6a34d47180d6c8af79f5cd3a36b84fe23479",
+    "sourceCommitSha": "16db6a34d47180d6c8af79f5cd3a36b84fe23479"
+  },
+  "gitDirtyAbsent": true
+}

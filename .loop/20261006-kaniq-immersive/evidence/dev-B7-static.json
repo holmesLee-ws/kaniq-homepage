@@ -1,0 +1,29 @@
+{
+  "intro": {
+    "animations": 0,
+    "lineTransform": "none"
+  },
+  "rows": [
+    {
+      "day": 0,
+      "row": 0,
+      "activities": 0,
+      "today": 0,
+      "running": 0
+    },
+    {
+      "day": 3,
+      "row": 2,
+      "activities": 4,
+      "today": 4,
+      "running": 0
+    },
+    {
+      "day": 6,
+      "row": 3,
+      "activities": 5,
+      "today": 5,
+      "running": 0
+    }
+  ]
+}

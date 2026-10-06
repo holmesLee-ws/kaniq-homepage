@@ -1,0 +1,178 @@
+{
+ "ops": [
+  {
+   "name": "load",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "planner tx-lasik",
+   "running": 0,
+   "total": 0,
+   "exitNodes": 0
+  },
+  {
+   "name": "planner days-10",
+   "running": 0,
+   "total": 0,
+   "exitNodes": 0
+  },
+  {
+   "name": "planner pax-3",
+   "running": 0,
+   "total": 0,
+   "exitNodes": 0
+  },
+  {
+   "name": "scrub Home",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "scrub ArrowRight",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "scrub End",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "flip click",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "template hover",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "ambassador give-2",
+   "running": 0,
+   "total": 0
+  },
+  {
+   "name": "header compact scroll",
+   "running": 0,
+   "total": 0
+  }
+ ],
+ "flipPressed": "true",
+ "tplOpen": "visible",
+ "giveText": "Community fund",
+ "headCompact": true,
+ "static": {
+  "chips": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "img": "none",
+  "receiptRows": [
+   "1",
+   "1",
+   "1",
+   "1"
+  ],
+  "total": "1",
+  "seal": "0.88",
+  "running": 0
+ },
+ "idleNoPref": [],
+ "pos": {
+  "no-preference": [
+   {
+    "y": 0,
+    "steps": 0,
+    "read": 0
+   },
+   {
+    "y": 2292,
+    "steps": 0,
+    "read": 0.30003927018907334
+   },
+   {
+    "y": 5156,
+    "steps": 0.5003999837239583,
+    "read": 0.6749574449327257
+   },
+   {
+    "y": 5492,
+    "steps": 0.7982999674479166,
+    "read": 0.7189422607421875
+   },
+   {
+    "y": 7639,
+    "steps": 1,
+    "read": 1
+   }
+  ],
+  "reduce": [
+   {
+    "y": 0,
+    "steps": 0,
+    "read": 0
+   },
+   {
+    "y": 2292,
+    "steps": 0,
+    "read": 0.30003927018907334
+   },
+   {
+    "y": 5156,
+    "steps": 0.5003999837239583,
+    "read": 0.6749574449327257
+   },
+   {
+    "y": 5492,
+    "steps": 0.7982999674479166,
+    "read": 0.7189422607421875
+   },
+   {
+    "y": 7639,
+    "steps": 1,
+    "read": 1
+   }
+  ]
+ },
+ "posDiff": [
+  {
+   "y": 0,
+   "dSteps": 0,
+   "dRead": 0,
+   "steps": 0,
+   "read": 0
+  },
+  {
+   "y": 2292,
+   "dSteps": 0,
+   "dRead": 0,
+   "steps": 0,
+   "read": 0.30003927018907334
+  },
+  {
+   "y": 5156,
+   "dSteps": 0,
+   "dRead": 0,
+   "steps": 0.5003999837239583,
+   "read": 0.6749574449327257
+  },
+  {
+   "y": 5492,
+   "dSteps": 0,
+   "dRead": 0,
+   "steps": 0.7982999674479166,
+   "read": 0.7189422607421875
+  },
+  {
+   "y": 7639,
+   "dSteps": 0,
+   "dRead": 0,
+   "steps": 1,
+   "read": 1
+  }
+ ]
+}

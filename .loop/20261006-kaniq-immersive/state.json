@@ -1,0 +1,482 @@
+{
+  "run": "20261006-kaniq-immersive",
+  "shape": "feature",
+  "review_tier": "standard",
+  "size": "L",
+  "estimate": {
+    "size": "L",
+    "reason": "UI 전용(데이터 모델 없음)이나 홈 전 섹션 + 견적 폼에 모션·인터랙션 추가(공용 섹션 다수 교체, 규칙 7) + 브라우저로만 판정되는 동작 다수(규칙 12, +1) → M+1 = L. 신규 인터랙션(회복 스크러버)·reduced-motion·성능 예산 회귀 검증 포함",
+    "mode": "default",
+    "shape": "feature",
+    "estimated_at": 1791292526,
+    "browser_items": 8,
+    "rework": {
+      "share": 89,
+      "cost_x": 1.97,
+      "n": 106
+    },
+    "rounds": {
+      "developer": {
+        "p50": 3.0,
+        "low": 2.0,
+        "high": 4.75,
+        "p80": 5.0,
+        "n": 106
+      },
+      "review_qa": {
+        "p50": 4.0,
+        "low": 2.0,
+        "high": 7.0,
+        "p80": 8.0,
+        "n": 106
+      }
+    },
+    "wall_s": {
+      "p50": 14121.5,
+      "low": 8594.5,
+      "high": 25251.25,
+      "p80": 31797.0,
+      "basis": "history",
+      "n": 106
+    },
+    "tokens_total": {
+      "p50": 173438501.5,
+      "low": 106282088.0,
+      "high": 372855650.0,
+      "p80": 479347862.6,
+      "basis": "history",
+      "n": 94
+    },
+    "cost_usd": {
+      "p50": 109.7213,
+      "low": 52.101,
+      "high": 158.7005,
+      "p80": 159.68815999999998,
+      "basis": "history",
+      "n": 29,
+      "era": "era"
+    },
+    "scope": "size=L,mode=default",
+    "basis": "history"
+  },
+  "estimate_initial": {
+    "size": "L",
+    "reason": "UI 전용(데이터 모델 없음)이나 홈 전 섹션 + 견적 폼에 모션·인터랙션 추가(공용 섹션 다수 교체, 규칙 7) + 브라우저로만 판정되는 동작 다수(규칙 12, +1) → M+1 = L. 신규 인터랙션(회복 스크러버)·reduced-motion·성능 예산 회귀 검증 포함",
+    "mode": "default",
+    "shape": "feature",
+    "estimated_at": 1791292526,
+    "browser_items": 8,
+    "rework": {
+      "share": 89,
+      "cost_x": 1.97,
+      "n": 106
+    },
+    "rounds": {
+      "developer": {
+        "p50": 3.0,
+        "low": 2.0,
+        "high": 4.75,
+        "p80": 5.0,
+        "n": 106
+      },
+      "review_qa": {
+        "p50": 4.0,
+        "low": 2.0,
+        "high": 7.0,
+        "p80": 8.0,
+        "n": 106
+      }
+    },
+    "wall_s": {
+      "p50": 14121.5,
+      "low": 8594.5,
+      "high": 25251.25,
+      "p80": 31797.0,
+      "basis": "history",
+      "n": 106
+    },
+    "tokens_total": {
+      "p50": 173438501.5,
+      "low": 106282088.0,
+      "high": 372855650.0,
+      "p80": 479347862.6,
+      "basis": "history",
+      "n": 94
+    },
+    "cost_usd": {
+      "p50": 109.7213,
+      "low": 52.101,
+      "high": 158.7005,
+      "p80": 159.68815999999998,
+      "basis": "history",
+      "n": 29,
+      "era": "era"
+    },
+    "scope": "size=L,mode=default",
+    "basis": "history"
+  },
+  "diff": {
+    "files": 39,
+    "lines": 1856,
+    "risk": false,
+    "deps": false
+  },
+  "execution_surface": "orca-tui",
+  "phase": "closeout",
+  "waiting_on": null,
+  "roster": {
+    "windows": {
+      "grok-4.7": "500k",
+      "grok-4.6": "500k",
+      "grok-4.5": "500k",
+      "claude-opus-5": "1M",
+      "claude-sonnet-5": "1M",
+      "claude-fable-5": "1M",
+      "gpt-5.6-sol": "1.05M",
+      "gpt-5.6-terra": "1.05M",
+      "gpt-5.6-luna": "1.05M",
+      "gpt-6-astra": "1.05M",
+      "gpt-5.5": "1.05M",
+      "gemini-3.8-flash-high": "1M",
+      "gemini-3.8-flash-medium": "1M",
+      "gemini-3.8-flash-low": "1M",
+      "gemini-3.8-flash": "1M",
+      "claude-opus-5-5": "1M",
+      "gpt-6-sol": "1.05M",
+      "gpt-6-luna": "1.05M",
+      "gpt-6.1-sol": "1.05M"
+    },
+    "roles": {
+      "po": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "designer": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "developer": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      },
+      "reviewer": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "qa": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "releaser": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      }
+    }
+  },
+  "initial_roster": {
+    "windows": {
+      "grok-4.7": "500k",
+      "grok-4.6": "500k",
+      "grok-4.5": "500k",
+      "claude-opus-5": "1M",
+      "claude-sonnet-5": "1M",
+      "claude-fable-5": "1M",
+      "gpt-5.6-sol": "1.05M",
+      "gpt-5.6-terra": "1.05M",
+      "gpt-5.6-luna": "1.05M",
+      "gpt-6-astra": "1.05M",
+      "gpt-5.5": "1.05M",
+      "gemini-3.8-flash-high": "1M",
+      "gemini-3.8-flash-medium": "1M",
+      "gemini-3.8-flash-low": "1M",
+      "gemini-3.8-flash": "1M",
+      "claude-opus-5-5": "1M",
+      "gpt-6-sol": "1.05M",
+      "gpt-6-luna": "1.05M",
+      "gpt-6.1-sol": "1.05M"
+    },
+    "roles": {
+      "po": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "designer": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "developer": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      },
+      "reviewer": {
+        "tui": "grok",
+        "model": "grok-4.7",
+        "effort": "medium",
+        "context": "500k"
+      },
+      "qa": {
+        "tui": "claude",
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "context": "1M"
+      },
+      "releaser": {
+        "tui": "codex",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "context": "1.05M"
+      }
+    }
+  },
+  "model_experiment": {
+    "id": "developer-astra-low-2026-09",
+    "role": "developer",
+    "candidate": {
+      "tui": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low"
+    },
+    "baseline": {
+      "tui": "codex",
+      "model": "gpt-5.6-sol",
+      "effort": "medium",
+      "note": "Pre-canary runs without an explicit roster snapshot are not attributed retroactively."
+    },
+    "started_on": "2026-09-06",
+    "review_on": "2026-09-20",
+    "review_after_completed_runs": 10,
+    "criteria": {
+      "quality_floor": "First-pass acceptance must not fall more than 5 percentage points versus an attributed Sol-medium baseline.",
+      "efficiency_target": "Average credits or developer wall time should improve by at least 15 percent.",
+      "safety_floor": "No new failure class, scope drift, or increased human intervention.",
+      "decision": "Keep Astra low, escalate selected tasks to Astra medium, or roll back to Sol medium."
+    }
+  },
+  "workers": {
+    "reviewer": {
+      "round": 7,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791292561,
+          "detected_done_at": 1791293017,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791293063,
+          "detected_done_at": 1791293334,
+          "outcome": "done"
+        },
+        {
+          "round": 3,
+          "sent_at": 1791293356,
+          "detected_done_at": 1791293445,
+          "outcome": "done"
+        },
+        {
+          "round": 4,
+          "sent_at": 1791294359,
+          "detected_done_at": 1791295153,
+          "outcome": "done"
+        },
+        {
+          "round": 5,
+          "sent_at": 1791295369,
+          "detected_done_at": 1791295782,
+          "outcome": "done"
+        },
+        {
+          "round": 6,
+          "sent_at": 1791297026,
+          "detected_done_at": 1791297553,
+          "outcome": "done"
+        },
+        {
+          "round": 7,
+          "sent_at": 1791298485,
+          "detected_done_at": 1791298773,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791298773,
+      "status": "stopped",
+      "reserved_at": 1791298477,
+      "handle": "term_8c43370e-7ac1-459d-b7b5-1018a3000daf",
+      "tabId": "ba2ce1a8-cdea-4d4a-aec7-113015eaeb6b",
+      "spawned_at": 1791298485,
+      "sent_at": 1791298485,
+      "stopped_at": 1791298794
+    },
+    "designer": {
+      "round": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791293473,
+          "detected_done_at": 1791294321,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791295203,
+          "detected_done_at": 1791295343,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791295343,
+      "status": "stopped",
+      "reserved_at": 1791295186,
+      "handle": "term_94b9fb2e-b17e-4bb6-8971-c54408a968fe",
+      "tabId": "6dd5dadd-4318-44a7-af3a-9541fd9d9480",
+      "spawned_at": 1791295203,
+      "sent_at": 1791295203,
+      "stopped_at": 1791295360
+    },
+    "developer": {
+      "status": "stopped",
+      "reserved_at": 1791292634,
+      "handle": "term_7af648af-8502-442c-b762-8b9c7d222cf3",
+      "tabId": "d2fbf756-b2ef-406a-b2b1-03040fc3d111",
+      "spawned_at": 1791292642,
+      "sent_at": 1791295814,
+      "round": 1,
+      "detected_done_at": 1791296980,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791295814,
+          "detected_done_at": 1791296980,
+          "outcome": "done"
+        }
+      ],
+      "stopped_at": 1791298418
+    },
+    "qa": {
+      "round": 2,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791297028,
+          "detected_done_at": 1791297828,
+          "outcome": "done"
+        },
+        {
+          "round": 2,
+          "sent_at": 1791298099,
+          "detected_done_at": 1791298387,
+          "outcome": "done"
+        }
+      ],
+      "detected_done_at": 1791298387,
+      "status": "stopped",
+      "reserved_at": 1791298091,
+      "handle": "term_d3c73545-3943-4461-bb8e-2fa0aaaf1bc1",
+      "tabId": "1faed06c-43e9-4afb-a868-17e3afb50d90",
+      "spawned_at": 1791298099,
+      "sent_at": 1791298099,
+      "stopped_at": 1791298412
+    },
+    "releaser": {
+      "status": "stopped",
+      "reserved_at": 1791297852,
+      "handle": "term_06cafd54-0fc8-42db-b1e0-fe1232df017e",
+      "tabId": "fccdb49e-2a7f-43bd-8162-b9247844a48f",
+      "spawned_at": 1791297864,
+      "sent_at": 1791297864,
+      "round": 1,
+      "detected_done_at": 1791298068,
+      "rounds": [
+        {
+          "round": 1,
+          "sent_at": 1791297864,
+          "detected_done_at": 1791298068,
+          "outcome": "done"
+        }
+      ],
+      "stopped_at": 1791298090
+    }
+  },
+  "ledger": {
+    "requestId": null,
+    "status": null
+  },
+  "branch": "feat/immersive-motion",
+  "pr": "https://github.com/holmesLee-ws/kaniq-homepage/pull/5",
+  "release_pr": "https://github.com/holmesLee-ws/kaniq-homepage/pull/5",
+  "decisions": [
+    "spec:auto-confirm-by-delegation",
+    "release_mode:full",
+    "ledger:none(po-skip)",
+    "gates:G1-G5 independent reviewer score>=85",
+    "gate:G1 PASS 91 (r1 73 → r2 84 → r3 91)",
+    "gate:G2 PASS 93 (r4 81 → r5 93)",
+    "gate:G3 PASS reviewer r6 95 / qa r1 100 (10/10)",
+    "release: PR#5 squash 16db6a3 → dpl_84XGs4qiqNFkhPpXbqsKLSwQgnRD (cli, porcelain clean)",
+    "gate:G4 PASS qa r2 100"
+  ],
+  "user_interventions": 1,
+  "_schema": "execution_surface는 항상 orca-tui이며 direct CLI/subagent fallback은 금지. shape: feature|ship (SKILL §2.1). review_tier: light|standard|deep (feature만, SKILL §2.2 — 가판정은 leh.sh set, 확정은 leh.sh review-tier --apply, 승격만·강등 금지). size: XS|S|M|L|XL, estimate/estimate_initial: `leh.sh estimate`가 쓰는 예상(p50·범위·근거; initial은 최초값 불변) — 실측은 state가 아니라 `estimate.json`(`leh.sh actual`) (SKILL §2.7). diff: `review-tier --apply`가 남기는 {files,lines,risk,deps} 실측. roster.roles[role]: {tui, model, effort, context, tier?} — run 시작 전에 leh.sh snapshot-roster가 effective 전체를 roster와 immutable initial_roster에 고정하고 이후 roster 변경은 leh.sh set-model만 쓴다. model_experiment는 snapshot 시점 canary 계약이다. workers[role]: {status: spawning|active|idle|stopped|leaked, handle, tabId, reserved_at, spawned_at, sent_at(라운드 시작; 재촉은 안 바꿈), round(=산출물 인덱스 1-based), detected_done_at(종료 STATUS done|blocked|needs_decision 감지 시각), stopped_at, rounds[](완료 라운드 이력 — tick이 terminal 감지 시 append: {round, sent_at, detected_done_at, outcome:done|blocked|needs_decision|exited}; 진행 중 라운드는 flat 필드에만 있고 완료 시 여기에 쌓인다 — 스테이지 소요/병목 계측용)}. 워커 필드는 leh.sh spawn/dispatch/send(idle 경로)/tick/stop/handoff/cleanup/orphans 가, 나머지(run·shape·phase·decisions·ledger·branch·pr·release_pr·waiting_on·user_interventions)는 `leh.sh set <run> '<jq>'` 가 쓴다. 사람 원문은 leh.sh archive (inputs.jsonl / ~/.claude/.loop). 손편집 금지.",
+  "reclaimer": {
+    "handle": "term_2d8b6375-480b-4992-8413-0a57c395dcec",
+    "tabId": "fe726230-9aec-4c70-bda2-61b018c17835",
+    "report": "/Users/holmesmac/.claude/.loop/reclaim-receipts/report-20261006-kaniq-immersive-20261006T221522.json",
+    "started_at": 1791292522,
+    "status": "closed"
+  },
+  "scratch": [
+    {
+      "name": "dev-base",
+      "path": "/private/tmp/leh-20261006-kaniq-immersive-dev-base",
+      "ref": "7379aa5",
+      "created_at": 1791296176,
+      "status": "removed"
+    },
+    {
+      "name": "review-verify",
+      "path": "/private/tmp/leh-20261006-kaniq-immersive-review-verify",
+      "ref": "5f5fd82f89807e10c100bc460e008996bd259d2d",
+      "created_at": 1791297051,
+      "status": "removed"
+    },
+    {
+      "name": "qa-cand",
+      "path": "/private/tmp/leh-20261006-kaniq-immersive-qa-cand",
+      "ref": "5f5fd82f89807e10c100bc460e008996bd259d2d",
+      "created_at": 1791297061,
+      "status": "removed"
+    },
+    {
+      "name": "qa-base",
+      "path": "/private/tmp/leh-20261006-kaniq-immersive-qa-base",
+      "ref": "7379aa5",
+      "created_at": 1791297062,
+      "status": "removed"
+    },
+    {
+      "name": "rel-main",
+      "path": "/private/tmp/leh-20261006-kaniq-immersive-rel-main",
+      "ref": "16db6a34d47180d6c8af79f5cd3a36b84fe23479",
+      "created_at": 1791297920,
+      "status": "removed"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "selected": "tx-womens-health",
+  "animations": [
+    {
+      "presence": "exit",
+      "price": false
+    },
+    {
+      "presence": "enter",
+      "price": false
+    },
+    {
+      "presence": "exit",
+      "price": false
+    },
+    {
+      "presence": "enter",
+      "price": false
+    },
+    {
+      "presence": "exit",
+      "price": false
+    },
+    {
+      "presence": "enter",
+      "price": false
+    },
+    {
+      "presence": "enter",
+      "price": false
+    },
+    {
+      "presence": "exit",
+      "price": false
+    },
+    {
+      "presence": "exit",
+      "price": false
+    },
+    {
+      "presence": "enter",
+      "price": false
+    },
+    {
+      "price": true
+    }
+  ]
+}

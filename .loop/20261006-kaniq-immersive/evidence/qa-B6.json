@@ -1,0 +1,147 @@
+{
+ "no-preference": {
+  "bar1": 0.3333333895351347,
+  "emptyErr": {
+   "alerts": [
+    "この項目を入力してください。"
+   ],
+   "focus": "interest",
+   "step": "3ステップの1番目 · 診療"
+  },
+  "s12": {
+   "at": 80.89999997615814,
+   "enterN": 1,
+   "leaveN": 1,
+   "enterRun": 1,
+   "leaveRun": 1,
+   "leaveInert": true,
+   "bar400": 0.6666666947675673,
+   "leave400": 0,
+   "h2": "3ステップの2番目 · 日程"
+  },
+  "s23": {
+   "at": 81.30000001192093,
+   "enterN": 1,
+   "leaveN": 1,
+   "enterRun": 1,
+   "leaveRun": 1,
+   "leaveInert": true,
+   "bar400": 1,
+   "leave400": 0,
+   "h2": "3ステップの3番目 · 連絡先"
+  },
+  "s32back": {
+   "at": 81.20000004768372,
+   "enterN": 1,
+   "leaveN": 1,
+   "enterRun": 1,
+   "leaveRun": 1,
+   "leaveInert": true,
+   "bar400": 0.6666666947675673,
+   "leave400": 0,
+   "h2": "3ステップの2番目 · 日程"
+  },
+  "s23b": {
+   "at": 80.69999998807907,
+   "enterN": 1,
+   "leaveN": 1,
+   "enterRun": 1,
+   "leaveRun": 1,
+   "leaveInert": true,
+   "bar400": 1,
+   "leave400": 0,
+   "h2": "3ステップの3番目 · 連絡先"
+  },
+  "doneMid": [
+   {
+    "st": "running",
+    "end": 860.0000000000001
+   },
+   {
+    "st": "running",
+    "end": 560
+   },
+   {
+    "st": "running",
+    "end": 560
+   }
+  ],
+  "done1000": {
+   "n": 3,
+   "states": [
+    "finished",
+    "finished",
+    "finished"
+   ],
+   "notice": "登録前のため、お申し込みは保存・返信されません。",
+   "text": "体験が完了しました\n\n登録前のため、お申し込みは保存・返信されません。\n\n入力を確認しました。保存されておらず、返信はありません。\n\nホームへ"
+  },
+  "doneElapsed": 973,
+  "postStatus": 200,
+  "runningNow": 0
+ },
+ "reduce": {
+  "bar1": 0.3333333895351347,
+  "emptyErr": {
+   "alerts": [
+    "この項目を入力してください。"
+   ],
+   "focus": "interest",
+   "step": "3ステップの1番目 · 診療"
+  },
+  "s12": {
+   "at": 81.29999995231628,
+   "enterN": 1,
+   "leaveN": 0,
+   "enterRun": 0,
+   "leaveRun": 0,
+   "leaveInert": true,
+   "bar400": 0.6666666947675673,
+   "leave400": 0,
+   "h2": "3ステップの2番目 · 日程"
+  },
+  "s23": {
+   "at": 81.60000002384186,
+   "enterN": 1,
+   "leaveN": 0,
+   "enterRun": 0,
+   "leaveRun": 0,
+   "leaveInert": true,
+   "bar400": 1,
+   "leave400": 0,
+   "h2": "3ステップの3番目 · 連絡先"
+  },
+  "s32back": {
+   "at": 81.69999998807907,
+   "enterN": 1,
+   "leaveN": 0,
+   "enterRun": 0,
+   "leaveRun": 0,
+   "leaveInert": true,
+   "bar400": 0.6666666947675673,
+   "leave400": 0,
+   "h2": "3ステップの2番目 · 日程"
+  },
+  "s23b": {
+   "at": 81.59999996423721,
+   "enterN": 1,
+   "leaveN": 0,
+   "enterRun": 0,
+   "leaveRun": 0,
+   "leaveInert": true,
+   "bar400": 1,
+   "leave400": 0,
+   "h2": "3ステップの3番目 · 連絡先"
+  },
+  "doneMid": [],
+  "done1000": {
+   "n": 0,
+   "states": [],
+   "notice": "登録前のため、お申し込みは保存・返信されません。",
+   "text": "体験が完了しました\n\n登録前のため、お申し込みは保存・返信されません。\n\n入力を確認しました。保存されておらず、返信はありません。\n\nホームへ"
+  },
+  "doneElapsed": 979,
+  "postStatus": 200,
+  "runningNow": 0
+ }
+}

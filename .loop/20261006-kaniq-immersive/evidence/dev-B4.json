@@ -1,0 +1,106 @@
+[
+  {
+    "lang": "ko",
+    "value": 0,
+    "aria": "D0 — 진료 당일",
+    "column": "D0",
+    "activities": [],
+    "today": [],
+    "row": 0,
+    "focus": "3px"
+  },
+  {
+    "lang": "ko",
+    "value": 3,
+    "aria": "D3 — 회복과 문화",
+    "column": "D3",
+    "activities": [
+      "찜질방",
+      "온천 당일 여행",
+      "매운 음식",
+      "한복으로 경복궁"
+    ],
+    "today": [
+      "찜질방",
+      "온천 당일 여행",
+      "매운 음식",
+      "한복으로 경복궁"
+    ],
+    "row": 2,
+    "focus": "3px"
+  },
+  {
+    "lang": "ko",
+    "value": 6,
+    "aria": "D6 — 의료진 경과 확인 후",
+    "column": "D6",
+    "activities": [
+      "찜질방",
+      "온천 당일 여행",
+      "매운 음식",
+      "한복으로 경복궁",
+      "1박 템플스테이"
+    ],
+    "today": [
+      "찜질방",
+      "온천 당일 여행",
+      "매운 음식",
+      "한복으로 경복궁",
+      "1박 템플스테이"
+    ],
+    "row": 3,
+    "focus": "3px"
+  },
+  {
+    "lang": "en",
+    "value": 0,
+    "aria": "D0 — Treatment day",
+    "column": "D0",
+    "activities": [],
+    "today": [],
+    "row": 0,
+    "focus": "3px"
+  },
+  {
+    "lang": "en",
+    "value": 3,
+    "aria": "D3 — Recovery and culture",
+    "column": "D3",
+    "activities": [
+      "Jjimjilbang",
+      "Hot spring day trip",
+      "Spicy food",
+      "Gyeongbokgung in hanbok"
+    ],
+    "today": [
+      "Jjimjilbang",
+      "Hot spring day trip",
+      "Spicy food",
+      "Gyeongbokgung in hanbok"
+    ],
+    "row": 2,
+    "focus": "3px"
+  },
+  {
+    "lang": "en",
+    "value": 6,
+    "aria": "D6 — After your doctor’s check",
+    "column": "D6",
+    "activities": [
+      "Jjimjilbang",
+      "Hot spring day trip",
+      "Spicy food",
+      "Gyeongbokgung in hanbok",
+      "Overnight templestay"
+    ],
+    "today": [
+      "Jjimjilbang",
+      "Hot spring day trip",
+      "Spicy food",
+      "Gyeongbokgung in hanbok",
+      "Overnight templestay"
+    ],
+    "row": 3,
+    "focus": "3px"
+  }
+]
