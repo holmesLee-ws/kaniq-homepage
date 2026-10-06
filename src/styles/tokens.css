@@ -1,0 +1,29 @@
+:root {
+  --paper: #f1f5f2;
+  --mist: #dce8e1;
+  --celadon: #9cc3b2;
+  --pine: #23453f;
+  --ink: #17252b;
+  --ok: #f3c14b;
+  --stop: #c9d6cf;
+  --line: rgba(23, 37, 43, 0.14);
+  --font:
+    var(--font-schibsted), system-ui, -apple-system, "Apple SD Gothic Neo",
+    sans-serif;
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.4vw, 1.375rem);
+  --step-2: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --step-3: clamp(2.2rem, 1.5rem + 2.2vw, 3.3rem);
+  --wrap: min(1200px, 100% - 2.5rem);
+}
+:root {
+  --text-2: #33464c;
+  --text-3: #4c5e63;
+  --none: #5e6e68;
+  --wait-line: #8a9a93;
+  --radius-lg: 28px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+  color-scheme: light;
+}

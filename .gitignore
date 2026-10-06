@@ -1,0 +1,9 @@
+node_modules/
+.next/
+next-env.d.ts
+.vercel/
+*.tsbuildinfo
+/evidence/
+.qa-tmp/
+.loop/
+.lessons/
