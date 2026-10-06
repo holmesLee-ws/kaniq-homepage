@@ -13,7 +13,7 @@ it("CTA ownership, preview mode and public copy guards", () => {
     if (file.endsWith(".tsx")) {
       if (!file.includes("/cta/"))
         expect(text).not.toMatch(
-          /className=["\x27][^"\x27]*\bcta\b|className=\{`[^`]*\bcta\b/,
+          /className\s*=\s*(?:["'][^"']*\bcta\b|\{\s*(?:["'][^"']*\bcta\b|`[^`]*\bcta\b))/,
         );
       expect(text).not.toMatch(/href=["']#["']/);
     }

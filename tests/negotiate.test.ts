@@ -20,5 +20,7 @@ describe("language negotiation", () => {
     ["ja;q=abc, id", "id"],
     ["en;q=0.5, ja;q=0.5", "en"],
     ["ko;q=2,id", "id"],
+    ["ja ;q=0.9", "ja"],
+    ["ko ; q=0.5, en;q=0.4", "ko"],
   ])("%s → %s", (header, lang) => expect(negotiateLanguage(header)).toBe(lang));
 });

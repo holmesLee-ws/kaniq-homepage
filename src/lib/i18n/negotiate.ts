@@ -6,7 +6,7 @@ export function negotiateLanguage(header: string | null): Lang {
       const [tag, ...params] = part.trim().toLowerCase().split(";");
       const quality = params.find((p) => p.trim().startsWith("q="));
       const q = quality === undefined ? 1 : Number(quality.trim().slice(2));
-      return { tag, q, index };
+      return { tag: tag.trim(), q, index };
     })
     .filter(
       ({ tag, q }) => tag !== "*" && Number.isFinite(q) && q > 0 && q <= 1,
