@@ -1499,3 +1499,16 @@ html:lang(mn) body {
     right: 24px;
   }
 }
+
+/* Keep localized hero phrases and Korean words intact across line breaks. */
+.hero h1:lang(ja) {
+  font-size: clamp(2.2rem, 1.5rem + 2vw, 3rem);
+}
+.hero h1:lang(ja) > span {
+  white-space: nowrap;
+}
+.hero h1:lang(ko),
+.hero h1:lang(ko) > span {
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
