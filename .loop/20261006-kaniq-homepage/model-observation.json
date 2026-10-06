@@ -1,0 +1,38 @@
+{
+  "observation_id": "53ae6702236f9d2afec76e0a",
+  "recorded_at": "2026-10-06T12:06:27.305167+00:00",
+  "project_hash": "f7461fa70fb07ae8",
+  "run": "20261006-kaniq-homepage",
+  "shape": "feature",
+  "review_tier": "standard",
+  "developer": {
+    "tui": "codex",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "context": "1.05M"
+  },
+  "developer_final": {
+    "tui": "codex",
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "context": "1.05M"
+  },
+  "escalated": false,
+  "completed": true,
+  "first_pass": false,
+  "developer_rounds": 4,
+  "developer_seconds": 2857,
+  "reviewer_rounds": 8,
+  "qa_rounds": 4,
+  "reviewer_changes": true,
+  "qa_failed": false,
+  "qa_fail_rounds": 0,
+  "user_interventions": 1,
+  "credits": null,
+  "input_tokens": 14821844,
+  "cached_input_tokens": 14438144,
+  "output_tokens": 79711,
+  "developer_cost_usd": 3.0083,
+  "run_cost_usd": 21.2099,
+  "run_wall_s": 7507
+}

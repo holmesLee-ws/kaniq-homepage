@@ -1,0 +1,618 @@
+{
+  "id": "53ae6702236f9d2afec76e0a",
+  "project_hash": "f7461fa70fb07ae8",
+  "run": "20261006-kaniq-homepage",
+  "recorded_at": "2026-10-06T12:06:24.086606+00:00",
+  "size": "L",
+  "size_initial": "L",
+  "shape": "feature",
+  "review_tier": "standard",
+  "mode": "default",
+  "completed": true,
+  "source": "run",
+  "user_interventions": 1,
+  "estimate": {
+    "size": "L",
+    "reason": "그린필드 독립 앱(DB·외부 통합 없음, 규칙 9 → L): Next.js 신규 구축 + 5개 언어권 홈(i18n 라우팅·현지화 콘텐츠) + 인터랙티브 여정 플래너 + 견적 폼/API + Vercel 신규 배포. 브라우저 판정 항목 다수(규칙 12 신호는 L에 포함)",
+    "mode": "default",
+    "shape": "feature",
+    "estimated_at": 1791280220,
+    "browser_items": 7,
+    "rework": {
+      "share": 89,
+      "cost_x": 2.0,
+      "n": 105
+    },
+    "rounds": {
+      "developer": {
+        "p50": 3.0,
+        "low": 2.0,
+        "high": 5.0,
+        "p80": 5.0,
+        "n": 105
+      },
+      "review_qa": {
+        "p50": 4.0,
+        "low": 2.0,
+        "high": 7.0,
+        "p80": 8.0,
+        "n": 105
+      }
+    },
+    "wall_s": {
+      "p50": 14194.0,
+      "low": 8641.0,
+      "high": 25498.0,
+      "p80": 32005.6,
+      "basis": "history",
+      "n": 105
+    },
+    "tokens_total": {
+      "p50": 173438501.5,
+      "low": 106282088.0,
+      "high": 372855650.0,
+      "p80": 479347862.6,
+      "basis": "history",
+      "n": 94
+    },
+    "cost_usd": {
+      "p50": 109.7213,
+      "low": 52.101,
+      "high": 158.7005,
+      "p80": 159.68815999999998,
+      "basis": "history",
+      "n": 29,
+      "era": "era"
+    },
+    "scope": "size=L,mode=default",
+    "basis": "history"
+  },
+  "actual": {
+    "measured_at": 1791288384,
+    "start": 1791280875,
+    "end": 1791288382,
+    "wall_s": 7507,
+    "worker_s": 7825,
+    "tokens_total": 41097684,
+    "cost_usd": 21.2099,
+    "rounds": {
+      "reviewer": 8,
+      "designer": 1,
+      "developer": 4,
+      "qa": 4,
+      "releaser": 3
+    },
+    "diff": {
+      "files": 71,
+      "lines": 14062,
+      "risk": false,
+      "deps": true
+    },
+    "usage": {
+      "sessions": [
+        {
+          "tui": "claude",
+          "role": "designer",
+          "session": "ad148602-bcf6-4113-9fc9-c2d8dda749a1",
+          "models": {
+            "claude-opus-5-5": {
+              "input": 58,
+              "cache_read": 3401957,
+              "cache_write_5m": 0,
+              "cache_write_1h": 200331,
+              "output": 69716
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 58,
+            "cache_read": 3401957,
+            "cache_write_5m": 0,
+            "cache_write_1h": 200331,
+            "output": 69716
+          },
+          "tokens_total": 3672062,
+          "cost_usd": 3.6776
+        },
+        {
+          "tui": "codex",
+          "role": "developer",
+          "session": "01a110ad-a646-7440-af33-5b36b9ddad55",
+          "models": {
+            "gpt-6.1-sol": {
+              "input": 336035,
+              "cache_read": 13785344,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 74922
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 336035,
+            "cache_read": 13785344,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 74922
+          },
+          "tokens_total": 14196301,
+          "cost_usd": 2.7998
+        },
+        {
+          "tui": "codex",
+          "role": "developer",
+          "session": "01a1110f-b92f-7dd2-884d-39d4b5db4f95",
+          "models": {
+            "gpt-6.1-sol": {
+              "input": 47665,
+              "cache_read": 652800,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 4789
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 47665,
+            "cache_read": 652800,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 4789
+          },
+          "tokens_total": 705254,
+          "cost_usd": 0.2085
+        },
+        {
+          "tui": "claude",
+          "role": "qa",
+          "session": "04f07e1d-0feb-4996-a854-bd5458550445",
+          "models": {
+            "claude-opus-5-5": {
+              "input": 38,
+              "cache_read": 1287974,
+              "cache_write_5m": 0,
+              "cache_write_1h": 70986,
+              "output": 10170
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 38,
+            "cache_read": 1287974,
+            "cache_write_5m": 0,
+            "cache_write_1h": 70986,
+            "output": 10170
+          },
+          "tokens_total": 1369168,
+          "cost_usd": 1.029
+        },
+        {
+          "tui": "claude",
+          "role": "qa",
+          "session": "d3bed151-e624-4d49-b43f-08f979127625",
+          "models": {
+            "claude-opus-5-5": {
+              "input": 36,
+              "cache_read": 1185664,
+              "cache_write_5m": 0,
+              "cache_write_1h": 74457,
+              "output": 14029
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 36,
+            "cache_read": 1185664,
+            "cache_write_5m": 0,
+            "cache_write_1h": 74457,
+            "output": 14029
+          },
+          "tokens_total": 1274186,
+          "cost_usd": 1.1135
+        },
+        {
+          "tui": "claude",
+          "role": "qa",
+          "session": "d6c5f776-a562-4f0c-b86b-fa8bd729ced6",
+          "models": {
+            "claude-opus-5-5": {
+              "input": 52,
+              "cache_read": 2325816,
+              "cache_write_5m": 0,
+              "cache_write_1h": 109131,
+              "output": 18839
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 52,
+            "cache_read": 2325816,
+            "cache_write_5m": 0,
+            "cache_write_1h": 109131,
+            "output": 18839
+          },
+          "tokens_total": 2453838,
+          "cost_usd": 1.7152
+        },
+        {
+          "tui": "claude",
+          "role": "qa",
+          "session": "e065c6fe-e778-4881-b72a-1472b86036cb",
+          "models": {
+            "claude-opus-5-5": {
+              "input": 78,
+              "cache_read": 4322875,
+              "cache_write_5m": 0,
+              "cache_write_1h": 150347,
+              "output": 37594
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 78,
+            "cache_read": 4322875,
+            "cache_write_5m": 0,
+            "cache_write_1h": 150347,
+            "output": 37594
+          },
+          "tokens_total": 4510894,
+          "cost_usd": 2.8195
+        },
+        {
+          "tui": "codex",
+          "role": "releaser",
+          "session": "01a110f1-ca6b-7493-bf02-3c58e85871ea",
+          "models": {
+            "gpt-6.1-sol": {
+              "input": 65521,
+              "cache_read": 1050880,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 6403
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 65521,
+            "cache_read": 1050880,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 6403
+          },
+          "tokens_total": 1122804,
+          "cost_usd": 0.3002
+        },
+        {
+          "tui": "codex",
+          "role": "releaser",
+          "session": "01a11104-1da7-7ec2-976f-fd8e19625c97",
+          "models": {
+            "gpt-6.1-sol": {
+              "input": 83467,
+              "cache_read": 960768,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 5049
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 83467,
+            "cache_read": 960768,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 5049
+          },
+          "tokens_total": 1049284,
+          "cost_usd": 0.3135
+        },
+        {
+          "tui": "codex",
+          "role": "releaser",
+          "session": "01a11118-3845-71a0-8637-1cd03601708a",
+          "models": {
+            "gpt-6.1-sol": {
+              "input": 51774,
+              "cache_read": 649472,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 3910
+            }
+          },
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 51774,
+            "cache_read": 649472,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 3910
+          },
+          "tokens_total": 705156,
+          "cost_usd": 0.2076
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a110ab-d156-7343-9220-d249f6b8cfa1",
+          "models": {
+            "grok-4.7-build": {
+              "input": 169836,
+              "cache_read": 2677504,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 43069
+            }
+          },
+          "reported_cost_usd": 0.6585,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 169836,
+            "cache_read": 2677504,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 43069
+          },
+          "tokens_total": 2890409,
+          "cost_usd": 1.9368
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a110bf-a6a0-79f2-8b7e-aea2a4c86b86",
+          "models": {
+            "grok-4.7-build": {
+              "input": 127074,
+              "cache_read": 2554624,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 37394
+            }
+          },
+          "reported_cost_usd": 0.597,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 127074,
+            "cache_read": 2554624,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 37394
+          },
+          "tokens_total": 2719092,
+          "cost_usd": 1.7558
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a110ee-c4b9-7db2-bdf6-61b8a7c5bfaf",
+          "models": {
+            "grok-4.7-build": {
+              "input": 115471,
+              "cache_read": 530048,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 11123
+            }
+          },
+          "reported_cost_usd": 0.1913,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 115471,
+            "cache_read": 530048,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 11123
+          },
+          "tokens_total": 656642,
+          "cost_usd": 0.5627
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a110ff-60cd-7961-9c00-38329838a248",
+          "models": {
+            "grok-4.7-build": {
+              "input": 85546,
+              "cache_read": 995840,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 22275
+            }
+          },
+          "reported_cost_usd": 0.2729,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 85546,
+            "cache_read": 995840,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 22275
+          },
+          "tokens_total": 1103661,
+          "cost_usd": 0.8027
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a1110b-032f-7593-85d0-15a27a122a83",
+          "models": {
+            "grok-4.7-build": {
+              "input": 98659,
+              "cache_read": 1116800,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 20543
+            }
+          },
+          "reported_cost_usd": 0.2989,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 98659,
+            "cache_read": 1116800,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 20543
+          },
+          "tokens_total": 1236002,
+          "cost_usd": 0.879
+        },
+        {
+          "tui": "grok",
+          "role": "reviewer",
+          "session": "01a11112-8c48-7e22-89d1-957061830632",
+          "models": {
+            "grok-4.7-build": {
+              "input": 165324,
+              "cache_read": 1245056,
+              "cache_write_5m": 0,
+              "cache_write_1h": 0,
+              "output": 22551
+            }
+          },
+          "reported_cost_usd": 0.3701,
+          "long_context_usd": 0.0,
+          "tokens": {
+            "input": 165324,
+            "cache_read": 1245056,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 22551
+          },
+          "tokens_total": 1432931,
+          "cost_usd": 1.0885
+        }
+      ],
+      "by_role": {
+        "qa": {
+          "sessions": 4,
+          "tokens": {
+            "input": 204,
+            "cache_read": 9122329,
+            "cache_write_5m": 0,
+            "cache_write_1h": 404921,
+            "output": 80632
+          },
+          "tokens_total": 9608086,
+          "cost_usd": 6.6772,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        },
+        "designer": {
+          "sessions": 1,
+          "tokens": {
+            "input": 58,
+            "cache_read": 3401957,
+            "cache_write_5m": 0,
+            "cache_write_1h": 200331,
+            "output": 69716
+          },
+          "tokens_total": 3672062,
+          "cost_usd": 3.6776,
+          "models": [
+            "claude-opus-5-5"
+          ]
+        },
+        "developer": {
+          "sessions": 2,
+          "tokens": {
+            "input": 383700,
+            "cache_read": 14438144,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 79711
+          },
+          "tokens_total": 14901555,
+          "cost_usd": 3.0083,
+          "models": [
+            "gpt-6.1-sol"
+          ]
+        },
+        "releaser": {
+          "sessions": 3,
+          "tokens": {
+            "input": 200762,
+            "cache_read": 2661120,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 15362
+          },
+          "tokens_total": 2877244,
+          "cost_usd": 0.8213,
+          "models": [
+            "gpt-6.1-sol"
+          ]
+        },
+        "reviewer": {
+          "sessions": 6,
+          "tokens": {
+            "input": 761910,
+            "cache_read": 9119872,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0,
+            "output": 156955
+          },
+          "tokens_total": 10038737,
+          "cost_usd": 7.0255,
+          "models": [
+            "grok-4.7-build"
+          ]
+        }
+      },
+      "tokens": {
+        "input": 1346634,
+        "cache_read": 38743422,
+        "cache_write_5m": 0,
+        "cache_write_1h": 605252,
+        "output": 402376
+      },
+      "tokens_total": 41097684,
+      "tokens_by_model": {
+        "claude-opus-5-5": {
+          "input": 262,
+          "cache_read": 12524286,
+          "cache_write_5m": 0,
+          "cache_write_1h": 605252,
+          "output": 150348
+        },
+        "gpt-6.1-sol": {
+          "input": 584462,
+          "cache_read": 17099264,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "output": 95073
+        },
+        "grok-4.7-build": {
+          "input": 761910,
+          "cache_read": 9119872,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "output": 156955
+        }
+      },
+      "long_context_usd": 0.0,
+      "long_context_hits": 0,
+      "grok_tick_anomalies": 0,
+      "cost_usd": 21.2099,
+      "unpriced_models": [],
+      "orchestrator_found": false
+    },
+    "pace_marks": []
+  },
+  "delta": {
+    "wall_s": {
+      "error_pct": -47.1,
+      "within_range": false,
+      "within_budget": true
+    },
+    "tokens_total": {
+      "error_pct": -76.3,
+      "within_range": false,
+      "within_budget": true
+    },
+    "cost_usd": {
+      "error_pct": -80.7,
+      "within_range": false,
+      "within_budget": true
+    }
+  }
+}

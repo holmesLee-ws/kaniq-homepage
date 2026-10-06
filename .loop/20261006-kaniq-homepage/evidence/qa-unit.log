@@ -1,0 +1,82 @@
+
+ RUN  v5.0.3 /private/tmp/leh-20261006-kaniq-homepage-qa-cand
+
+ ✓ tests/negotiate.test.ts > language negotiation > en → en 1ms
+ ✓ tests/negotiate.test.ts > language negotiation > ja → ja 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > id → id 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > mn → mn 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko-KR → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=0.1, en;q=0.9 → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > fr → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > null → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation >  → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > * → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > KO → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > mn-MN → mn 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > zh-CN,ko;q=0.5 → ko 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=0, ja;q=0.1 → ja 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ja;q=abc, id → id 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > en;q=0.5, ja;q=0.5 → en 0ms
+ ✓ tests/negotiate.test.ts > language negotiation > ko;q=2,id → id 0ms
+ ✓ tests/quote-schema.test.ts > valid input is trimmed, unknown keys removed, optional fields absent 2ms
+ ✓ tests/quote-schema.test.ts > requires lang 0ms
+ ✓ tests/quote-schema.test.ts > requires interest 0ms
+ ✓ tests/quote-schema.test.ts > requires timing 0ms
+ ✓ tests/quote-schema.test.ts > requires name 0ms
+ ✓ tests/quote-schema.test.ts > requires contactMethod 0ms
+ ✓ tests/quote-schema.test.ts > requires contact 0ms
+ ✓ tests/quote-schema.test.ts > requires consent 0ms
+ ✓ tests/quote-schema.test.ts > rejects lang 1ms
+ ✓ tests/quote-schema.test.ts > rejects interest 0ms
+ ✓ tests/quote-schema.test.ts > rejects timing 0ms
+ ✓ tests/quote-schema.test.ts > rejects name 0ms
+ ✓ tests/quote-schema.test.ts > rejects contact 0ms
+ ✓ tests/quote-schema.test.ts > rejects contactMethod 0ms
+ ✓ tests/quote-schema.test.ts > rejects consent 0ms
+ ✓ tests/quote-schema.test.ts > rejects consent 0ms
+ ✓ tests/quote-schema.test.ts > rejects pickup 0ms
+ ✓ tests/quote-schema.test.ts > rejects stay 0ms
+ ✓ tests/quote-schema.test.ts > rejects residence 0ms
+ ✓ tests/quote-schema.test.ts > steps validate only their own fields 0ms
+ ✓ tests/guards.test.ts > CTA ownership, preview mode and public copy guards 12ms
+ ✓ tests/quote-route.test.ts > valid, invalid, malformed and oversized requests never log or transmit body 26ms
+ ✓ tests/seo.test.ts > canonical, all language alternatives, x-default and sitemap 2ms
+ ✓ tests/proxy.test.ts > root redirect ko-KR 2ms
+ ✓ tests/proxy.test.ts > root redirect null 0ms
+ ✓ tests/launch.test.ts > en preview/live launch projection 1ms
+ ✓ tests/launch.test.ts > ja preview/live launch projection 0ms
+ ✓ tests/launch.test.ts > id preview/live launch projection 0ms
+ ✓ tests/launch.test.ts > mn preview/live launch projection 0ms
+ ✓ tests/launch.test.ts > ko preview/live launch projection 0ms
+ ✓ tests/planner.test.ts > en > treatment changes title, activities and price while retaining days 2ms
+ ✓ tests/planner.test.ts > en > days change skeleton but retain price 0ms
+ ✓ tests/planner.test.ts > en > travelers change subtitle and accommodation only 0ms
+ ✓ tests/planner.test.ts > en > all eligible activities carry correctly classified badges 1ms
+ ✓ tests/planner.test.ts > ja > treatment changes title, activities and price while retaining days 0ms
+ ✓ tests/planner.test.ts > ja > days change skeleton but retain price 0ms
+ ✓ tests/planner.test.ts > ja > travelers change subtitle and accommodation only 0ms
+ ✓ tests/planner.test.ts > ja > all eligible activities carry correctly classified badges 0ms
+ ✓ tests/planner.test.ts > id > treatment changes title, activities and price while retaining days 0ms
+ ✓ tests/planner.test.ts > id > days change skeleton but retain price 0ms
+ ✓ tests/planner.test.ts > id > travelers change subtitle and accommodation only 0ms
+ ✓ tests/planner.test.ts > id > all eligible activities carry correctly classified badges 0ms
+ ✓ tests/planner.test.ts > mn > treatment changes title, activities and price while retaining days 0ms
+ ✓ tests/planner.test.ts > mn > days change skeleton but retain price 0ms
+ ✓ tests/planner.test.ts > mn > travelers change subtitle and accommodation only 0ms
+ ✓ tests/planner.test.ts > mn > all eligible activities carry correctly classified badges 0ms
+ ✓ tests/planner.test.ts > ko > treatment changes title, activities and price while retaining days 0ms
+ ✓ tests/planner.test.ts > ko > days change skeleton but retain price 0ms
+ ✓ tests/planner.test.ts > ko > travelers change subtitle and accommodation only 0ms
+ ✓ tests/planner.test.ts > ko > all eligible activities carry correctly classified badges 0ms
+ ✓ tests/dictionary.test.ts > en dictionary matches localization fixture and sections 5ms
+ ✓ tests/dictionary.test.ts > ja dictionary matches localization fixture and sections 2ms
+ ✓ tests/dictionary.test.ts > id dictionary matches localization fixture and sections 3ms
+ ✓ tests/dictionary.test.ts > mn dictionary matches localization fixture and sections 2ms
+ ✓ tests/dictionary.test.ts > ko dictionary matches localization fixture and sections 2ms
+
+ Test Files  9 passed (9)
+      Tests  73 passed (73)
+   Start at  20:03:18
+   Duration  251ms (transform 68%, import 19%, tests 10%, worker 3%)
+

@@ -1,0 +1,31 @@
+# A1 curl — base http://localhost:3100, commit 4be4286, 2026-10-06 20:03:11 KST
+en                     307 http://localhost:3100/en
+ja                     307 http://localhost:3100/ja
+id                     307 http://localhost:3100/id
+mn                     307 http://localhost:3100/mn
+ko                     307 http://localhost:3100/ko
+ko-KR                  307 http://localhost:3100/ko
+ko;q=0.1, en;q=0.9     307 http://localhost:3100/en
+fr                     307 http://localhost:3100/en
+(none)                 307 http://localhost:3100/en
+## vary
+vary: Accept-Language
+## homes
+en 200 <html lang="en"
+ja 200 <html lang="ja"
+id 200 <html lang="id"
+mn 200 <html lang="mn"
+ko 200 <html lang="ko"
+## quotes
+en 200 <html lang="en"
+ja 200 <html lang="ja"
+id 200 <html lang="id"
+mn 200 <html lang="mn"
+ko 200 <html lang="ko"
+## phase2
+hi 404
+ru 404
+vi 404
+zh 404
+es 404
+th 404

@@ -1,0 +1,25 @@
+# A4/A9 guards — commit 4be4286d59ea116bedaf1034284b0106871bd4f2, origin/main 75c7c73f1c4b87984fbd11e323a149578c53e898, 2026-10-06 20:03:42 KST
+$ rg -n -w -e [내부수치] -e [내부수치] -e [내부수치] -e [내부수치] -e [내부수치] -e 수수료율 -e commission rate -e referral rate src/content
+exit: 1
+
+$ rg -n -i -w -e best -e guarantee -e guaranteed -e No\.1 -e half the cost -e before and after -e cheapest src
+exit: 1
+
+$ rg -n -e 최고 -e 보장 -e 줄기세포 -e 전후 -e 保証 -e 最高 -e stem cell src
+exit: 1
+
+$ rg -n -e [내부수치] -e [내부수치] -e [내부수치] -e [내부수치] -e CPL -e [내부수치] src README.md
+exit: 1
+
+$ git diff origin/main -- design/drafts | wc -c
+       0
+## 추가(QA): 리포 전체 내부 수치 탐색 (.loop 제외)
+$ rg -n --hidden -g !.loop -g !node_modules -g !.next -g !package-lock.json -e [내부수치] -e [내부수치] -e [내부수치] -e CPL -e [내부수치] -e [내부수치] -e [내부수치] .
+./tests/guards.test.ts:28:    expect(text).not.toMatch(/[내부수치]|[내부수치]|[내부수치]|[내부수치]|CPL|[내부수치]/);
+./tests/guards.test.ts:31:    /[내부수치]|[내부수치]|[내부수치]|[내부수치]|CPL|[내부수치]/,
+exit: 0
+
+## 추가(QA): src/content 내 % 기호
+$ rg -n % src/content
+exit: 1
+

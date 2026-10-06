@@ -1,0 +1,440 @@
+[
+  {
+    "A2": [
+      {
+        "title": "Dental implants, 7 days",
+        "sub": "For 2 travelers, arriving at Incheon",
+        "price": "₩2.4M–3.2M",
+        "days": [
+          "D-1",
+          "D0",
+          "D1–2",
+          "D3–5",
+          "D6"
+        ],
+        "room": "Stay\nTwin room near your hospital"
+      },
+      {
+        "title": "LASIK, 10 days",
+        "sub": "For 1 traveler, arriving at Incheon",
+        "price": "₩1.6M–2.4M",
+        "days": [
+          "D-1",
+          "D0",
+          "D1–2",
+          "D3–5",
+          "D6–8",
+          "D9"
+        ],
+        "room": "Stay\nHotel near your hospital"
+      },
+      {
+        "title": "Women’s health, 5 days",
+        "sub": "For a group, arriving at Incheon",
+        "price": "₩3.0M–5.0M",
+        "days": [
+          "D-1",
+          "D0",
+          "D1–2",
+          "D3",
+          "D4"
+        ],
+        "room": "Stay\nFamily residence near your hospital"
+      }
+    ],
+    "keyboard": "Tab / ArrowRight / ArrowLeft / Space passed",
+    "sameURL": "http://localhost:3000/en"
+  },
+  {
+    "A2recipe": 1440,
+    "base": {
+      "title": "Dental implants, 7 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩2.4M–3.2M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3–5",
+        "D6"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "screen": {
+      "title": "Health screening, 7 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3–5",
+        "D6"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "short": {
+      "title": "Health screening, 5 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3",
+        "D4"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "group": {
+      "title": "Health screening, 5 days",
+      "sub": "For a group, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3",
+        "D4"
+      ],
+      "room": "Stay\nFamily residence near your hospital"
+    }
+  },
+  {
+    "A2recipe": 390,
+    "base": {
+      "title": "Dental implants, 7 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩2.4M–3.2M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3–5",
+        "D6"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "screen": {
+      "title": "Health screening, 7 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3–5",
+        "D6"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "short": {
+      "title": "Health screening, 5 days",
+      "sub": "For 2 travelers, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3",
+        "D4"
+      ],
+      "room": "Stay\nTwin room near your hospital"
+    },
+    "group": {
+      "title": "Health screening, 5 days",
+      "sub": "For a group, arriving at Incheon",
+      "price": "₩0.5M–1.5M",
+      "days": [
+        "D-1",
+        "D0",
+        "D1–2",
+        "D3",
+        "D4"
+      ],
+      "room": "Stay\nFamily residence near your hospital"
+    }
+  },
+  {
+    "A3": "en",
+    "h1": "Care your insurance won’t cover, planned in Korea.",
+    "priority": [
+      "Dental implants",
+      "LASIK",
+      "Health screening",
+      "Fertility consultation"
+    ],
+    "messenger": "Chat on WhatsApp\nOpens at launch"
+  },
+  {
+    "A3": "ja",
+    "h1": "ソウルまで2時間。精密検診も歯科も、週末で。",
+    "priority": [
+      "健康診断・人間ドック",
+      "歯科",
+      "女性のウェルネス"
+    ],
+    "messenger": "LINEで相談\n正式公開時に開始"
+  },
+  {
+    "A3": "id",
+    "h1": "Perjalanan cek kesehatan yang aman, bersama seluruh keluarga.",
+    "priority": [
+      "Pemeriksaan kesehatan",
+      "Perawatan gigi",
+      "Kesehatan wanita"
+    ],
+    "messenger": "Konsultasi via WhatsApp\nDibuka saat peluncuran"
+  },
+  {
+    "A3": "mn",
+    "h1": "Солонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.",
+    "priority": [
+      "Эрүүл мэндийн үзлэг",
+      "Эмэгтэйчүүдийн эрүүл мэнд",
+      "Хүнд өвчний эмнэлэгт илгээх"
+    ],
+    "messenger": "Messenger-ээр зөвлөгөө\nНээлтийн үед эхэлнэ"
+  },
+  {
+    "A3": "ko",
+    "h1": "동포와 유학생의 검진부터 기관 제휴까지, 한국어로.",
+    "priority": [
+      "유학생 검진",
+      "치과",
+      "안과"
+    ],
+    "messenger": "KakaoTalk 상담\n출시 때 열림"
+  },
+  {
+    "A3switch": "Escape / outside click / focusout / quote subpath all passed"
+  },
+  {
+    "A4": {
+      "total": "₩0",
+      "sampleBadges": 4
+    },
+    "A5": {
+      "templates": 6,
+      "giveOptions": 4,
+      "steps": 4,
+      "organizations": 4,
+      "ambassadorKeyboard": true
+    }
+  },
+  {
+    "A6": "Q1-Q12 passed including offline, intercepted 422, actual POST 200",
+    "response": {
+      "ok": true
+    },
+    "done": "体験が完了しました\n\n登録前のため、お申し込みは保存・返信されません。\n\n入力を確認しました。保存されておらず、返信はありません。\n\nホームへ"
+  },
+  {
+    "A7widths": [
+      {
+        "route": "/en",
+        "width": 390,
+        "menuOpen": false,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/en",
+        "width": 390,
+        "menuOpen": true,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/en",
+        "width": 768,
+        "menuOpen": false,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/en",
+        "width": 768,
+        "menuOpen": true,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/en",
+        "width": 1440,
+        "menuOpen": false,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      {
+        "route": "/en",
+        "width": 1440,
+        "menuOpen": true,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      {
+        "route": "/mn",
+        "width": 390,
+        "menuOpen": false,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/mn",
+        "width": 390,
+        "menuOpen": true,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/mn",
+        "width": 768,
+        "menuOpen": false,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/mn",
+        "width": 768,
+        "menuOpen": true,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/mn",
+        "width": 1440,
+        "menuOpen": false,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      {
+        "route": "/mn",
+        "width": 1440,
+        "menuOpen": true,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      {
+        "route": "/en/quote",
+        "width": 390,
+        "menuOpen": false,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/en/quote",
+        "width": 390,
+        "menuOpen": true,
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      {
+        "route": "/en/quote",
+        "width": 768,
+        "menuOpen": false,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/en/quote",
+        "width": 768,
+        "menuOpen": true,
+        "scrollWidth": 768,
+        "innerWidth": 768
+      },
+      {
+        "route": "/en/quote",
+        "width": 1440,
+        "menuOpen": false,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      {
+        "route": "/en/quote",
+        "width": 1440,
+        "menuOpen": true,
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      }
+    ]
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "Skip to content",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "KANIQ",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "Find care",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "Your journey",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "Refer someone",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "A",
+      "text": "Trust",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "SUMMARY",
+      "text": "English",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7focus": {
+      "tag": "INPUT",
+      "text": "",
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "A7reduced": {
+      "seal": "none",
+      "transition": "0s",
+      "scroll": "auto"
+    },
+    "chipFocus": {
+      "outline": "3px",
+      "style": "solid"
+    }
+  },
+  {
+    "pageErrors": []
+  }
+]

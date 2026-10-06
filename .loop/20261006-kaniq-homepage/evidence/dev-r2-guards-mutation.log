@@ -1,0 +1,167 @@
+Mutation className={"cta"}
+exit: 1
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+ ❯ tests/guards.test.ts (1 test | 1 failed) 7ms
+   × CTA ownership, preview mode and public copy guards 6ms
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  20:14:30
+   Duration  83ms (transform 44%, tests 30%, import 19%, worker 6%)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/guards.test.ts > CTA ownership, preview mode and public copy guards
+AssertionError: expected 'import { site } from "@/config/site";…' not to match /className\s*=\s*(?:["'][^"']*\bcta\b|…/
+
+- Expected:
+/className\s*=\s*(?:["'][^"']*\bcta\b|\{\s*(?:["'][^"']*\bcta\b|`[^`]*\bcta\b))/
+
++ Received:
+"import { site } from \"@/config/site\";
+import type { Dictionary } from \"@/content/types\";
+export function SiteFooter({ dict: d }: { dict: Dictionary }) {
+  return (
+    <footer className={\"cta\"}>
+      <div className=\"wrap\">
+        <div className=\"foot-grid\">
+          <div>
+            <strong className=\"logo\">{site.brand}</strong>
+            <p>{d.footer.tagline}</p>
+          </div>
+          <div>
+            <h2>{d.footer.feeTitle}</h2>
+            <ul>
+              {d.footer.fee.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2>{d.footer.privacyTitle}</h2>
+            <p>{d.footer.privacy}</p>
+          </div>
+          <div>
+            <h2>{d.footer.disputeTitle}</h2>
+            <a href={`/${d.lang}#trust-steps`}>{d.footer.dispute}</a>
+          </div>
+        </div>
+        <div className=\"reg\">
+          <span>
+            {d.footer.regMedical}: {site.registration.medicalTourism}{\" \"}
+            <span className=\"sample\">{d.trust.sample}</span>
+          </span>
+          <span>
+            {d.footer.regTravel}: {site.registration.travelAgency}{\" \"}
+            <span className=\"sample\">{d.trust.sample}</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+"
+
+ ❯ tests/guards.test.ts:15:26
+     13|     if (file.endsWith(".tsx")) {
+     14|       if (!file.includes("/cta/"))
+     15|         expect(text).not.toMatch(
+       |                          ^
+     16|           /className\s*=\s*(?:["'][^"']*\bcta\b|\{\s*(?:["'][^"']*\bct…
+     17|         );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+Mutation className={'cta cta--rogue'}
+exit: 1
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+ ❯ tests/guards.test.ts (1 test | 1 failed) 5ms
+   × CTA ownership, preview mode and public copy guards 4ms
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  20:14:31
+   Duration  80ms (transform 48%, tests 24%, import 20%, worker 8%)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/guards.test.ts > CTA ownership, preview mode and public copy guards
+AssertionError: expected 'import { site } from "@/config/site";…' not to match /className\s*=\s*(?:["'][^"']*\bcta\b|…/
+
+- Expected:
+/className\s*=\s*(?:["'][^"']*\bcta\b|\{\s*(?:["'][^"']*\bcta\b|`[^`]*\bcta\b))/
+
++ Received:
+"import { site } from \"@/config/site\";
+import type { Dictionary } from \"@/content/types\";
+export function SiteFooter({ dict: d }: { dict: Dictionary }) {
+  return (
+    <footer className={'cta cta--rogue'}>
+      <div className=\"wrap\">
+        <div className=\"foot-grid\">
+          <div>
+            <strong className=\"logo\">{site.brand}</strong>
+            <p>{d.footer.tagline}</p>
+          </div>
+          <div>
+            <h2>{d.footer.feeTitle}</h2>
+            <ul>
+              {d.footer.fee.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2>{d.footer.privacyTitle}</h2>
+            <p>{d.footer.privacy}</p>
+          </div>
+          <div>
+            <h2>{d.footer.disputeTitle}</h2>
+            <a href={`/${d.lang}#trust-steps`}>{d.footer.dispute}</a>
+          </div>
+        </div>
+        <div className=\"reg\">
+          <span>
+            {d.footer.regMedical}: {site.registration.medicalTourism}{\" \"}
+            <span className=\"sample\">{d.trust.sample}</span>
+          </span>
+          <span>
+            {d.footer.regTravel}: {site.registration.travelAgency}{\" \"}
+            <span className=\"sample\">{d.trust.sample}</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+"
+
+ ❯ tests/guards.test.ts:15:26
+     13|     if (file.endsWith(".tsx")) {
+     14|       if (!file.includes("/cta/"))
+     15|         expect(text).not.toMatch(
+       |                          ^
+     16|           /className\s*=\s*(?:["'][^"']*\bcta\b|\{\s*(?:["'][^"']*\bct…
+     17|         );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+Restored SiteFooter (byte-for-byte)
+exit: 0
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  20:14:31
+   Duration  80ms (transform 44%, tests 30%, import 19%, worker 7%)
+

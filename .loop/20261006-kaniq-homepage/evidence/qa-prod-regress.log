@@ -1,0 +1,203 @@
+# QA r3 G4 운영 회귀 — 2026-10-06T11:26:27Z base=https://kaniq-homepage.vercel.app
+## A1 redirects (HEAD /)
+AL=[en] | HTTP/2 307  | location: /en | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[ja] | HTTP/2 307  | location: /ja | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[id] | HTTP/2 307  | location: /id | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[mn] | HTTP/2 307  | location: /mn | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[ko] | HTTP/2 307  | location: /ko | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[ko-KR] | HTTP/2 307  | location: /ko | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[ko;q=0.1, en;q=0.9] | HTTP/2 307  | location: /en | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[fr] | HTTP/2 307  | location: /en | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+AL=[__none__] | HTTP/2 307  | location: /en | vary: Accept-Language | cache-control: public, max-age=0, must-revalidate
+## cache-poison check: same / twice with different AL
+AL=ja 307 https://kaniq-homepage.vercel.app/ja
+AL=ko 307 https://kaniq-homepage.vercel.app/ko
+AL=ja 307 https://kaniq-homepage.vercel.app/ja
+## homes 5 + quote 5: status, html lang, dpl
+/en 200 lang="en" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/en/quote 200 lang="en" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/ja 200 lang="ja" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/ja/quote 200 lang="ja" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/id 200 lang="id" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/id/quote 200 lang="id" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/mn 200 lang="mn" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/mn/quote 200 lang="mn" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/ko 200 lang="ko" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+/ko/quote 200 lang="ko" data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1"
+## phase2 404
+/hi 404
+/ru 404
+/vi 404
+/zh 404
+/es 404
+/th 404
+## A6 /api/quote invalid -> 422 (no valid POST)
+{"ok":false,"errors":[{"field":"lang","code":"required"},{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":"required"},{"field":"contact","code":"required"},{"field":"consent","code":"required"}]}
+HTTP 422
+{"ok":false,"errors":[{"field":"_body","code":"invalid"}]}
+HTTP 422
+{"ok":false,"errors":[{"field":"lang","code":"required"},{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":"required"},{"field":"contact","code":"required"},{"field":"consent","code":"required"}]}
+HTTP 422
+## A8 meta per home (production absolute?)
+-- /en
+<link rel="canonical" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="en" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="ja" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="id" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="mn" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="ko" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="x-default" href="https://kaniq-homepage.vercel.app/en"/>
+<meta name="description" content="Pick your care, stay and company. See how recovery and Korea fit together."/>
+<meta property="og:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<meta name="twitter:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<title>KANIQ · A home for your language</title>
+-- /ja
+<link rel="canonical" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="en" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="ja" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="id" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="mn" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="ko" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="x-default" href="https://kaniq-homepage.vercel.app/en"/>
+<meta name="description" content="診療・日数・人数を選んで、回復と韓国滞在の旅程を見てみましょう。"/>
+<meta property="og:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<meta name="twitter:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<title>KANIQ · あなたの言語のホーム</title>
+-- /id
+<link rel="canonical" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="en" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="ja" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="id" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="mn" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="ko" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="x-default" href="https://kaniq-homepage.vercel.app/en"/>
+<meta name="description" content="Pilih perawatan, lama tinggal, dan pendamping. Lihat rencana pemulihan dan kunjungan ke Korea."/>
+<meta property="og:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<meta name="twitter:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<title>KANIQ · Beranda bahasa Anda</title>
+-- /mn
+<link rel="canonical" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="en" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="ja" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="id" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="mn" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="ko" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="x-default" href="https://kaniq-homepage.vercel.app/en"/>
+<meta name="description" content="Эмчилгээ, хоног, хамт явах хүнийг сонгоод нөхөн сэргэлт болон Солонгосын аяллыг төлөвлөөрэй."/>
+<meta property="og:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<meta name="twitter:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<title>KANIQ · Таны хэлний нүүр хуудас</title>
+-- /ko
+<link rel="canonical" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="en" href="https://kaniq-homepage.vercel.app/en"/>
+<link rel="alternate" hrefLang="ja" href="https://kaniq-homepage.vercel.app/ja"/>
+<link rel="alternate" hrefLang="id" href="https://kaniq-homepage.vercel.app/id"/>
+<link rel="alternate" hrefLang="mn" href="https://kaniq-homepage.vercel.app/mn"/>
+<link rel="alternate" hrefLang="ko" href="https://kaniq-homepage.vercel.app/ko"/>
+<link rel="alternate" hrefLang="x-default" href="https://kaniq-homepage.vercel.app/en"/>
+<meta name="description" content="진료·일수·인원을 고르면 회복과 한국 여행이 하나의 여정으로 펼쳐집니다."/>
+<meta property="og:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<meta name="twitter:image" content="https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg"/>
+<title>KANIQ · 한국어를 위한 홈</title>
+## og:image fetch
+og=https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.292b0jbps96wc.jpg
+og:image 200 image/jpeg 194003B
+## sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://kaniq-homepage.vercel.app/en</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/en/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ja</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ja/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/id</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/id/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/mn</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/mn/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ko</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ko/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+</urlset>
+
+HTTP 200
+## robots.txt
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://kaniq-homepage.vercel.app/sitemap.xml
+
+HTTP 200
+## aux domain
+HTTP/2 200 
+x-matched-path: /en
+<html data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1" lang="en">
+<h1>

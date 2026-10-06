@@ -1,0 +1,96 @@
+2026-10-06T11:23:39.192334+00:00
+CASE en: PASS
+curl -sS -I https://kaniq-homepage.vercel.app/en
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 11:23:40 GMT
+etag: "03ff684a7e36e38c2ea066995f5a62c1"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /en
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: PRERENDER
+x-vercel-id: icn1::hhpz2-1791285819458-c5a1ad74e3aa
+content-length: 90711
+
+
+
+CASE ja redirect: PASS
+curl -sS -I -H Accept-Language: ja https://kaniq-homepage.vercel.app/
+HTTP/2 307 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Tue, 06 Oct 2026 11:23:40 GMT
+location: /ja
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: Accept-Language
+x-vercel-id: icn1::kkfn6-1791285820238-9bbd79e50719
+
+
+
+CASE hi: PASS
+curl -sS -I https://kaniq-homepage.vercel.app/hi
+HTTP/2 404 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="404"
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 11:23:41 GMT
+etag: "7e0babb4f4b82c3a12531619a4a5526e"
+last-modified: Tue, 06 Oct 2026 11:23:41 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /404
+x-vercel-cache: MISS
+x-vercel-id: icn1::ffg78-1791285820758-f0d8a6b98c38
+content-length: 5061
+
+
+
+CASE invalid quote: PASS
+curl -sS -i -X POST -H Content-Type: application/json --data {} https://kaniq-homepage.vercel.app/api/quote
+HTTP/2 422 
+cache-control: public, max-age=0, must-revalidate
+content-type: application/json
+date: Tue, 06 Oct 2026 11:23:41 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /api/quote
+x-vercel-cache: MISS
+x-vercel-id: icn1::iad1::l77f6-1791285821278-d600e6664590
+
+{"ok":false,"errors":[{"field":"lang","code":"required"},{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":"required"},{"field":"contact","code":"required"},{"field":"consent","code":"required"}]}
+
+CASE sitemap: PASS
+curl -sS -I https://kaniq-homepage.vercel.app/sitemap.xml
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="sitemap.xml"
+content-type: application/xml
+date: Tue, 06 Oct 2026 11:23:42 GMT
+etag: "ce41476506c57f63a45fe03975f3243e"
+last-modified: Tue, 06 Oct 2026 11:23:42 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /sitemap.xml
+x-vercel-cache: MISS
+x-vercel-id: icn1::lhhhx-1791285822269-16695d361e90
+content-length: 5393
+
+
+
+en body site identity: True; saved rel-en.html
+SUMMARY: PASS 6/6

@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 /Users/holmesmac/orca/workspaces/kaniq-homepage/kaniq-homepage-build
+
+
+ Test Files  1 passed (1)
+      Tests  20 passed (20)
+   Start at  20:14:30
+   Duration  88ms (transform 56%, import 25%, tests 11%, worker 8%)
+

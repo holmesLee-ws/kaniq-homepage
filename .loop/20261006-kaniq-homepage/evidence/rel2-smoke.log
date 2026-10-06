@@ -1,0 +1,93 @@
+/en headers=[]: expected=200, actual=200, PASS
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 11:43:20 GMT
+etag: "140390ea825cace0d874c3c73f24323b"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /en
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: PRERENDER
+x-vercel-id: icn1::8hmw2-1791286999442-2b4eb3027b79
+content-length: 90441
+
+
+/favicon.ico headers=[]: expected=200, actual=200, PASS
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="favicon.ico"
+content-type: image/vnd.microsoft.icon
+date: Tue, 06 Oct 2026 11:43:20 GMT
+etag: "d7e5b0f7fb511f647c6b090c1b3b8556"
+last-modified: Tue, 06 Oct 2026 11:43:20 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /favicon.ico
+x-vercel-cache: MISS
+x-vercel-id: icn1::2979n-1791287000525-4e9613e93f4a
+content-length: 512
+
+
+/ja headers=[]: expected=200, actual=200, PASS
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 11:43:21 GMT
+etag: "1b24c2297c8ff642fc9e48dfc1cce0b9"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /ja
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: PRERENDER
+x-vercel-id: icn1::vnb65-1791287001035-af6be3cb2647
+content-length: 91450
+
+
+/ headers=['-H', 'Accept-Language: ja']: expected=307, actual=307, PASS
+HTTP/2 307 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Tue, 06 Oct 2026 11:43:22 GMT
+location: /ja
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: Accept-Language
+x-vercel-id: icn1::zhcr8-1791287001772-b677b653fd05
+
+
+/hi headers=[]: expected=404, actual=404, PASS
+HTTP/2 404 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="404"
+content-type: text/html; charset=utf-8
+date: Tue, 06 Oct 2026 11:43:22 GMT
+etag: "f2f6f7dd4ed6add0ababd29ceea8c741"
+last-modified: Tue, 06 Oct 2026 11:43:22 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-matched-path: /404
+x-vercel-cache: MISS
+x-vercel-id: icn1::zhcr8-1791287002302-a1470888565b
+content-length: 5402
+
+
+PASS 5/5 required smoke checks; /en body KANIQ + new deployment id confirmed.

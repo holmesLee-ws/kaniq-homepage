@@ -1,0 +1,14 @@
+# qa-prod2-A10 2026-10-06T11:45:12Z
+main=91cdbf55979d834773adb05cad07ebdf9ed34c97
+pr2 state=MERGED merge=91cdbf55979d834773adb05cad07ebdf9ed34c97 head=f8904be49e076eff3ec247f01a56db8079af88f4 mergedAt=2026-10-06T11:41:36Z
+tree head=87f1e02ddfe8f907ac6753b35a06a8fe8d39be6c merge=87f1e02ddfe8f907ac6753b35a06a8fe8d39be6c
+HTTP/2 200 
+server: Vercel
+x-matched-path: /en
+data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+HTTP/2 200 
+data-dpl-id="dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9"
+vercel id=dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9 target=production readyState=READY projectId=prj_st04zp2ldGxa0qku1Dx60Rp6rtnS
+meta.gitCommitSha=91cdbf55979d834773adb05cad07ebdf9ed34c97 meta.sourceCommitSha=91cdbf55979d834773adb05cad07ebdf9ed34c97 gitDirty=(absent)
+alias kaniq-homepage.vercel.app -> dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9
+alias kaniq-care.vercel.app -> dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9

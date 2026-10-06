@@ -1,0 +1,185 @@
+en HTTP/1.1 307 Temporary Redirect
+location: /en
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+ja HTTP/1.1 307 Temporary Redirect
+location: /ja
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+id HTTP/1.1 307 Temporary Redirect
+location: /id
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+mn HTTP/1.1 307 Temporary Redirect
+location: /mn
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+ko HTTP/1.1 307 Temporary Redirect
+location: /ko
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+ko-KR HTTP/1.1 307 Temporary Redirect
+location: /ko
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+ko;q=0.1, en;q=0.9 HTTP/1.1 307 Temporary Redirect
+location: /en
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+fr HTTP/1.1 307 Temporary Redirect
+location: /en
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+None HTTP/1.1 307 Temporary Redirect
+location: /en
+vary: Accept-Language
+Date: Tue, 06 Oct 2026 10:57:00 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+en 200 ["<title>KANIQ · A home for your language</title>", "<meta name=\"description\" content=\"Pick your care, stay and company. See how recovery and Korea fit together.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<meta property=\"og:image\" content=\"https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg\"/>"]
+OG /-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg 200
+en/quote 200 ["<title>KANIQ · Start your quote</title>", "<meta name=\"description\" content=\"Explore the steps before launch.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja/quote\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id/quote\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko/quote\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>"]
+ja 200 ["<title>KANIQ · あなたの言語のホーム</title>", "<meta name=\"description\" content=\"診療・日数・人数を選んで、回復と韓国滞在の旅程を見てみましょう。\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<meta property=\"og:image\" content=\"https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg\"/>"]
+OG /-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg 200
+ja/quote 200 ["<title>KANIQ · 見積もりを始める</title>", "<meta name=\"description\" content=\"正式公開前に手順を体験できます。\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja/quote\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id/quote\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko/quote\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>"]
+id 200 ["<title>KANIQ · Beranda bahasa Anda</title>", "<meta name=\"description\" content=\"Pilih perawatan, lama tinggal, dan pendamping. Lihat rencana pemulihan dan kunjungan ke Korea.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<meta property=\"og:image\" content=\"https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg\"/>"]
+OG /-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg 200
+id/quote 200 ["<title>KANIQ · Mulai estimasi</title>", "<meta name=\"description\" content=\"Coba langkah-langkah sebelum peluncuran.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja/quote\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id/quote\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko/quote\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>"]
+mn 200 ["<title>KANIQ · Таны хэлний нүүр хуудас</title>", "<meta name=\"description\" content=\"Эмчилгээ, хоног, хамт явах хүнийг сонгоод нөхөн сэргэлт болон Солонгосын аяллыг төлөвлөөрэй.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<meta property=\"og:image\" content=\"https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg\"/>"]
+OG /-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg 200
+mn/quote 200 ["<title>KANIQ · Үнийн хүсэлт эхлүүлэх</title>", "<meta name=\"description\" content=\"Нээлтээс өмнө алхмуудыг туршаарай.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja/quote\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id/quote\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko/quote\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>"]
+ko 200 ["<title>KANIQ · 한국어를 위한 홈</title>", "<meta name=\"description\" content=\"진료·일수·인원을 고르면 회복과 한국 여행이 하나의 여정으로 펼쳐집니다.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en\"/>", "<meta property=\"og:image\" content=\"https://kaniq-homepage.vercel.app/-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg\"/>"]
+OG /-/opengraph-image.jpg?opengraph-image.3rnysf2g6kkhf.jpg 200
+ko/quote 200 ["<title>KANIQ · 견적 시작</title>", "<meta name=\"description\" content=\"출시 전 단계를 체험해 보세요.\"/>", "<link rel=\"alternate\" hrefLang=\"en\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ja\" href=\"https://kaniq-homepage.vercel.app/ja/quote\"/>", "<link rel=\"alternate\" hrefLang=\"id\" href=\"https://kaniq-homepage.vercel.app/id/quote\"/>", "<link rel=\"alternate\" hrefLang=\"mn\" href=\"https://kaniq-homepage.vercel.app/mn/quote\"/>", "<link rel=\"alternate\" hrefLang=\"ko\" href=\"https://kaniq-homepage.vercel.app/ko/quote\"/>", "<link rel=\"alternate\" hrefLang=\"x-default\" href=\"https://kaniq-homepage.vercel.app/en/quote\"/>"]
+/hi 404
+/ru 404
+/vi 404
+/zh 404
+/es 404
+/th 404
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://kaniq-homepage.vercel.app/en</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/en/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ja</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ja/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/id</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/id/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/mn</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/mn/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ko</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko" />
+</url>
+<url>
+<loc>https://kaniq-homepage.vercel.app/ko/quote</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://kaniq-homepage.vercel.app/en/quote" />
+<xhtml:link rel="alternate" hreflang="ja" href="https://kaniq-homepage.vercel.app/ja/quote" />
+<xhtml:link rel="alternate" hreflang="id" href="https://kaniq-homepage.vercel.app/id/quote" />
+<xhtml:link rel="alternate" hreflang="mn" href="https://kaniq-homepage.vercel.app/mn/quote" />
+<xhtml:link rel="alternate" hreflang="ko" href="https://kaniq-homepage.vercel.app/ko/quote" />
+</url>
+</urlset>
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://kaniq-homepage.vercel.app/sitemap.xml
+
+{"ok":true} 200
+{"ok":false,"errors":[{"field":"interest","code":"required"},{"field":"timing","code":"required"},{"field":"contactMethod","code":"required"},{"field":"name","code":"required"},{"field":"contact","code":"required"},{"field":"consent","code":"required"}]} 422

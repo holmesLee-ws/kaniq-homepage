@@ -1,0 +1,24 @@
+$ rg -n -w -e '[내부수치]' -e '[내부수치]' -e '[내부수치]' -e '[내부수치]' -e '[내부수치]' -e '수수료율' -e 'commission rate' -e 'referral rate' src/content
+exit: 1
+stdout: (empty)
+stderr: (empty)
+
+$ rg -n -i -w -e best -e guarantee -e guaranteed -e 'No\.1' -e 'half the cost' -e 'before and after' -e cheapest src
+exit: 1
+stdout: (empty)
+stderr: (empty)
+
+$ rg -n -e 최고 -e 보장 -e 줄기세포 -e 전후 -e 保証 -e 最高 -e 'stem cell' src
+exit: 1
+stdout: (empty)
+stderr: (empty)
+
+$ rg -n -e '[내부수치]' -e '[내부수치]' -e '[내부수치]' -e '[내부수치]' -e 'CPL' -e '[내부수치]' src README.md
+exit: 1
+stdout: (empty)
+stderr: (empty)
+
+$ git diff origin/main -- design/drafts
+exit: 0
+stdout: (empty)
+stderr: (empty)

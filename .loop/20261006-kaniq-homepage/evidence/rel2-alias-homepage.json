@@ -1,0 +1,21 @@
+{
+  "alias": "kaniq-homepage.vercel.app",
+  "created": "2026-10-06T11:22:54.094Z",
+  "createdAt": 1791285774094,
+  "creator": {
+    "uid": "5RPpzHz43WP0EFsl09QeQAE9",
+    "email": "[redacted-email]",
+    "username": "[redacted-user]"
+  },
+  "deletedAt": null,
+  "deployment": {
+    "id": "dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9",
+    "url": "kaniq-homepage-ih0gijsur-wishket-aidp.vercel.app"
+  },
+  "deploymentId": "dpl_6Mjd6j1oSSBgyGZWztYJxxsn2YQ9",
+  "projectId": "prj_st04zp2ldGxa0qku1Dx60Rp6rtnS",
+  "redirect": null,
+  "redirectStatusCode": null,
+  "uid": "b5ea64a5b7aa4195f1029c38471a92be3fa0ccbf23d5366b9a25001686417e60a176deff895f703acc6b7bf03c5c4692cafd506e563dc6c4586f16ce32777e29",
+  "updatedAt": 1791286949216
+}

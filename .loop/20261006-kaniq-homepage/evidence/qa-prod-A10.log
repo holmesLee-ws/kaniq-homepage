@@ -1,0 +1,30 @@
+# QA r3 G4 A10 — 2026-10-06T11:25:46Z
+## curl -sI https://kaniq-homepage.vercel.app/en
+HTTP/2 200 
+age: 126
+content-type: text/html; charset=utf-8
+server: Vercel
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-matched-path: /en
+x-vercel-cache: HIT
+x-vercel-id: icn1::j5jtl-1791285946887-ae24ac188945
+## H1 / title
+Care your insurance won’t cover, planned in Korea.
+<title>KANIQ · A home for your language</title>
+<html data-dpl-id="dpl_HoS737YjPzBKTUv416fLpPRM1jm1" lang="en">
+## gh main sha
+edd3834fc6766466506c50453092a0967581af19 feat: build localized KANIQ preview homepage (#1)
+## gh contents src/proxy.ts?ref=main
+src/proxy.ts sha=2c9fbc09e7462c0f58650e2cb32edf473f8c51d5 size=432
+## PR #1
+MERGED merge=edd3834fc6766466506c50453092a0967581af19 head=e1730b90f7453fc2b3eaf4b40cc59d05d99cb1bf at=2026-10-06T11:21:41Z
+## tree compare (PR head vs merge)
+head e1730b9 tree=98d92c0580ddfe16c1644b1a975dc81b472ec90a
+merge edd3834 tree=98d92c0580ddfe16c1644b1a975dc81b472ec90a
+## vercel production deployments
+head: illegal byte count -- 0
+id dpl_HoS737YjPzBKTUv416fLpPRM1jm1 target production readyState READY project prj_st04zp2ldGxa0qku1Dx60Rp6rtnS
+meta.gitCommitSha edd3834fc6766466506c50453092a0967581af19 meta.sourceCommitSha edd3834fc6766466506c50453092a0967581af19 gitDirty None
+alias ['kaniq-care.vercel.app', 'kaniq-homepage.vercel.app', 'kaniq-homepage-wishket-aidp.vercel.app']
+prod-list dpl_HoS737YjPzBKTUv416fLpPRM1jm1 READY 1791285760726 edd3834fc6766466506c50453092a0967581af19
+prod-list dpl_BPKvDVVX6Ke8B89DhgpSQZcVYstX READY 1791285746291 edd3834fc6766466506c50453092a0967581af19
