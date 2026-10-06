@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KANIQ — Plan the treatment. We plan the week around it.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1F5F2;
+  --mist:#DCE8E1;
+  --celadon:#9CC3B2;
+  --pine:#23453F;
+  --ink:#17252B;
+  --ok:#F3C14B;
+  --stop:#C9D6CF;
+  --line:rgba(23,37,43,.14);
+  --font:"Schibsted Grotesk",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;
+  --step--1:clamp(.8rem,.78rem + .1vw,.875rem);
+  --step-0:clamp(1rem,.96rem + .2vw,1.0625rem);
+  --step-1:clamp(1.2rem,1.1rem + .4vw,1.375rem);
+  --step-2:clamp(1.5rem,1.3rem + .9vw,2rem);
+  --step-3:clamp(2.2rem,1.5rem + 2.2vw,3.3rem);
+  --wrap:min(1200px,100% - 2.5rem);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--step-0)/1.55 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.draft-note{background:var(--ink);color:var(--mist);font-size:var(--step--1);text-align:center;padding:.4rem 1rem}
+
+/* header */
+.site-head{display:flex;align-items:center;gap:2rem;padding-block:1.25rem}
+.logo{font-weight:800;font-size:1.35rem;letter-spacing:-.02em;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.logo i{width:22px;height:22px;border-radius:50% 50% 50% 0;background:var(--pine);display:inline-block;transform:rotate(-45deg)}
+.site-nav{display:flex;gap:1.5rem;margin-right:auto}
+.site-nav a{text-decoration:none;font-size:.95rem}
+.site-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.lang{font:inherit;font-size:.9rem;background:transparent;border:1px solid var(--line);border-radius:999px;padding:.4rem .8rem;color:var(--ink)}
+@media (max-width:860px){.site-nav{display:none}.site-head{justify-content:space-between}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);padding-block:clamp(1.5rem,3.5vw,3rem) clamp(3rem,6vw,6rem);align-items:start}
+.hero h1{font-size:var(--step-3);line-height:1.02;letter-spacing:-.035em;font-weight:750;margin:0 0 1.25rem;max-width:12ch}
+.hero .lede{font-size:1.15rem;line-height:1.5;max-width:38ch;margin:0 0 1.75rem;color:#33464C}
+fieldset{border:0;padding:0;margin:0 0 1.4rem}
+legend{font-weight:650;font-size:.95rem;margin-bottom:.6rem;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{cursor:pointer;border:1.5px solid var(--ink);border-radius:999px;padding:.5rem 1rem;font-size:.95rem;font-weight:500;transition:background .15s,color .15s}
+.chips input:checked+label{background:var(--ink);color:var(--paper)}
+.chips input:focus-visible+label{outline:3px solid var(--pine);outline-offset:3px}
+.chips label:hover{background:var(--mist)}
+.chips input:checked+label:hover{background:var(--pine)}
+.inline-sets{display:flex;gap:2rem;flex-wrap:wrap}
+.hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font:inherit;font-weight:650;border-radius:999px;padding:.85rem 1.4rem;text-decoration:none;cursor:pointer;border:1.5px solid var(--pine)}
+.btn-primary{background:var(--pine);color:#fff}
+.btn-primary:hover{background:var(--ink);border-color:var(--ink)}
+.btn-quiet{background:transparent;color:var(--pine)}
+.btn-quiet:hover{background:var(--mist)}
+
+/* plan (the memorable thing) */
+.plan{position:relative;background:#fff;border-radius:28px;padding:clamp(1.25rem,3vw,2.25rem);box-shadow:0 1px 0 var(--line),0 30px 60px -40px rgba(35,69,63,.45)}
+.plan-top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.25rem;border-bottom:1px solid var(--line)}
+.plan-top h2{font-size:var(--step-2);letter-spacing:-.02em;line-height:1.1;margin:0}
+.plan-top p{margin:.35rem 0 0;color:#4C5E63;font-size:.95rem}
+.plan-photo{width:96px;height:120px;border-radius:14px;object-fit:cover;flex:none;background:var(--mist)}
+.days{list-style:none;margin:0;padding:0;position:relative}
+.days::before{content:"";position:absolute;left:46px;top:8px;bottom:8px;width:2px;background:var(--mist)}
+.day{display:grid;grid-template-columns:94px 1fr;gap:0 1rem;padding-block:.85rem}
+.day-label{font-weight:800;font-size:1.05rem;letter-spacing:-.01em;font-variant-numeric:tabular-nums;position:relative;display:flex;flex-direction:column;align-items:flex-start}
+.day-label span{background:var(--paper);border:2px solid var(--pine);border-radius:999px;padding:.15rem .6rem;position:relative;z-index:1;min-width:64px;text-align:center}
+.day.is-treat .day-label span{background:var(--pine);color:#fff}
+.day h3{margin:0 0 .45rem;font-size:1.05rem;font-weight:700}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.item{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;font-size:.95rem;line-height:1.4}
+.track{font-size:.75rem;font-weight:700;border-radius:6px;padding:.1rem .45rem;background:var(--mist);color:var(--pine);flex:none}
+.track[data-t="Treat"]{background:var(--pine);color:#fff}
+.okbadge{font-size:.75rem;font-weight:700;border-radius:999px;padding:.08rem .5rem;background:var(--ok);color:var(--ink);white-space:nowrap}
+.okbadge.wait{background:transparent;border:1.5px dashed #8A9A93;color:#4C5E63}
+.plan-foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--line);font-size:.9rem;color:#4C5E63}
+.plan-foot strong{color:var(--ink)}
+.plan.updating .days{animation:swap .35s ease}
+@keyframes swap{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+@media (max-width:960px){.hero{grid-template-columns:1fr}.hero h1{max-width:16ch}}
+@media (max-width:520px){.day{grid-template-columns:1fr}.days::before{display:none}.day-label{margin-bottom:.4rem}.plan-photo{display:none}}
+
+/* doctor ok */
+.section{padding-block:clamp(3.5rem,8vw,7rem)}
+.section h2{font-size:var(--step-2);letter-spacing:-.025em;line-height:1.1;margin:0 0 1rem;max-width:22ch}
+.section .intro{max-width:56ch;color:#33464C;margin:0 0 2.5rem}
+.okrules{background:var(--pine);color:#EAF2EE;border-radius:28px;padding:clamp(1.5rem,4vw,3.5rem);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(2rem,5vw,4rem)}
+.okrules h2{color:#fff}
+.okrules .intro{color:#C7DAD2}
+.okrules .badge-big{display:inline-flex;align-items:center;gap:.5rem;background:var(--ok);color:var(--ink);font-weight:800;border-radius:999px;padding:.5rem 1rem;font-size:1.1rem;margin-bottom:1.5rem}
+.rule-grid{width:100%;border-collapse:separate;border-spacing:4px 6px;font-size:.9rem}
+.rule-grid caption{text-align:left;color:#C7DAD2;font-size:.85rem;padding-bottom:.5rem}
+.rule-grid th{font-weight:600;text-align:left;padding-right:.75rem;white-space:nowrap}
+.rule-grid thead th{font-weight:500;color:#C7DAD2;text-align:center;font-size:.8rem;padding:0}
+.rule-grid td{height:30px;border-radius:6px;background:rgba(255,255,255,.08);text-align:center;font-size:.75rem}
+.rule-grid td.y{background:var(--ok);color:var(--ink);font-weight:700}
+.rule-grid td.n{background:repeating-linear-gradient(135deg,rgba(255,255,255,.12) 0 4px,transparent 4px 9px)}
+.rule-grid .sub{display:block;font-weight:400;color:#C7DAD2;font-size:.8rem}
+.legend{display:flex;gap:1.25rem;font-size:.85rem;color:#C7DAD2;margin-top:1rem;flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:.35rem}
+@media (max-width:900px){.okrules{grid-template-columns:1fr}.rule-scroll{overflow-x:auto}}
+
+/* recovery matrix */
+.matrix{display:grid;grid-template-columns:150px repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
+.matrix > *{padding:1rem .9rem 1.1rem 0;border-bottom:1px solid var(--line);font-size:.95rem;line-height:1.45}
+.matrix .mh{font-weight:700;font-size:.9rem;color:#4C5E63;padding-top:.75rem;padding-bottom:.75rem}
+.matrix .stage{font-weight:800;letter-spacing:-.01em}
+.matrix .stage small{display:block;font-weight:400;color:#4C5E63;font-size:.8rem}
+.matrix .none{color:#7E8E88}
+@media (max-width:860px){
+  .matrix{grid-template-columns:1fr;border-top:0}
+  .matrix .mh{display:none}
+  .matrix > *{border-bottom:0;padding:.15rem 0}
+  .matrix .stage{border-top:2px solid var(--ink);padding-top:1rem;margin-top:1rem}
+  .matrix [data-col]::before{content:attr(data-col)": ";font-weight:700}
+}
+
+/* split w/ image */
+.split{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.split img{border-radius:28px;aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--mist)}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:1.4rem}
+.facts li{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.facts svg{width:28px;height:28px;stroke:var(--pine);fill:none;stroke-width:1.8;margin-top:.15rem}
+.facts strong{display:block;font-size:1.05rem}
+.facts span{color:#4C5E63;font-size:.95rem}
+@media (max-width:860px){.split{grid-template-columns:1fr}.split img{aspect-ratio:4/3}}
+
+/* templates */
+.tpl{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.tpl li{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr) minmax(0,4fr) auto;gap:1.5rem;align-items:center;padding-block:1.15rem;border-bottom:1px solid var(--line)}
+.tpl .t-name{font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
+.tpl .t-len{font-variant-numeric:tabular-nums;color:#4C5E63}
+.tpl .t-hi{color:#33464C;font-size:.95rem}
+.tpl a{font-weight:650;color:var(--pine);text-underline-offset:4px;white-space:nowrap}
+@media (max-width:760px){.tpl li{grid-template-columns:1fr auto;gap:.25rem 1rem}.tpl .t-hi{grid-column:1/-1}.tpl .t-len{grid-row:2}}
+
+/* footer */
+.site-foot{background:var(--ink);color:#C7D3CE;padding-block:3.5rem 2.5rem;font-size:.9rem}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem}
+.site-foot h4{color:#fff;margin:0 0 .75rem;font-size:.95rem}
+.site-foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.site-foot a{color:#C7D3CE;text-decoration:none}
+.site-foot a:hover{color:#fff;text-decoration:underline}
+.reg{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15);display:flex;gap:2rem;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}}
+
+/* messenger bar */
+.msgbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.msgbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
+.msgbar p{margin:0;font-size:.95rem}
+.msgbar .acts{display:flex;gap:.6rem}
+.wa{background:#1F8F55;border-color:#1F8F55;color:#fff}
+.wa:hover{background:#17704A}
+@media (max-width:640px){.msgbar p{display:none}.msgbar .acts{width:100%}.msgbar .btn{flex:1;justify-content:center;padding-inline:.8rem}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="draft-note">시안 A — 여정이 먼저 보이는 홈 (병원·가격·등록번호는 샘플 데이터)</div>
+
+<header class="wrap site-head">
+  <a class="logo" href="#"><i aria-hidden="true"></i>KANIQ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#">Find care</a>
+    <a href="#plan">Plan your trip</a>
+    <a href="#ambassador">Refer someone</a>
+    <a href="#trust">Why you can trust us</a>
+  </nav>
+  <select class="lang" aria-label="Language">
+    <option>English</option><option>日本語</option><option>Bahasa Indonesia</option><option>Монгол</option><option>한국어</option>
+  </select>
+</header>
+
+<main>
+<section class="wrap hero" id="plan" aria-labelledby="hero-title">
+  <div>
+    <h1 id="hero-title">Plan the treatment. We plan the week around it.</h1>
+    <p class="lede">Pick a treatment and how long you can stay. You get a day-by-day plan with airport pickup, a place to recover and things to do, each one cleared by doctors for your stage of recovery.</p>
+
+    <form id="planner" aria-describedby="plan-title">
+      <fieldset>
+        <legend>Treatment</legend>
+        <div class="chips">
+          <input type="radio" name="tx" id="tx-implant" value="implant" checked><label for="tx-implant">Dental implants</label>
+          <input type="radio" name="tx" id="tx-lasik" value="lasik"><label for="tx-lasik">LASIK</label>
+          <input type="radio" name="tx" id="tx-check" value="check"><label for="tx-check">Health screening</label>
+          <input type="radio" name="tx" id="tx-women" value="women"><label for="tx-women">Women's health</label>
+          <input type="radio" name="tx" id="tx-fert" value="fert"><label for="tx-fert">Fertility consult</label>
+        </div>
+      </fieldset>
+      <div class="inline-sets">
+        <fieldset>
+          <legend>Days in Korea</legend>
+          <div class="chips">
+            <input type="radio" name="days" id="d5" value="5"><label for="d5">5</label>
+            <input type="radio" name="days" id="d7" value="7" checked><label for="d7">7</label>
+            <input type="radio" name="days" id="d10" value="10"><label for="d10">10</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Travelers</legend>
+          <div class="chips">
+            <input type="radio" name="pax" id="p1" value="1"><label for="p1">Just me</label>
+            <input type="radio" name="pax" id="p2" value="2" checked><label for="p2">2</label>
+            <input type="radio" name="pax" id="p3" value="3"><label for="p3">3 or more</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quote">Get a quote for this plan</a>
+        <a class="btn btn-quiet" href="#">Download as PDF</a>
+      </div>
+    </form>
+  </div>
+
+  <article class="plan" id="plan-card" aria-live="polite">
+    <div class="plan-top">
+      <div>
+        <h2 id="plan-title">Dental implants, 7 days</h2>
+        <p id="plan-sub">For 2 travelers, arriving at Incheon</p>
+      </div>
+      <img class="plan-photo" src="img/a-samgyetang.jpg" alt="Samgyetang and rice porridge, a typical recovery meal">
+    </div>
+    <ol class="days" id="days"></ol>
+    <div class="plan-foot">
+      <span>Treatment reference price <strong id="price">₩2.4M–3.2M</strong>, final quote from the hospital</span>
+      <span>Your fee to KANIQ <strong>₩0</strong></span>
+    </div>
+  </article>
+</section>
+
+<section class="section wrap" aria-labelledby="ok-title">
+  <div class="okrules">
+    <div>
+      <span class="badge-big">Doctor OK</span>
+      <h2 id="ok-title">Every suggestion carries the day it becomes safe</h2>
+      <p class="intro">Doctors at our partner hospitals set the recovery rules. A sauna, a hike or spicy food only shows up in your plan once your treatment allows it.</p>
+    </div>
+    <div class="rule-scroll">
+      <table class="rule-grid">
+        <caption>Sample rules by day after treatment</caption>
+        <thead><tr><th scope="col"><span class="sr">Activity</span></th><th scope="col">D0</th><th scope="col">D1</th><th scope="col">D2</th><th scope="col">D3</th><th scope="col">D4</th><th scope="col">D5</th><th scope="col">D6</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Sauna or jjimjilbang<span class="sub">after LASIK</span></th><td class="n"></td><td class="n"></td><td class="n"></td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td></tr>
+          <tr><th scope="row">Hot spring<span class="sub">after implants</span></th><td class="n"></td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td></tr>
+          <tr><th scope="row">Spicy food<span class="sub">after implants</span></th><td class="n"></td><td class="n"></td><td class="n"></td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td></tr>
+          <tr><th scope="row">Palace walk in hanbok<span class="sub">after LASIK</span></th><td class="n"></td><td class="n"></td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td></tr>
+          <tr><th scope="row">Overnight templestay<span class="sub">after implants</span></th><td class="n"></td><td class="n"></td><td class="n"></td><td class="n"></td><td class="y">OK</td><td class="y">OK</td><td class="y">OK</td></tr>
+        </tbody>
+      </table>
+      <div class="legend"><span><i style="background:var(--ok)"></i>Cleared by doctors</span><span><i style="background:repeating-linear-gradient(135deg,rgba(255,255,255,.35) 0 3px,transparent 3px 6px)"></i>Not yet</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="week-title" style="padding-top:0">
+  <h2 id="week-title">What a recovery week looks like</h2>
+  <p class="intro">Places within 30 minutes of your hospital, picked for how you'll feel on each day. Places our pilot patients actually used are marked as checked.</p>
+  <div class="matrix" role="table" aria-label="Recovery stages">
+    <div class="mh" role="columnheader">Stage</div><div class="mh" role="columnheader">Stay</div><div class="mh" role="columnheader">See</div><div class="mh" role="columnheader">Eat</div><div class="mh" role="columnheader">Culture</div>
+    <div class="stage" role="rowheader">D0<small>Treatment day</small></div>
+    <div data-col="Stay">Rest at a hotel near the hospital</div>
+    <div data-col="See" class="none">None, companions can take a short walk</div>
+    <div data-col="Eat">Rice porridge, lukewarm Korean meals</div>
+    <div data-col="Culture" class="none">None</div>
+    <div class="stage" role="rowheader">D1–2<small>Early recovery</small></div>
+    <div data-col="Stay">Same hotel</div>
+    <div data-col="See">Flat walks along Cheonggyecheon or Changdeokgung, 1–2 hours</div>
+    <div data-col="Eat">Samgyetang, hanjeongsik, cafés</div>
+    <div data-col="Culture">Hanok tea ceremony, indoor hanbok portrait</div>
+    <div class="stage" role="rowheader">D3–5<small>Recovery and culture</small></div>
+    <div data-col="Stay">Move to a hanok stay if you like</div>
+    <div data-col="See">Namsan, Bukchon, Han River, traditional markets</div>
+    <div data-col="Eat">Market food tour, cooking class</div>
+    <div data-col="Culture">Palace in hanbok, a performance, day templestay</div>
+    <div class="stage" role="rowheader">After check-up<small>Cleared by your doctor</small></div>
+    <div data-col="Stay">Anywhere</div>
+    <div data-col="See">Day trips outside Seoul</div>
+    <div data-col="Eat">Anything</div>
+    <div data-col="Culture">Spa and hot springs, overnight templestay</div>
+  </div>
+</section>
+
+<section class="section wrap" id="trust" aria-labelledby="trust-title" style="padding-top:0">
+  <div class="split">
+    <div>
+      <h2 id="trust-title">Before you book, check us</h2>
+      <p class="intro">Everything below is public, and stays at the bottom of every page.</p>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><strong>A registered medical tourism agency</strong><span>Our registration number links straight to the Ministry of Health lookup.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg><div><strong>You pay KANIQ nothing</strong><span>You pay the same price as walking into the hospital yourself. The hospital pays us.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><div><strong>Real doctors, by name</strong><span>Photo, board certification, years in practice and the languages they speak.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg><div><strong>A 24-hour hotline, until you're home</strong><span>And remote follow-up with your doctor after you fly back.</span></div></li>
+      </ul>
+    </div>
+    <img src="img/a-hanok-tea.jpg" alt="Morning light in a hanok room with a celadon tea set">
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="tpl-title" style="padding-top:0">
+  <h2 id="tpl-title">Start from a plan other patients used</h2>
+  <p class="intro">Six ready-made plans you can download now. Change the dates with a coordinator over chat.</p>
+  <ul class="tpl">
+    <li><span class="t-name">Dental implants</span><span class="t-len">7 days</span><span class="t-hi">Two visits, recovery in Seoul, hanok tea and palace walks</span><a href="#">Download PDF</a></li>
+    <li><span class="t-name">LASIK</span><span class="t-len">5 days</span><span class="t-hi">Indoor culture first, outdoor sightseeing from day 3</span><a href="#">Download PDF</a></li>
+    <li><span class="t-name">Executive health screening</span><span class="t-len">3 days</span><span class="t-hi">Results with an English report before you leave</span><a href="#">Download PDF</a></li>
+    <li><span class="t-name">Women's wellness retreat</span><span class="t-len">5 days</span><span class="t-hi">Female coordinator and doctors, hanok stay, spa when cleared</span><a href="#">Download PDF</a></li>
+    <li><span class="t-name">Fertility first consultation</span><span class="t-len">4 days</span><span class="t-hi">Tests, a treatment plan and quiet places to stay</span><a href="#">Download PDF</a></li>
+    <li><span class="t-name">Family screening trip</span><span class="t-len">4 days</span><span class="t-hi">Screenings for parents, halal and vegetarian meals on request</span><a href="#">Download PDF</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="logo" href="#" style="color:#fff"><i aria-hidden="true" style="background:var(--celadon)"></i>KANIQ</a><p style="max-width:34ch">You decide. We handle the complicated parts.</p></div>
+      <div><h4>Care</h4><ul><li><a href="#">Health screening</a></li><li><a href="#">Dental</a></li><li><a href="#">Eye</a></li><li><a href="#">Women's health</a></li><li><a href="#">Fertility</a></li></ul></div>
+      <div><h4>Trust</h4><ul><li><a href="#">Our fee rules</a></li><li><a href="#">If something goes wrong</a></li><li><a href="#">Privacy</a></li><li><a href="#">About KANIQ</a></li></ul></div>
+      <div><h4>Partners</h4><ul><li><a href="#">Ambassadors</a></li><li><a href="#">Organizations</a></li><li><a href="#">Hospitals</a></li></ul></div>
+    </div>
+    <div class="reg">
+      <span>Medical tourism agency registration <strong>SAMPLE-0000-000</strong></span>
+      <span>Travel agency registration <strong>SAMPLE-0000-000</strong></span>
+      <span>Liability insurance ₩100M+</span>
+    </div>
+  </div>
+</footer>
+
+<div class="msgbar" id="quote">
+  <div class="wrap">
+    <p>A coordinator replies within 24 hours, in English.</p>
+    <div class="acts">
+      <a class="btn wa" href="#">Chat on WhatsApp</a>
+      <a class="btn btn-quiet" href="#">Get a quote</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const TX = {
+  implant:{name:"Dental implants",price:"₩2.4M–3.2M",treat:"Implant placement at the dental clinic",
+    early:[["Taste","Samgyetang, soft and lukewarm",null],["Feel","Hanok tea ceremony",null],["See","Flat walk along Cheonggyecheon",null]],
+    mid:[["Feel","Gyeongbokgung in hanbok",null],["Taste","Gwangjang Market food tour","OK from day 3"],["Feel","Day templestay","OK from day 3"]],
+    late:[["Feel","Hot spring day trip","OK from day 2"],["Feel","Overnight templestay","OK from day 4"]]},
+  lasik:{name:"LASIK",price:"₩1.6M–2.4M",treat:"Eye exam and LASIK",
+    early:[["Stay","Rest with eyes closed at the hotel",null],["Feel","Indoor hanbok portrait",null],["Taste","Hanjeongsik lunch",null]],
+    mid:[["See","Bukchon and Namsan by day","OK from day 2"],["Feel","Nanta performance",null],["Feel","Jjimjilbang","OK from day 3"]],
+    late:[["Feel","Han River cycling","OK from day 7"],["Feel","Swimming pool","No pool until day 14"]]},
+  check:{name:"Health screening",price:"₩0.5M–1.5M",treat:"Full-day screening with sedated endoscopy",
+    early:[["Taste","Rice porridge after the endoscopy",null],["See","Changdeokgung secret garden",null],["Feel","Hanok tea ceremony",null]],
+    mid:[["Treat","Results with an English report",null],["Feel","Cooking class",null],["See","DDP and Dongdaemun",null]],
+    late:[["Feel","Day trip to Suwon fortress",null],["Feel","Korean spa",null]]},
+  women:{name:"Women's health",price:"₩3.0M–5.0M",treat:"Gynecologic check-up with a female doctor",
+    early:[["Stay","Quiet room, female coordinator on call",null],["Feel","Hanok tea ceremony",null],["Taste","Temple food lunch",null]],
+    mid:[["Feel","Herbal medicine consultation",null],["Feel","Gyeongbokgung in hanbok",null],["Feel","Spa day","After your doctor's OK"]],
+    late:[["Feel","Overnight templestay","After your doctor's OK"],["Feel","Hot spring retreat","After your doctor's OK"]]},
+  fert:{name:"Fertility consultation",price:"₩0.8M–1.5M",treat:"Tests and consultation with a fertility specialist",
+    early:[["Stay","Residence with a kitchen",null],["See","Seoul Forest walk",null],["Taste","Hanjeongsik dinner",null]],
+    mid:[["Treat","Treatment plan and remote follow-up schedule",null],["Feel","Bukchon hanok village",null],["Feel","A traditional music performance",null]],
+    late:[["Feel","Day trip to Gapyeong",null],["Feel","Korean spa","After your doctor's OK"]]}
+};
+
+const form = document.getElementById('planner');
+const daysEl = document.getElementById('days');
+const card = document.getElementById('plan-card');
+
+function li(track, text, ok){
+  const badge = ok ? `<span class="okbadge${/^No|After/.test(ok)?' wait':''}">${ok}</span>` : '';
+  return `<li class="item"><span class="track" data-t="${track}">${track}</span><span>${text}</span>${badge}</li>`;
+}
+function day(label, title, items, treat){
+  return `<li class="day${treat?' is-treat':''}"><div class="day-label"><span>${label}</span></div><div><h3>${title}</h3><ul class="items">${items.join('')}</ul></div></li>`;
+}
+
+function render(animate){
+  const fd = new FormData(form);
+  const t = TX[fd.get('tx')], n = +fd.get('days'), pax = fd.get('pax');
+  const who = pax === '1' ? 'For 1 traveler' : pax === '2' ? 'For 2 travelers' : 'For a group of 3 or more';
+  document.getElementById('plan-title').textContent = `${t.name}, ${n} days`;
+  document.getElementById('plan-sub').textContent = `${who}, arriving at Incheon`;
+  document.getElementById('price').textContent = t.price;
+
+  const room = pax === '1' ? 'Hotel 15 minutes from the hospital' : pax === '2' ? 'Twin room 15 minutes from the hospital' : 'Family residence 20 minutes from the hospital';
+  const rows = [
+    day('D-1','Arrive',[li('Move','Pickup at Incheon, driver speaks English'),li('Stay',room)]),
+    day('D0','Treatment',[li('Treat',t.treat),li('Move','Coordinator goes with you to the hospital')],true),
+    day('D1–2','Early recovery',t.early.map(a=>li(...a)))
+  ];
+  if(n === 5){
+    rows.push(day('D3','Recovery and culture',t.mid.slice(0,2).map(a=>li(...a))));
+  } else {
+    rows.push(day('D3–5','Recovery and culture',t.mid.map(a=>li(...a))));
+  }
+  if(n === 10) rows.push(day('D6–8','Free days',t.late.map(a=>li(...a))));
+  const last = n === 5 ? 'D4' : n === 7 ? 'D6' : 'D9';
+  rows.push(day(last,'Check-up and fly home',[li('Treat','Final check and a written report in English'),li('Move','Drop-off at Incheon, hotline stays open')]));
+  daysEl.innerHTML = rows.join('');
+
+  if(animate){card.classList.remove('updating');void card.offsetWidth;card.classList.add('updating');}
+}
+form.addEventListener('change',()=>render(true));
+render(false);
+</script>
+<style>.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style>
+</body>
+</html>

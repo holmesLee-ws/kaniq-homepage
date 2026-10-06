@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KANIQ — Korea, in your language</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Noto+Sans:wght@400;700;800&family=Noto+Sans+JP:wght@500;800&family=Noto+Sans+KR:wght@500;800&family=Noto+Sans+SC:wght@500;800&family=Noto+Sans+Thai:wght@500;800&family=Noto+Sans+Devanagari:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#E6EBFF;
+  --sky-2:#CBD5FF;
+  --ultra:#1A2A8C;
+  --ultra-2:#3B4BB0;
+  --marigold:#FFB01F;
+  --white:#FFFFFF;
+  --line:rgba(26,42,140,.16);
+  --display:"Archivo","Noto Sans","Noto Sans KR",system-ui,sans-serif;
+  --body:"Archivo","Noto Sans","Noto Sans KR",system-ui,sans-serif;
+  --wrap:min(1240px,100% - 2.5rem);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--ultra);font:400 1.0625rem/1.55 var(--body);font-stretch:100%;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.draft-note{font-size:.8rem;background:var(--ultra);color:var(--sky);text-align:center;padding:.4rem 1rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+.top{background:var(--sky)}
+.site-head{display:flex;align-items:center;gap:2rem;padding-block:1.3rem}
+.logo{font:850 1.5rem/1 var(--display);font-stretch:125%;letter-spacing:-.01em;text-decoration:none}
+.site-nav{display:flex;gap:1.6rem;margin-left:auto;font-size:.95rem}
+.site-nav a{text-decoration:none}
+.site-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:860px){.site-nav{display:none}}
+
+/* hero — language is the hero */
+.hero{display:grid;grid-template-columns:230px minmax(0,1fr) 360px;gap:clamp(1.5rem,3vw,3rem);padding-block:clamp(1.5rem,4vw,3.5rem) clamp(3rem,6vw,5rem);align-items:start}
+.rail{list-style:none;margin:0;padding:0}
+.rail .grp{font-size:.82rem;color:var(--ultra-2);margin:1.2rem 0 .4rem}
+.rail .grp:first-child{margin-top:0}
+.rail button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;width:100%;padding:.48rem .75rem;border-radius:10px;font-size:1.02rem;font-weight:600;line-height:1.25}
+.rail button:hover{background:var(--sky-2)}
+.rail button[aria-pressed="true"]{background:var(--ultra);color:var(--white)}
+.rail button:focus-visible{outline:3px solid var(--marigold);outline-offset:2px}
+.rail small{font-weight:500;font-size:.75rem;opacity:.7}
+.rail button[aria-pressed="true"] small{opacity:.85}
+
+.stage{min-height:520px;display:flex;flex-direction:column}
+.stage .where{font-size:.95rem;color:var(--ultra-2);margin:0 0 1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.soon{background:var(--marigold);color:var(--ultra);border-radius:999px;padding:.15rem .6rem;font-size:.8rem;font-weight:700}
+.headline{font:850 clamp(2.2rem,1.2rem + 2.8vw,3.9rem)/1.04 var(--display);font-stretch:112%;letter-spacing:-.02em;margin:0 0 1rem;text-wrap:balance}
+.headline:lang(ja),.headline:lang(zh),.headline:lang(ko),.headline:lang(th),.headline:lang(hi){letter-spacing:0;line-height:1.18}
+.headline:lang(ja){font-family:"Noto Sans JP",sans-serif;white-space:pre-line}
+.headline:lang(zh){font-family:"Noto Sans SC",sans-serif}
+.headline:lang(ko){font-family:"Noto Sans KR",sans-serif}
+.headline:lang(th){font-family:"Noto Sans Thai",sans-serif;line-height:1.35}
+.headline:lang(hi){font-family:"Noto Sans Devanagari",sans-serif;line-height:1.35}
+.gloss{font-size:1.05rem;color:var(--ultra-2);max-width:46ch;margin:0 0 2rem}
+.gloss:empty{display:none}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem 2rem;margin:auto 0 1.75rem;padding-top:1.5rem;border-top:2px solid var(--ultra)}
+.facts h2{font-size:.85rem;font-weight:600;margin:0 0 .5rem;color:var(--ultra-2)}
+.care{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.care li{background:var(--white);border-radius:999px;padding:.3rem .8rem;font-size:.92rem;font-weight:600}
+.special{margin:0;font-weight:600;font-size:1.02rem;line-height:1.4}
+.cta-row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font:700 1rem/1 var(--body);border-radius:12px;padding:1rem 1.3rem;text-decoration:none;border:0;cursor:pointer}
+.btn svg{width:20px;height:20px}
+.btn-msg{background:var(--mbg,#128C4A);color:var(--mfg,#fff)}
+.btn-msg:hover{filter:brightness(.92)}
+.btn-ghost{background:transparent;color:var(--ultra);box-shadow:inset 0 0 0 2px var(--ultra)}
+.btn-ghost:hover{background:var(--sky-2)}
+.reply{font-size:.88rem;color:var(--ultra-2)}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px 20px 120px 20px;background:var(--sky-2)}
+.photo p{font-size:.85rem;color:var(--ultra-2);margin:.6rem 0 0}
+.swap{animation:swap .4s ease}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (max-width:1100px){.hero{grid-template-columns:200px minmax(0,1fr)}.photo{display:none}}
+@media (max-width:720px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero > nav{min-width:0}
+  .rail{display:flex;overflow-x:auto;gap:.3rem;padding-bottom:.5rem;scroll-snap-type:x mandatory}
+  .rail .grp{display:none}
+  .rail li{flex:none;scroll-snap-align:start}
+  .rail button{white-space:nowrap;background:var(--white)}
+  .rail small{display:none}
+  .stage{min-height:0}
+  .facts{grid-template-columns:1fr}
+}
+
+/* arrival band */
+.band{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding-block:clamp(4rem,8vw,7rem)}
+.band img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:20px 120px 20px 20px;background:var(--sky)}
+.section-h{font:850 clamp(1.9rem,1.3rem + 2vw,3rem)/1.04 var(--display);font-stretch:112%;letter-spacing:-.02em;margin:0 0 1rem;max-width:18ch}
+.intro{font-size:1.1rem;color:var(--ultra-2);max-width:48ch;margin:0 0 2rem}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.ticks li{padding-left:2rem;position:relative}
+.ticks li::before{content:"";position:absolute;left:0;top:.35rem;width:16px;height:16px;border-radius:50%;background:var(--marigold)}
+.ticks strong{display:block}
+.ticks span{color:var(--ultra-2);font-size:.95rem}
+@media (max-width:860px){.band{grid-template-columns:1fr}}
+
+/* ambassadors */
+.amb{background:var(--ultra);color:var(--white);border-radius:32px;padding:clamp(2rem,5vw,4.5rem);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(2rem,5vw,5rem)}
+.amb .section-h{color:var(--white)}
+.amb .intro{color:var(--sky-2)}
+.give{border:0;padding:0;margin:0 0 2rem}
+.give legend{font-weight:700;margin-bottom:.8rem;padding:0}
+.give-opts{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.give input{position:absolute;opacity:0}
+.give label{display:block;cursor:pointer;border-radius:14px;padding:.9rem 1rem;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.25);font-weight:600;line-height:1.3}
+.give label span{display:block;font-weight:400;font-size:.85rem;color:var(--sky-2);margin-top:.2rem}
+.give input:checked+label{background:var(--marigold);color:var(--ultra);box-shadow:none}
+.give input:checked+label span{color:var(--ultra)}
+.give input:focus-visible+label{outline:3px solid var(--marigold);outline-offset:3px}
+.btn-mari{background:var(--marigold);color:var(--ultra)}
+.btn-mari:hover{filter:brightness(1.05)}
+.portal{background:var(--white);color:var(--ultra);border-radius:20px;padding:1.5rem}
+.portal-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1rem;flex-wrap:wrap}
+.portal-top strong{font:800 1.15rem/1.2 var(--display);font-stretch:110%}
+.portal-top span{font-size:.85rem;color:var(--ultra-2)}
+.code{display:flex;justify-content:space-between;align-items:center;background:var(--sky);border-radius:12px;padding:.8rem 1rem;margin-bottom:1.25rem;font-weight:700;letter-spacing:.04em}
+.code button{all:unset;cursor:pointer;font-size:.85rem;font-weight:700;color:var(--ultra-2);text-decoration:underline;letter-spacing:0}
+.track-head,.track-row{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(4,minmax(0,1fr));align-items:center;gap:.25rem}
+.track-head{font-size:.75rem;color:var(--ultra-2);padding-bottom:.4rem;border-bottom:1px solid var(--line)}
+.track-head span:not(:first-child){text-align:center}
+.track-row{padding-block:.7rem;border-bottom:1px solid var(--line);font-size:.92rem}
+.track-row span:first-child small{display:block;color:var(--ultra-2);font-size:.78rem}
+.dot{justify-self:center;width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--sky-2)}
+.dot.done{background:var(--ultra);box-shadow:none}
+.dot.now{background:var(--marigold);box-shadow:none}
+.portal-foot{margin:1rem 0 0;font-size:.85rem;color:var(--ultra-2)}
+@media (max-width:900px){.amb{grid-template-columns:1fr}}
+@media (max-width:480px){.give-opts{grid-template-columns:1fr}}
+
+/* orgs */
+.orgs{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);padding-block:clamp(4rem,8vw,7rem)}
+.org-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--ultra)}
+.org-list li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:1.5rem;padding-block:1.1rem;border-bottom:1px solid var(--line)}
+.org-list strong{font-size:1.05rem}
+.org-list span{color:var(--ultra-2);font-size:.95rem}
+@media (max-width:860px){.orgs{grid-template-columns:1fr}.org-list li{grid-template-columns:1fr;gap:.2rem}}
+
+.site-foot{background:var(--sky);padding-block:3rem;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;gap:1.4rem;flex-wrap:wrap}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.reg{margin-top:1.5rem;color:var(--ultra-2);display:flex;gap:2rem;flex-wrap:wrap}
+
+.msgbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.msgbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem}
+.msgbar p{margin:0;font-size:.95rem}
+.msgbar .btn{padding:.8rem 1.1rem}
+@media (max-width:640px){.msgbar p{display:none}.msgbar .cta-row{width:100%}.msgbar .btn{flex:1;justify-content:center}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="draft-note">시안 C — 언어권마다 다른 홈 (왼쪽에서 언어를 눌러 보세요, 등록번호·코드는 샘플)</div>
+
+<div class="top">
+<header class="wrap site-head">
+  <a class="logo" href="#">KANIQ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#">Find care</a>
+    <a href="#">Plan your trip</a>
+    <a href="#ambassadors">Refer someone</a>
+    <a href="#orgs">For organizations</a>
+    <a href="#">Why trust us</a>
+  </nav>
+</header>
+
+<section class="wrap hero" aria-label="Choose your language">
+  <nav aria-label="Language">
+    <ul class="rail" id="rail"></ul>
+  </nav>
+  <div class="stage" id="stage" aria-live="polite">
+    <p class="where" id="where"></p>
+    <h1 class="headline" id="headline"></h1>
+    <p class="gloss" id="gloss"></p>
+    <div class="facts">
+      <div><h2>Most asked about from here</h2><ul class="care" id="care"></ul></div>
+      <div><h2>Made for you</h2><p class="special" id="special"></p></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-msg" id="msg" href="#"></a>
+      <a class="btn btn-ghost" href="#">Get a quote</a>
+      <span class="reply">A coordinator replies within 24 hours</span>
+    </div>
+  </div>
+  <figure class="photo" style="margin:0">
+    <img src="img/c-family-palace.jpg" alt="A family walks through Gyeongbokgung Palace with their coordinator">
+    <p>Coordinators who speak your language walk with you, from the clinic to the palace.</p>
+  </figure>
+</section>
+</div>
+
+<main>
+<section class="wrap band" aria-labelledby="arr-h">
+  <img src="img/c-airport.jpg" alt="A coordinator greets a mother and daughter in the Incheon arrivals hall">
+  <div>
+    <h2 class="section-h" id="arr-h">Someone meets you at the gate</h2>
+    <p class="intro">You'll know their name and face before you land, and you'll talk to them on the app you already use.</p>
+    <ul class="ticks">
+      <li><strong>Pickup at Incheon or Gimpo</strong><span>Driver, car and price confirmed before your flight</span></li>
+      <li><strong>A coordinator who speaks your language</strong><span>With you at the hospital, and on call 24 hours a day</span></li>
+      <li><strong>Follow-up after you fly home</strong><span>Remote check-ins with the doctor who treated you</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap" id="ambassadors" aria-labelledby="amb-h">
+  <div class="amb">
+    <div>
+      <h2 class="section-h" id="amb-h">Bring someone you care about to Korea</h2>
+      <p class="intro">Students, missionaries, Korean associations and alumni of Sejong Institute already send people to us. Sign up in three minutes and choose where your thank-you goes.</p>
+      <fieldset class="give">
+        <legend>Send my thank-you to</legend>
+        <div class="give-opts">
+          <input type="radio" name="give" id="g1" checked><label for="g1">Me<span>Paid to your account</span></label>
+          <input type="radio" name="give" id="g2"><label for="g2">A mission<span>Donated in your name</span></label>
+          <input type="radio" name="give" id="g3"><label for="g3">My Korean association<span>To its community fund</span></label>
+          <input type="radio" name="give" id="g4"><label for="g4">A scholarship<span>For students learning Korean</span></label>
+        </div>
+      </fieldset>
+      <a class="btn btn-mari" href="#">Become an ambassador</a>
+    </div>
+    <div class="portal" aria-label="Ambassador portal preview">
+      <div class="portal-top"><strong>Your referrals</strong><span>Portal preview, sample data</span></div>
+      <div class="code"><span>MINJI-2041</span><button type="button" id="copy">Copy link</button></div>
+      <div class="track-head" aria-hidden="true"><span>Person</span><span>Asked</span><span>Consulted</span><span>Booked</span><span>Treated</span></div>
+      <div class="track-row"><span>Bolor E.<small>Health screening</small></span><i class="dot done"></i><i class="dot done"></i><i class="dot done"></i><i class="dot now"></i></div>
+      <div class="track-row"><span>Siti R.<small>Dental</small></span><i class="dot done"></i><i class="dot done"></i><i class="dot now"></i><i class="dot"></i></div>
+      <div class="track-row"><span>Kenji T.<small>Eye</small></span><i class="dot done"></i><i class="dot now"></i><i class="dot"></i><i class="dot"></i></div>
+      <p class="portal-foot">Your share and payout date appear here once treatment is complete. Hospitals never pay ambassadors directly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap orgs" id="orgs" aria-labelledby="org-h">
+  <div>
+    <h2 class="section-h" id="org-h">For organizations</h2>
+    <p class="intro">Group screenings, member benefits and a direct contact person, set up under an MOU.</p>
+    <div class="cta-row"><a class="btn btn-msg" style="--mbg:var(--ultra)" href="#">Request a partnership call</a><a class="btn btn-ghost" href="#">Download proposal (PDF)</a></div>
+  </div>
+  <ul class="org-list">
+    <li><strong>Korean associations and OKTA chapters</strong><span>Member codes, event sponsorship and a transparent community fund</span></li>
+    <li><strong>KOTRA, trade and venture associations</strong><span>Screening for staff posted abroad and joint campaigns</span></li>
+    <li><strong>Companies and HR teams</strong><span>Group health screening packages with an English report</span></li>
+    <li><strong>Banks and insurers overseas</strong><span>Customer benefits and a single point of contact</span></li>
+  </ul>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="#">KANIQ</a>
+      <ul><li><a href="#">Our fee rules</a></li><li><a href="#">If something goes wrong</a></li><li><a href="#">Privacy</a></li><li><a href="#">Hospitals</a></li><li><a href="#">About</a></li></ul>
+    </div>
+    <div class="reg"><span>Medical tourism agency registration SAMPLE-0000-000</span><span>Travel agency registration SAMPLE-0000-000</span><span>You pay KANIQ nothing</span></div>
+  </div>
+</footer>
+
+<div class="msgbar">
+  <div class="wrap">
+    <p id="bar-p">A coordinator replies within 24 hours, in English.</p>
+    <div class="cta-row"><a class="btn btn-msg" id="bar-msg" href="#"></a><a class="btn btn-ghost" href="#">Get a quote</a></div>
+  </div>
+</div>
+
+<script>
+const MSG = {
+  WhatsApp:{bg:'#128C4A',fg:'#fff'}, LINE:{bg:'#04843D',fg:'#fff'}, Messenger:{bg:'#0759D6',fg:'#fff'},
+  KakaoTalk:{bg:'#FEE500',fg:'#191919'}, Telegram:{bg:'#1670B3',fg:'#fff'}, Zalo:{bg:'#0058D6',fg:'#fff'}, WeChat:{bg:'#068A4A',fg:'#fff'}
+};
+const L = [
+  {c:'en',n:'English',e:'English',live:true,h:'Care your insurance won’t cover, planned in Korea.',g:'',care:['Dental implants','LASIK','Health screening','Fertility'],s:'Medical reports in English to take home to your own doctor',m:'WhatsApp'},
+  {c:'ja',n:'日本語',e:'Japanese',live:true,h:'ソウルまで2時間。\n精密検診も歯科も、\n週末で。',g:'Two hours to Seoul. Thorough screening and dental care, over a weekend.',care:['Health screening','Dental','Women’s wellness'],s:'Female doctors on request. JCB cards accepted.',m:'LINE'},
+  {c:'id',n:'Bahasa Indonesia',e:'Indonesian',live:true,h:'Perjalanan cek kesehatan yang aman, bersama seluruh keluarga.',g:'A safe health screening trip, with the whole family.',care:['Health screening','Dental','Women’s health'],s:'Halal meals and a prayer room near every partner hospital',m:'WhatsApp'},
+  {c:'mn',n:'Монгол',e:'Mongolian',live:true,h:'Солонгосын томоохон эмнэлэг — эхнээс нь дуустал монгол хэлээр.',g:'Korea’s major hospitals, in Mongolian from start to finish.',care:['Health screening','Women’s health','Serious illness referral'],s:'Visa invitation letters and support for long stays',m:'Messenger'},
+  {c:'ko',n:'한국어',e:'Korean',live:true,h:'동포와 유학생의 검진부터 기관 제휴까지, 한국어로.',g:'From check-ups for overseas Koreans and students to partnerships with organizations.',care:['Student check-ups','Dental','Eye'],s:'A discount when you verify your student ID',m:'KakaoTalk'},
+  {c:'hi',n:'हिन्दी',e:'Hindi',live:false,h:'पूर्व का दीपक — आपका भरोसेमंद चिकित्सा साथी।',g:'The lamp of the East: a medical partner you can trust.',care:['Health screening','Eye','Fertility'],s:'Vegetarian meals arranged at every stay',m:'WhatsApp'},
+  {c:'ru',n:'Русский',e:'Russian',live:false,h:'Переводчик рядом с вами — от начала и до конца.',g:'An interpreter beside you, from start to finish.',care:['Health screening','Women’s health','Dental'],s:'A Russian-speaking coordinator for your whole stay',m:'Telegram'},
+  {c:'vi',n:'Tiếng Việt',e:'Vietnamese',live:false,h:'Gần nhà, kết quả rõ ràng.',g:'Close to home, with clear results.',care:['Health screening','Dental','Eye'],s:'Direct flights to Incheon from Hanoi and Ho Chi Minh City',m:'Zalo'},
+  {c:'zh',n:'中文',e:'Chinese',live:false,h:'精密体检，专科医生诊疗。',g:'Thorough screening, with care from specialists.',care:['Health screening','Eye'],s:'Simplified and Traditional Chinese. WeChat Pay accepted.',m:'WeChat'},
+  {c:'es',n:'Español',e:'Spanish',live:false,h:'Atención médica en Corea, en español de principio a fin.',g:'Medical care in Korea, in Spanish from start to finish.',care:['Health screening','Dental'],s:'Consultations scheduled in Latin American time zones',m:'WhatsApp'},
+  {c:'th',n:'ไทย',e:'Thai',live:false,h:'ห่างจากกรุงเทพฯ เพียง 5 ชั่วโมง กับรีทรีตสุขภาพสำหรับผู้หญิง',g:'Five hours from Bangkok: a wellness retreat for women.',care:['Women’s wellness','Eye'],s:'Temple stays and hanbok experiences, cleared by your doctor',m:'LINE'}
+];
+const icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+const rail = document.getElementById('rail');
+rail.innerHTML = '<li class="grp">Open now</li>' +
+  L.filter(x=>x.live).map(x=>`<li><button type="button" data-c="${x.c}" lang="${x.c}" aria-pressed="false">${x.n}</button></li>`).join('') +
+  '<li class="grp">Opening in December</li>' +
+  L.filter(x=>!x.live).map(x=>`<li><button type="button" data-c="${x.c}" lang="${x.c}" aria-pressed="false">${x.n}</button></li>`).join('');
+
+const $ = id => document.getElementById(id);
+function paint(btn, m){ btn.style.setProperty('--mbg',MSG[m].bg); btn.style.setProperty('--mfg',MSG[m].fg); btn.innerHTML = `${icon}Chat on ${m}`; }
+function show(c, animate){
+  const x = L.find(l=>l.c===c);
+  rail.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.c===c));
+  $('where').innerHTML = x.live ? `Home for ${x.e} speakers` : `Home for ${x.e} speakers <span class="soon">Opens in December</span>`;
+  const h = $('headline'); h.lang = x.c; h.textContent = x.h;
+  $('gloss').textContent = x.g;
+  $('care').innerHTML = x.care.map(t=>`<li>${t}</li>`).join('');
+  $('special').textContent = x.s;
+  const m = x.live ? x.m : 'WhatsApp';
+  paint($('msg'), m); paint($('bar-msg'), m);
+  $('bar-p').textContent = x.live ? `A coordinator replies within 24 hours, in ${x.e}.` : `Until December, a coordinator replies within 24 hours in English.`;
+  if(animate){ const s=$('stage'); s.classList.remove('swap'); void s.offsetWidth; s.classList.add('swap'); }
+}
+rail.addEventListener('click',e=>{ const b=e.target.closest('button'); if(b) show(b.dataset.c,true); });
+show('en',false);
+
+$('copy').addEventListener('click',e=>{ e.target.textContent='Copied'; setTimeout(()=>e.target.textContent='Copy link',1500); });
+</script>
+</body>
+</html>

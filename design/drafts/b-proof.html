@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KANIQ — Don't take our word for it. Check it.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF8FB;
+  --mauve:#EBDDE5;
+  --plum:#3A1A31;
+  --plum-2:#6B3A5C;
+  --seal:#B42318;
+  --gold:#B8962E;
+  --line:rgba(58,26,49,.16);
+  --serif:"Newsreader","Noto Serif KR",Georgia,serif;
+  --sans:"Public Sans","Apple SD Gothic Neo",system-ui,sans-serif;
+  --wrap:min(1180px,100% - 2.5rem);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--plum);font:400 1.0625rem/1.65 var(--serif);-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--seal);outline-offset:3px;border-radius:3px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.sans{font-family:var(--sans)}
+.draft-note{font:500 .8rem/1.4 var(--sans);background:var(--plum);color:var(--mauve);text-align:center;padding:.4rem 1rem}
+
+.site-head{display:flex;align-items:center;gap:2rem;padding-block:1.4rem;font-family:var(--sans);font-size:.92rem;border-bottom:1px solid var(--line)}
+.logo{font:600 1.5rem/1 var(--serif);letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo svg{width:26px;height:26px}
+.site-nav{display:flex;gap:1.6rem;margin-right:auto}
+.site-nav a{text-decoration:none}
+.site-nav a:hover{text-decoration:underline}
+.lang{font:inherit;border:1px solid var(--line);background:#fff;border-radius:6px;padding:.4rem .6rem;color:var(--plum)}
+@media (max-width:860px){.site-nav{display:none}.site-head{justify-content:space-between}}
+
+.btn{display:inline-flex;align-items:center;font:600 .98rem/1 var(--sans);padding:.95rem 1.35rem;border-radius:8px;text-decoration:none;border:1.5px solid var(--plum);cursor:pointer}
+.btn-dark{background:var(--plum);color:#fff}
+.btn-dark:hover{background:var(--plum-2);border-color:var(--plum-2)}
+.btn-line{background:transparent;color:var(--plum)}
+.btn-line:hover{background:var(--mauve)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(2rem,6vw,6rem);align-items:center;padding-block:clamp(2.5rem,5vw,4.5rem) clamp(3rem,7vw,6rem)}
+.hero h1{font-weight:400;font-size:clamp(2.6rem,1.6rem + 4vw,5.2rem);line-height:.98;letter-spacing:-.025em;margin:0 0 1.75rem;max-width:11ch}
+.hero h1 em{font-style:italic;font-weight:300}
+.hero .lede{font-size:1.3rem;line-height:1.5;max-width:30ch;margin:0 0 2.25rem;color:var(--plum-2)}
+.hero .acts{display:flex;gap:.75rem;flex-wrap:wrap}
+
+/* receipt — the memorable thing */
+.receipt-wrap{position:relative;padding:1.5rem 1.5rem 2.5rem}
+.receipt{position:relative;background:#fff;padding:2rem 1.75rem 1.75rem;font-family:var(--sans);font-size:.92rem;box-shadow:0 40px 70px -45px rgba(58,26,49,.55),0 0 0 1px var(--line);
+  --tooth:10px;
+  -webkit-mask:radial-gradient(circle var(--tooth) at 50% 100%,transparent 98%,#000) bottom/calc(var(--tooth)*2.2) calc(var(--tooth)*2) repeat-x, linear-gradient(#000,#000) top/100% calc(100% - var(--tooth)*2) no-repeat;
+          mask:radial-gradient(circle var(--tooth) at 50% 100%,transparent 98%,#000) bottom/calc(var(--tooth)*2.2) calc(var(--tooth)*2) repeat-x, linear-gradient(#000,#000) top/100% calc(100% - var(--tooth)*2) no-repeat;
+  padding-bottom:calc(1.75rem + 20px);transform:rotate(.6deg)}
+.receipt h2{font:500 1.5rem/1.2 var(--serif);margin:0 0 .25rem;padding-right:110px}
+.receipt .r-sub{color:#7A6273;margin:0 0 1.25rem}
+.rows{list-style:none;margin:0;padding:0;border-top:1px dashed var(--line)}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding-block:.9rem;border-bottom:1px dashed var(--line)}
+.rows .what{font-weight:600}
+.rows .who{grid-column:1;color:#7A6273;font-size:.85rem}
+.rows .amt{grid-row:1/3;grid-column:2;align-self:center;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.total{display:flex;justify-content:space-between;align-items:baseline;padding-top:1rem}
+.total span{font-weight:600}
+.total strong{font:400 3rem/1 var(--serif);letter-spacing:-.02em}
+.seal{position:absolute;right:-18px;top:-6px;width:150px;height:150px;transform:rotate(-14deg);color:var(--seal);mix-blend-mode:multiply;opacity:.88;pointer-events:none}
+.seal-in{animation:stamp .5s cubic-bezier(.2,1.6,.4,1) .5s both}
+@keyframes stamp{from{transform:rotate(-14deg) scale(1.8);opacity:0}to{transform:rotate(-14deg) scale(1);opacity:.88}}
+.rosette{position:absolute;inset:0;z-index:-1;color:var(--gold);opacity:.35}
+@media (max-width:900px){.hero{grid-template-columns:1fr}.receipt-wrap{max-width:460px}}
+@media (max-width:520px){.receipt-wrap{padding-inline:.25rem}.seal{right:-2px;width:118px;height:118px}}
+
+/* signals */
+.signals{background:var(--plum);color:#F3E9EF}
+.signals .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.signals div{padding:1.6rem 1.4rem 1.6rem 0;font-family:var(--sans);font-size:.88rem;line-height:1.45}
+.signals div + div{padding-left:1.4rem;border-left:1px solid rgba(255,255,255,.14)}
+.signals strong{display:block;font:500 1.15rem/1.25 var(--serif);color:#fff;margin-bottom:.3rem}
+@media (max-width:860px){.signals .wrap{grid-template-columns:1fr 1fr}.signals div:nth-child(3){padding-left:0;border-left:0}}
+
+.section{padding-block:clamp(4rem,9vw,8rem)}
+.section h2{font-weight:400;font-size:clamp(2rem,1.4rem + 2.2vw,3.2rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 1rem;max-width:18ch}
+.intro{font-size:1.15rem;max-width:52ch;color:var(--plum-2);margin:0 0 3rem}
+
+/* registry */
+.registry{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.registry figure{margin:0;position:sticky;top:1.5rem}
+.registry img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;background:var(--mauve)}
+.registry figcaption{font:400 .85rem/1.5 var(--sans);color:#7A6273;margin-top:.6rem}
+.record{border:1px solid var(--line);background:#fff;border-radius:4px;margin-bottom:1.5rem}
+.record header{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:1.4rem 1.5rem 1.2rem;border-bottom:1px solid var(--line)}
+.record h3{font:500 1.5rem/1.15 var(--serif);margin:0}
+.record .kind{font:400 .88rem/1.4 var(--sans);color:#7A6273;margin:.3rem 0 0}
+.verify{font:600 .85rem/1.2 var(--sans);color:var(--seal);white-space:nowrap}
+.record dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;font-family:var(--sans)}
+.record dl div{padding:1rem 1.5rem;border-bottom:1px solid var(--line)}
+.record dl div:nth-child(odd){border-right:1px solid var(--line)}
+.record dt{font-size:.8rem;color:#7A6273}
+.record dd{margin:.15rem 0 0;font-weight:600;font-variant-numeric:tabular-nums}
+.doctor{display:grid;grid-template-columns:56px 1fr;gap:1rem;padding:1.2rem 1.5rem;font-family:var(--sans);font-size:.92rem}
+.mono{width:56px;height:56px;border-radius:50%;background:var(--mauve);display:grid;place-items:center;font:500 1.25rem/1 var(--serif);color:var(--plum)}
+.doctor strong{font:500 1.15rem/1.2 var(--serif);display:block}
+.doctor p{margin:.2rem 0 0;color:#5C4656}
+@media (max-width:860px){.registry{grid-template-columns:1fr}.registry figure{position:static}.registry img{aspect-ratio:3/2}}
+@media (max-width:520px){.record dl{grid-template-columns:1fr}.record dl div:nth-child(odd){border-right:0}}
+
+/* questions */
+.qa-wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.qa{border-top:1px solid var(--plum)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;padding:1.15rem 0;font:400 1.3rem/1.3 var(--serif)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"";flex:none;width:14px;height:14px;margin-top:.45rem;border-right:1.5px solid var(--plum);border-bottom:1.5px solid var(--plum);transform:rotate(45deg);transition:transform .2s}
+.qa details[open] summary::after{transform:rotate(-135deg) translate(-4px,-4px)}
+.qa summary:hover{color:var(--plum-2)}
+.qa .ans{padding:0 0 1.4rem;max-width:58ch}
+.qa .ans p{margin:0 0 .6rem}
+.qa .where{font:500 .85rem/1.4 var(--sans);color:var(--plum-2)}
+.qa .where a{color:var(--seal);font-weight:600}
+.qa-side img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;background:var(--mauve)}
+@media (max-width:860px){.qa-wrap{grid-template-columns:1fr}.qa-side{order:-1}.qa-side img{aspect-ratio:16/9}}
+
+/* problem steps — a real sequence */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);counter-reset:s;border-top:1px solid var(--plum)}
+.steps li{counter-increment:s;padding:1.5rem 1.5rem 0 0}
+.steps li + li{padding-left:1.5rem;border-left:1px solid var(--line)}
+.steps li::before{content:counter(s);display:block;font:300 3.2rem/1 var(--serif);color:var(--seal);margin-bottom:.75rem}
+.steps strong{display:block;font:500 1.2rem/1.25 var(--serif);margin-bottom:.4rem}
+.steps span{font:400 .92rem/1.55 var(--sans);color:#5C4656}
+.insure{margin-top:2.5rem;font:400 .95rem/1.5 var(--sans);color:#5C4656}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr;row-gap:2rem}.steps li:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}.steps li + li{padding-left:0;border-left:0}}
+
+/* review */
+.review{background:var(--mauve);border-radius:4px;padding:clamp(2rem,5vw,4rem);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,8fr);gap:clamp(1.5rem,4vw,4rem)}
+.review blockquote{margin:0;font:400 clamp(1.4rem,1.1rem + 1.2vw,2.1rem)/1.4 var(--serif)}
+.review blockquote[lang="ja"]{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",var(--serif);line-height:1.6}
+.review .meta{font:400 .9rem/1.6 var(--sans);color:#5C4656}
+.review .meta strong{display:block;color:var(--plum);font-size:1rem}
+.verified{display:inline-flex;gap:.4rem;align-items:center;margin-top:.8rem;font:600 .82rem/1 var(--sans);color:var(--plum);background:#fff;border-radius:999px;padding:.45rem .75rem}
+.verified svg{width:14px;height:14px}
+.toggle{margin-top:1.5rem;background:none;border:0;padding:0;font:600 .9rem/1 var(--sans);color:var(--seal);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+@media (max-width:760px){.review{grid-template-columns:1fr}}
+
+/* quote form */
+.form-box{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(2rem,5vw,5rem)}
+.stepper{display:flex;gap:.5rem;font:500 .85rem/1 var(--sans);margin-bottom:1.5rem;color:#7A6273}
+.stepper span{padding:.45rem .7rem;border-radius:999px;border:1px solid var(--line)}
+.stepper .on{background:var(--plum);color:#fff;border-color:var(--plum)}
+form label{display:block;font:600 .9rem/1.3 var(--sans);margin-bottom:.4rem}
+form select,form input[type=text]{width:100%;font:400 1rem/1.4 var(--sans);padding:.8rem .9rem;border:1px solid rgba(58,26,49,.35);border-radius:6px;background:#fff;color:var(--plum);margin-bottom:1.2rem}
+.consent{font:400 .88rem/1.5 var(--sans);display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem}
+.consent input{margin-top:.25rem;accent-color:var(--plum)}
+.privacy{font:400 .85rem/1.55 var(--sans);color:#5C4656;border-left:3px solid var(--gold);padding-left:.9rem;margin:1.2rem 0 1.5rem}
+@media (max-width:860px){.form-box{grid-template-columns:1fr}}
+
+.site-foot{border-top:1px solid var(--plum);padding-block:3rem;font:400 .88rem/1.6 var(--sans)}
+.foot-reg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;padding-bottom:2rem;border-bottom:1px solid var(--line)}
+.foot-reg dt{color:#7A6273;font-size:.8rem}
+.foot-reg dd{margin:.15rem 0 0;font:500 1.25rem/1.3 var(--serif)}
+.foot-links{display:flex;gap:1.5rem;flex-wrap:wrap;padding-top:1.5rem}
+@media (max-width:760px){.foot-reg{grid-template-columns:1fr}}
+
+.msgbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(250,248,251,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.msgbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem;font-family:var(--sans)}
+.msgbar p{margin:0;font-size:.92rem}
+.msgbar .acts{display:flex;gap:.5rem}
+.wa{background:#1F8F55;border-color:#1F8F55;color:#fff}
+@media (max-width:640px){.msgbar p{display:none}.msgbar .acts{width:100%}.msgbar .btn{flex:1;justify-content:center}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="draft-note">시안 B — 신뢰를 증명하는 홈 (병원·의료진·등록번호는 모두 샘플 데이터)</div>
+
+<header class="wrap site-head">
+  <a class="logo" href="#">
+    <svg viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="2" width="22" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 7v12M8 13l8-6M10.5 11.2 17 19" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    KANIQ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#records">Hospitals and doctors</a>
+    <a href="#questions">Your questions</a>
+    <a href="#problems">If something goes wrong</a>
+    <a href="#quote">Get a quote</a>
+  </nav>
+  <select class="lang" aria-label="Language"><option>English</option><option>日本語</option><option>Bahasa Indonesia</option><option>Монгол</option><option>한국어</option></select>
+</header>
+
+<main>
+<section class="wrap hero" aria-labelledby="h">
+  <div>
+    <h1 id="h">Don't take our word for it. <em>Check it.</em></h1>
+    <p class="lede">Every hospital, doctor and price on this site comes with a record you can verify yourself, before you send us anything.</p>
+    <div class="acts">
+      <a class="btn btn-dark" href="#records">See hospital records</a>
+      <a class="btn btn-line" href="#quote">Get a quote</a>
+    </div>
+  </div>
+
+  <div class="receipt-wrap">
+    <svg class="rosette" id="rosette" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+    <article class="receipt" aria-labelledby="r-h">
+      <h2 id="r-h">Who pays what</h2>
+      <p class="r-sub">A dental implant trip, as an example</p>
+      <ul class="rows">
+        <li><span class="what">Your treatment</span><span class="who">Paid to the hospital</span><span class="amt">Walk-in price</span></li>
+        <li><span class="what">Pickup and hotel</span><span class="who">Paid to the provider, price shown before you book</span><span class="amt">As quoted</span></li>
+        <li><span class="what">Coordinator, interpreter, 24-hour hotline</span><span class="who">KANIQ</span><span class="amt">₩0</span></li>
+        <li><span class="what">KANIQ's coordination fee</span><span class="who">Paid by the hospital, never added to your bill</span><span class="amt">Not yours</span></li>
+      </ul>
+      <div class="total"><span>What you pay KANIQ</span><strong>₩0</strong></div>
+    </article>
+    <svg class="seal seal-in" viewBox="0 0 160 160" aria-hidden="true">
+      <defs><path id="ring" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
+      <circle cx="80" cy="80" r="74" fill="none" stroke="currentColor" stroke-width="3"/>
+      <circle cx="80" cy="80" r="44" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text font-family="Public Sans,sans-serif" font-size="11.5" font-weight="700" fill="currentColor"><textPath href="#ring" textLength="356" lengthAdjust="spacing">NO FEE FOR PATIENTS ✦ KANIQ ✦ 환자 부담 없음 ✦</textPath></text>
+      <text x="80" y="96" text-anchor="middle" font-family="Newsreader,serif" font-size="46" fill="currentColor">0</text>
+    </svg>
+  </div>
+</section>
+
+<section class="signals" aria-label="What we show on every page">
+  <div class="wrap">
+    <div><strong>Registered agency</strong>Our medical tourism and travel agency numbers sit in every footer.</div>
+    <div><strong>Doctors by name</strong>Photo, board certification and languages spoken.</div>
+    <div><strong>Reviews tied to a booking</strong>Only patients with a booking number can write one.</div>
+    <div><strong>Prices as ranges</strong>From the hospital. Your final quote comes from them, in writing.</div>
+  </div>
+</section>
+
+<section class="section wrap" id="records" aria-labelledby="rec-h">
+  <h2 id="rec-h">Hospital and doctor records</h2>
+  <p class="intro">We only work with hospitals registered to treat foreign patients. Each record links to the government source, so you can check it without asking us.</p>
+  <div class="registry">
+    <figure>
+      <img src="img/b-consult.jpg" alt="A doctor explains an x-ray to a patient with an interpreter beside them">
+      <figcaption>Consultations happen with a medical interpreter in the room. You never translate for yourself.</figcaption>
+    </figure>
+    <div>
+      <article class="record">
+        <header>
+          <div><h3>Hanbit Dental Hospital</h3><p class="kind">Dental implants and prosthetics, Gangnam, Seoul</p></div>
+          <a class="verify" href="#">Verify with the Ministry of Health</a>
+        </header>
+        <dl>
+          <div><dt>Foreign patient registration</dt><dd>SAMPLE-2025-0412</dd></div>
+          <div><dt>Accreditation</dt><dd>KAHF certified</dd></div>
+          <div><dt>Board-certified specialists</dt><dd>14</dd></div>
+          <div><dt>International desk languages</dt><dd>English, Japanese, Mongolian</dd></div>
+        </dl>
+        <div class="doctor">
+          <span class="mono" aria-hidden="true">SJ</span>
+          <div><strong>Dr. Seo Ji-won</strong><p>Board-certified prosthodontist, 16 years in practice. Speaks Korean and English.</p></div>
+        </div>
+      </article>
+      <article class="record">
+        <header>
+          <div><h3>Seoul Women's Clinic</h3><p class="kind">Women's health and fertility, Jongno, Seoul</p></div>
+          <a class="verify" href="#">Verify with the Ministry of Health</a>
+        </header>
+        <dl>
+          <div><dt>Foreign patient registration</dt><dd>SAMPLE-2024-0187</dd></div>
+          <div><dt>Accreditation</dt><dd>KAHF certified, JCI</dd></div>
+          <div><dt>Board-certified specialists</dt><dd>9, all women</dd></div>
+          <div><dt>International desk languages</dt><dd>Japanese, Russian, Indonesian</dd></div>
+        </dl>
+        <div class="doctor">
+          <span class="mono" aria-hidden="true">HY</span>
+          <div><strong>Dr. Han Yu-jin</strong><p>Board-certified obstetrician and gynecologist, 21 years in practice. Speaks Korean and Japanese.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="questions" aria-labelledby="q-h" style="padding-top:0">
+  <div class="qa-wrap">
+    <div>
+      <h2 id="q-h">What patients ask before booking</h2>
+      <p class="intro">Each answer says where you can check it.</p>
+      <div class="qa">
+        <details open><summary>How much will it cost, and what's hidden?</summary><div class="ans"><p>Every treatment page shows a price range in your currency and an example of the whole trip's cost. KANIQ charges you nothing.</p><p class="where">Check it: <a href="#">price ranges by treatment</a></p></div></details>
+        <details><summary>Can I trust this hospital?</summary><div class="ans"><p>Each hospital record shows its foreign patient registration number, accreditation, number of specialists and the languages at its international desk.</p><p class="where">Check it: <a href="#">Ministry of Health registry</a></p></div></details>
+        <details><summary>Can I trust this doctor?</summary><div class="ans"><p>You see the doctor's real name, photo, board certification, years in practice and the languages they speak.</p></div></details>
+        <details><summary>Is KANIQ a real, accountable company?</summary><div class="ans"><p>We're a registered medical tourism agency and travel agency, insured for liability, with our team listed by name.</p><p class="where">Check it: <a href="#">registration numbers and insurance</a></p></div></details>
+        <details><summary>Can I talk to a doctor before I fly?</summary><div class="ans"><p>From December, the hospital can hold a remote consultation with you and send a written treatment plan and quote.</p></div></details>
+        <details><summary>How do I get from the airport to the hospital?</summary><div class="ans"><p>We arrange pickup from Incheon or Gimpo. You get the driver's photo, contact and the price before you land.</p></div></details>
+        <details><summary>Where do I stay while I recover?</summary><div class="ans"><p>Places within 30 minutes of your hospital, with family and long-stay options, plus visa and eSIM guidance.</p></div></details>
+        <details><summary>Who's responsible if something goes wrong?</summary><div class="ans"><p>The hospital for medical care, KANIQ for everything around it. The steps are below.</p></div></details>
+        <details><summary>Is my information safe?</summary><div class="ans"><p>We only ask what you're interested in, never your medical history, until you're talking to a coordinator. You can delete everything from a link in our emails.</p></div></details>
+      </div>
+    </div>
+    <div class="qa-side"><img src="img/b-documents.jpg" alt="Passport, treatment plan, Korean seal stamp and pen on a desk"></div>
+  </div>
+</section>
+
+<section class="section wrap" id="problems" aria-labelledby="p-h" style="padding-top:0">
+  <h2 id="p-h">If something goes wrong</h2>
+  <p class="intro">Who to contact, in order. You can skip straight to any step.</p>
+  <ol class="steps">
+    <li><strong>Call the 24-hour hotline</strong><span>In your language, from arrival until you're back home.</span></li>
+    <li><strong>The hospital's aftercare team</strong><span>Medical questions go to the doctor who treated you, including remote follow-ups after you fly home.</span></li>
+    <li><strong>KANIQ customer protection</strong><span>A direct line for anything you're not satisfied with: service, billing, or the hospital's response.</span></li>
+    <li><strong>Independent mediation</strong><span>Korea Medical Dispute Mediation and Arbitration Agency, free of charge. We help you file.</span></li>
+  </ol>
+  <p class="insure">KANIQ holds professional liability insurance of ₩100 million or more, as Korean law requires of registered agencies.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="rv-h" style="padding-top:0">
+  <h2 id="rv-h" class="sr">A patient review</h2>
+  <div class="review">
+    <div class="meta">
+      <strong>Patient from Osaka</strong>
+      Health screening, March 2026
+      <span class="verified"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Booking verified</span>
+    </div>
+    <div>
+      <blockquote id="rv" lang="ja">通訳の方が最初から最後まで一緒にいてくれて、検診の説明もすべて日本語で聞けました。結果のレポートも帰国前に受け取れました。</blockquote>
+      <button class="toggle" id="rv-t" type="button" aria-controls="rv">Show in English</button>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="quote" aria-labelledby="f-h" style="padding-top:0">
+  <div class="form-box">
+    <div>
+      <h2 id="f-h">Ask for a quote</h2>
+      <p class="intro">Three short steps. A coordinator replies within 24 hours, then the hospital sends the quote in writing.</p>
+    </div>
+    <form onsubmit="event.preventDefault()">
+      <div class="stepper" aria-label="Step 1 of 3"><span class="on">Interest</span><span>Dates</span><span>Contact</span></div>
+      <label for="f-tx">What are you interested in?</label>
+      <select id="f-tx"><option>Health screening</option><option>Dental</option><option>Eye</option><option>Women's health</option><option>Fertility</option></select>
+      <label for="f-when">When would you like to come?</label>
+      <select id="f-when"><option>In the next 3 months</option><option>In 3 to 6 months</option><option>Not sure yet</option></select>
+      <label for="f-from">Where do you live?</label>
+      <input id="f-from" type="text" placeholder="City and country">
+      <p class="privacy">We send your request only to the hospitals you choose, keep it for one year, and you can delete it any time from the link in our emails.</p>
+      <label class="consent"><input type="checkbox" required> Send my request to the hospitals I choose (required)</label>
+      <label class="consent"><input type="checkbox"> Email me travel and recovery tips (optional)</label>
+      <button class="btn btn-dark" type="submit" style="margin-top:.8rem">Continue to dates</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="wrap site-foot">
+  <dl class="foot-reg">
+    <div><dt>Medical tourism agency registration</dt><dd>SAMPLE-0000-000</dd></div>
+    <div><dt>Travel agency registration</dt><dd>SAMPLE-0000-000</dd></div>
+    <div><dt>Customer protection line</dt><dd>+82 2 0000 0000</dd></div>
+  </dl>
+  <div class="foot-links"><a href="#">Our fee rules</a><a href="#">Privacy</a><a href="#">Ambassadors</a><a href="#">For organizations</a><a href="#">About KANIQ</a></div>
+</footer>
+
+<div class="msgbar">
+  <div class="wrap">
+    <p>A coordinator replies within 24 hours, in English.</p>
+    <div class="acts"><a class="btn wa" href="#">Chat on WhatsApp</a><a class="btn btn-line" href="#quote">Get a quote</a></div>
+  </div>
+</div>
+
+<style>.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style>
+<script>
+// guilloché rosette behind the receipt
+const ro = document.getElementById('rosette'); let g = '';
+for(let i=0;i<36;i++) g += `<ellipse rx="96" ry="38" fill="none" stroke="currentColor" stroke-width=".35" transform="rotate(${i*5})"/>`;
+for(let i=0;i<24;i++) g += `<ellipse rx="60" ry="22" fill="none" stroke="currentColor" stroke-width=".3" transform="rotate(${i*7.5})"/>`;
+ro.innerHTML = g;
+
+const rv = document.getElementById('rv'), t = document.getElementById('rv-t');
+const JA = rv.textContent, EN = 'The interpreter stayed with me from start to finish, and I heard every explanation of the screening in Japanese. I had my results report before I flew home.';
+t.addEventListener('click',()=>{
+  const ja = rv.lang === 'ja';
+  rv.textContent = ja ? EN : JA; rv.lang = ja ? 'en' : 'ja';
+  t.textContent = ja ? 'Show the original (Japanese)' : 'Show in English';
+});
+</script>
+</body>
+</html>
